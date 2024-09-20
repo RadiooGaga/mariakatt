@@ -1,12 +1,12 @@
 .divHeader {
     display: flex;
+    position: absolute;
     justify-content:center; /* esto es lo modificable a la hora del responsive */
     flex-direction: column;
     align-items:center;
     width:50%;
     height:100svh;
-    padding: 20px 30px;
-    gap: 20px;
+    padding: 10px 30px 40px;
 }
 
 
@@ -14,11 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%; /* esto es lo modificable a la hora del responsive */
+    width: 100%; /* esto es lo modificable a la hora del responsive */
     height: 20svh;    
 }
 
 .logo {
+    width: 12%;
     object-fit: contain;    
 }
 
@@ -35,7 +36,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 li {
@@ -59,4 +60,58 @@ li:hover {
 
 .logo, li {
     opacity: 80%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+
+    .divHeader {
+        display: flex;
+        position: absolute;
+        width:100%;
+        height:100svh;
+        padding: 20px;
+    }
+
+    .divLogo {
+        height: 15svh;    
+    }
+
+    .logo {
+        width: 18%;
+        object-fit: contain;    
+    }
+
+    li {
+        font-size: 40px;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+   
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1921px) {
+
+    
+
 }
