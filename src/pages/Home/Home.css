@@ -8,11 +8,9 @@
 }
 
 .coverImage {
-   /* width: 70%;
-      filter: saturate(80%);*/
     object-fit: cover;
-    width: 100%;
-    filter: opacity(30%);
+    width: 60%;
+    filter: opacity(70%);
     
 }
 
@@ -20,6 +18,10 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 480px) {
+
+    .homeCover {
+        background-color: var(--rtc-color-skyBlue);
+    }
 
     .coverImage {
          object-fit: cover;
@@ -31,24 +33,54 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
+    .homeCover {
+        background-color: var(--rtc-color-skyBlue);
+    }
+
+    .coverImage {
+        object-fit: cover;
+        width: 100%;
+        filter: opacity(30%);
+    }
 
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
+     .homeCover {
+        background-color: var(--rtc-color-skyBlue);
+    }
+
+    .coverImage {
+        object-fit: cover;
+        width: 100%;
+        filter: opacity(30%);
+    }
    
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+    .coverImage {
+        object-fit: cover;
+        width: 60%;
+        filter: opacity(70%);
+    }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-
+    .coverImage {
+        object-fit: cover;
+        width: 60%;
+        filter: opacity(70%);
+    }
 }
 
 @media (min-width: 1921px) {
-
+    .coverImage {
+        object-fit: cover;
+        width: 60%;
+        filter: opacity(70%);
+    }
 }
 
 

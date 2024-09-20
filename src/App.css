@@ -1,7 +1,14 @@
 
 @font-face {
     font-family: 'portd';
-    src: url('/public/assets/fonts/portd___.ttf') format('truetype');
+    src: url('/assets/fonts/portd___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'borela';
+    src: url('/assets/fonts/Borela-6YX71.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

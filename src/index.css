@@ -1,9 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  --rtc-fontFamily-1: 'portd';
-
-  --rtc-color-red: #ff2927;
+  --rtc-font-family-1: 'portd';
+  --rtc-font-family-2: 'borela';
+  
+  --rtc-color-classicRed: #ff2927;
   --rtc-color-softBlue: #7ebbbc;
   --rtc-color-skyBlue: #b6eaf4;
   --rtc-color-babyPink:#ffe7e3;

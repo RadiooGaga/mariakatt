@@ -13,12 +13,13 @@ export const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li>BIO</li>
-                    <li>EDITORIAL</li>
-                    <li>CREATIVE</li>
-                    <li>CHARACTER</li>
-                    <li>HAIRSTYLES</li>
-                    <li>BEAUTY</li>
+                    <li className='line-through'>BIO</li>
+                    <li className='line-through'>EDITORIAL</li>
+                    <li className='line-through'>CREATIVE</li>
+                    <li className='line-through'>CHARACTER</li>
+                    <li className='line-through'>HAIRSTYLES</li>
+                    <li className='line-through'>BEAUTY</li>
+                    <li className='line-through'>CONTACT</li>
                 </ul>
             </nav>
         </div>
