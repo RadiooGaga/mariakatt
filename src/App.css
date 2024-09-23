@@ -7,8 +7,15 @@
 }
 
 @font-face {
-    font-family: 'borela';
-    src: url('/assets/fonts/Borela-6YX71.otf') format('truetype');
+    font-family: 'sageffine';
+    src: url('/assets/fonts/sageffine-cdnfonts/Sageffine-BF654db192d17bd.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'instrument';
+    src: url('/public/assets/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

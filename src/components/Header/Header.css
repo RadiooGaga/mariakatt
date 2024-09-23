@@ -35,7 +35,7 @@ nav {
     height: 65%;
 }
 
-ul {
+.navLinks {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,15 @@ ul {
     gap: 10px;
 }
 
-li {
+li > a {
+    color: var(--rtc-color-classicRed);
+    text-decoration: none;
+}
+
+.navLinks > li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
     width: auto;
     height: auto;
     color: var(--rtc-color-classicRed);
@@ -52,41 +60,34 @@ li {
     letter-spacing: 1px;
     font-size: 60px;
     font-weight: 100;
-    transform: scale3d(1.7, 1, 1);
-   
+    transform: scale3d(1.7, 1, 1); 
 }
 
-.line-through {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.line-through::after {
+.navLinks > li::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
-    height: 8px; 
-    background: #63c6e3;
+    height: 1px; 
+    background: #1fb6e4;
     transform: translateY(-50%) scaleX(0);
     transition: transform 0.7s ease ;
 }
 
-.line-through:hover::after {
+.navLinks > li:hover::after {
     transform: translateY(-50%) scaleX(1);
 }
 
-li:hover {
+.navLinks > li:hover {
     cursor: pointer;
 }
 
-
+/*
 .logo, li {
     opacity: 80%;
 }
-
+*/
 
 /* MEDIA QUERIES */
 
@@ -94,15 +95,19 @@ li:hover {
 
     .divHeader {
         display: flex;
+        justify-content: center;
         position: absolute;
         width:100%;
         height:100svh;
         padding: 20px;
         background-color: transparent;
+        gap: 20px;
     }
 
     .divLogo {
         display: flex;
+        position: relative;
+        bottom: 3em;
         justify-content: center;
         align-items: center;
         padding: 5px;
@@ -116,10 +121,13 @@ li:hover {
     }
 
     nav {
+        position: relative;
+        bottom: 1em;
         width: 100%;
         height: 50%;
     }
-    ul {
+
+    .navLinks {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -127,7 +135,7 @@ li:hover {
         gap: 10px;
     }
 
-    li {
+    .navLinks > li {
         font-size: 40px;
     }
    
@@ -141,30 +149,34 @@ li:hover {
         position: absolute;
         width:100%;
         height:100svh;
-        padding: 20px;
+        padding-top: 20px;
         background-color: transparent;
     }
 
     .divLogo {
-        height: 15svh;    
+        position: relative;
+        bottom: 1em;
+        height: 15%;    
     }
 
     .logo {
-        width: 18%;
+        width: 14%;
         object-fit: contain;    
     }
 
-    ul {
-        gap: 10px;
-    }
-
     nav {
+        position: relative;
+        top: 1em;
         width: 100%;
         height: 60%;
     }
 
-    li {
-        font-size: 50px;
+    .navLinks {
+        gap: 10px;
+    }
+
+    .navLinks > li {
+        font-size: 45px;
     }
 
 }
@@ -176,11 +188,13 @@ li:hover {
         position: absolute;
         width:100%;
         height:100svh;
-        padding: 20px;
+        padding: 10px;
         background-color: transparent;
     }
 
     .divLogo {
+        position: relative;
+        bottom: 5em;
         height: 15svh;    
     }
 
@@ -189,8 +203,12 @@ li:hover {
         object-fit: contain;    
     }
 
-    li {
-        font-size: 50px;
+    nav {
+        height: 50%;
+    }
+
+    .navLinks > li {
+        font-size: 60px;
     }
    
 }
@@ -213,11 +231,11 @@ li:hover {
     }
 
     .logo {
-        width: 22%;
+        width: 25%;
         object-fit: contain;    
     }
 
-    li {
+    .navLinks > li {
         font-size: 50px;
     }
   
@@ -228,7 +246,7 @@ li:hover {
 
     .divHeader {
         display: flex;
-        justify-content:center;
+        justify-content:space-evenly;
         flex-direction: column;
         align-items:center;
         width:40%;
@@ -242,11 +260,11 @@ li:hover {
     }
 
     .logo {
-        width: 16%;
+        width: 20%;
         object-fit: contain;    
     }
 
-    li {
+    .navLinks > li {
         font-size: 50px;
     }
 }
@@ -260,7 +278,8 @@ li:hover {
         width:40%;
         height:100svh;
         padding: 10px 30px 40px;
-        background-color: var(--rtc-color-skyBlue);
+        /*background-color: var(--rtc-color-skyBlue);*/
+       background-color:var(--rtc-color-babyWhite);
     }
 }
 

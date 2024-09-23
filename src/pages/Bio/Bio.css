@@ -1,0 +1,138 @@
+.bioSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 100px;
+    background-color:var( --rtc-color-babyPink);
+}
+
+.bioH2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    color: var(--rtc-color-classicRed);
+    font-family: var(--rtc-font-family-1);
+    transform: scale3d(1.7, 1, 1);
+    letter-spacing: 1px;
+    font-size: 60px;
+    font-weight: 100;
+
+}
+
+
+blockquote, .bioParagraph {
+    width: 100%;
+    height: auto;
+    padding: 40px 80px 60px;
+    text-align: center;
+    background-color:var( --rtc-color-babyPink);
+    font-family: var(--rtc-font-family-3);
+    color: var(--rtc-color-classicRed);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.bioParagraph {
+    text-align: justify;
+    color: #3a595a;
+    padding: 60px 80px 40px;
+}
+
+.bioPictureDiv {
+    width: 100%;
+    height: 850px;
+    position: relative; /* Para controlar la posición de la imagen, si es necesario */
+    overflow: hidden;
+}
+
+.bioPic {
+    width: 100%;      /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%;     /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen para ajustarse al div sin distorsionar */
+    display: block; 
+}
+
+strong {
+    color: #df4042;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 480px) {
+
+    blockquote, .bioParagraph {
+        text-align: justify;
+        padding: 30px;
+        font-size: 14px;
+    }
+
+
+    .bioPictureDiv {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bioPic {
+        width: 100%;   
+        height: 100%;    
+        object-fit: cover; 
+        display: block; 
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    blockquote, .bioParagraph {
+        text-align: justify;
+        padding: 35px;
+        font-size: 16px;
+    }
+
+
+    .bioPictureDiv {
+        width: 100%;
+        height: 450px;
+        position: relative; 
+        overflow: hidden;
+    }
+
+    .bioPic {
+        width: 100%; 
+        height: 100%;   
+        object-fit: cover;
+        display: block; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    blockquote, .bioParagraph {
+        text-align: justify;
+        padding: 45px;
+        font-size: 18px;
+    }
+
+
+    .bioPictureDiv {
+        width: 100%;
+        height: 450px;
+        position: relative; 
+        overflow: hidden;
+    }
+
+    .bioPic {
+        width: 100%; 
+        height: 100%;   
+        object-fit: cover;
+        display: block; 
+    }
+}

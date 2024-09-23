@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 
 import { Home } from './pages/Home/Home'
+import { Bio } from './pages/Bio/Bio';
 
 
 
@@ -12,7 +13,7 @@ function App() {
     <>
       <Routes>
           <Route path="/" element={<Home />} />
-          {/*<Route path="/bio" element={<ByLetter />} />*/}
+          <Route path="/bio" element={<Bio />} />
         </Routes>
     </>
   )

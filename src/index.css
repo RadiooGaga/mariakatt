@@ -2,7 +2,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --rtc-font-family-1: 'portd';
-  --rtc-font-family-2: 'borela';
+  --rtc-font-family-2: 'sageffine';
+  --rtc-font-family-3: 'instrument';
   
   --rtc-color-classicRed: #ff2927;
   --rtc-color-softBlue: #7ebbbc;
@@ -10,6 +11,7 @@
   --rtc-color-babyPink:#ffe7e3;
   --rtc-color-softGreen: #b7ceb1;
   --rtc-color-limeGreen: #d5f59f;
+  --rtc-color-babyWhite:#f6f6f8;
 
 }
 
