@@ -114,10 +114,6 @@ strong {
     .bioSection {
         padding: 20px 0px 40px;
     }
-
-    .bioH2, .bioH3 {
-        margin: 0px 0px 0px 40px;
-    }
     
     .bioH2 {
         font-size: 40px;
@@ -125,6 +121,7 @@ strong {
     
     .bioH3 {
         font-size: 30px;
+        margin: 0px 0px 0px 40px;
     }
     
     .bioH4 {
@@ -171,10 +168,6 @@ strong {
     .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
         padding: 10px 5px;
     }
-
-    .bioH3 {
-        margin: 0px 0px 0px 40px;
-    }
     
     .bioH2 {
         font-size: 45px;
@@ -182,6 +175,7 @@ strong {
     
     .bioH3 {
         font-size: 35px;
+        margin: 0px 0px 0px 40px;
     }
     
     .bioH4 {
@@ -390,7 +384,7 @@ strong {
     
     .bioH4 {
         font-size: 28px;
-        margin: 0px 0px 10px 80px;
+        margin: 0px 0px 10px 70px;
         
     }
 }
