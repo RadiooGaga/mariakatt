@@ -35,16 +35,14 @@
     font-weight: 100;
 }
 
-.bioH2, .bioH3, .bioH4 {
-    margin: 0px 0px 40px 40px;
-}
-
 .bioH2 {
     font-size: 60px;
+    margin: 0px 0px 40px 0px;
 }
 
 .bioH3 {
     font-size: 40px;
+    margin: 0px 0px 40px 40px;
 }
 
 .bioH4 {
@@ -80,7 +78,7 @@ blockquote, .bioParagraph, .studiesList, .otherStudiesList {
 
 .bioPictureDiv {
     width: 100%;
-    height: 750px;
+    height: 700px;
     position: relative; /* Para controlar la posición de la imagen, si es necesario */
     overflow: hidden;
 }
@@ -171,16 +169,17 @@ strong {
     
     .bioH2 {
         font-size: 45px;
+        margin: 0px 0px 20px 0px;
     }
     
     .bioH3 {
         font-size: 35px;
-        margin: 0px 0px 0px 40px;
+        margin: 0px 0px 0px 50px;
     }
     
     .bioH4 {
         font-size: 30px;
-        margin: 0px 0px 0px 60px;
+        margin: 0px 0px 0px 70px;
         
     }
 
@@ -215,22 +214,20 @@ strong {
     .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
         padding: 20px;
     }
-
-    .bioH3 {
-        margin: 0px 0px 0px 40px;
-    }
     
     .bioH2 {
         font-size: 50px;
+        margin: 0px 0px 20px 0px;
     }
     
     .bioH3 {
-        font-size: 40px;
+        font-size: 35px;
+        margin: 0px 0px 0px 50px;
     }
     
     .bioH4 {
-        font-size: 35px;
-        margin: 0px 0px 0px 70px;
+        font-size: 30px;
+        margin: 0px 0px 0px 75px;
         
     }
 
@@ -266,21 +263,19 @@ strong {
     .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
         padding: 20px;
     }
-
-    .bioH3 {
-        margin: 0px 0px 0px 50px;
-    }
     
     .bioH2 {
         font-size: 55px;
+        margin: 0px 0px 20px 0px;
     }
     
     .bioH3 {
-        font-size: 45px;
+        font-size: 40px;
+        margin: 0px 0px 0px 50px;
     }
     
     .bioH4 {
-        font-size: 40px;
+        font-size: 35px;
         margin: 0px 0px 0px 80px;
         
     }
@@ -317,20 +312,18 @@ strong {
         padding: 20px;
     }
     
-    .bioH3 {
-        margin: 0px 0px 0px 50px;
-    }
-    
     .bioH2 {
         font-size: 55px;
+        margin: 0px 0px 40px 0px;
     }
     
     .bioH3 {
         font-size: 40px;
+        margin: 0px 0px 0px 50px;
     }
     
     .bioH4 {
-        font-size: 28px;
+        font-size: 35px;
         margin: 0px 0px 0px 80px;
         
     }
@@ -369,17 +362,15 @@ strong {
         padding: 15px;
         font-size: 16px;
     }
-
-    .bioH3 {
-        margin: 0px 0px 10px 50px;
-    }
     
     .bioH2 {
         font-size: 55px;
+        margin: 0px 0px 30px 0px;
     }
     
     .bioH3 {
         font-size: 35px;
+        margin: 0px 0px 10px 50px;
     }
     
     .bioH4 {
