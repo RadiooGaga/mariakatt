@@ -1,31 +1,55 @@
 .bioSection {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: auto;
     padding: 50px 0px 100px;
     background-color:var( --rtc-color-babyPink);
 }
 
-.bioH2 {
-    width: auto;
+.introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0px 30px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.biographyDiv {
+    padding: 30px 10px;
+}
+
+.studiesDiv, .otherStudiesDiv {
+    display: flex;
+    align-items: start;
+}
+
+
+.bioH2, .bioH3, .bioH4 {
+    width: auto;
+    height: auto;
     color: var(--rtc-color-classicRed);
     font-family: var(--rtc-font-family-1);
     transform: scale3d(1.7, 1, 1);
     letter-spacing: 1px;
     font-size: 60px;
     font-weight: 100;
+}
 
+.bioH3, .bioH4 {
+    font-size: 40px;
+    padding: 0px 110px;
+}
+
+.bioH4 {
+    font-size: 30px;
+    padding: 0px 130px;
 }
 
 
-blockquote, .bioParagraph {
+blockquote, .bioParagraph, .studiesList, .otherStudiesList {
     width: 100%;
     height: auto;
     padding: 40px 80px 60px;
@@ -37,11 +61,19 @@ blockquote, .bioParagraph {
     letter-spacing: 0.5px;
 }
 
-.bioParagraph {
+.bioParagraph, .studiesList, .otherStudiesList {
     text-align: justify;
-    color: #3a595a;
-    padding: 60px 80px 40px;
+    list-style: none; 
+    color: var(--rtc-color-turquoise);
 }
+
+.studiesList > li, .otherStudiesList > li  {
+    width: auto;
+    height: auto;
+    font-family: var(--rtc-font-family-3);
+    color: var(--rtc-color-turquoise);
+}
+
 
 .bioPictureDiv {
     width: 100%;
@@ -58,10 +90,20 @@ blockquote, .bioParagraph {
 }
 
 strong {
-    color: #df4042;
-    font-weight: bold;
+    width: auto;
+    height: auto;
+    color:var(--rtc-color-classicRed);
 }
 
+.clave {
+    color: var(--rtc-color-turquoise);
+    font-weight: 100;
+}
+
+
+
+
+/* MEDIA QUERIES */
 
 
 @media (max-width: 480px) {
