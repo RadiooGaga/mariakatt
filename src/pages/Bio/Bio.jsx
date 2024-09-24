@@ -26,7 +26,7 @@ export const Bio = () => {
         <p className='bioParagraph'>Con una trayectoria de casi 20 años, inicio mi carrera trabajando en salones de peluquería de señora y caballero en <strong>Gijón</strong>, mi ciudad natal, y en <strong>Fuerteventura</strong>. Durante esos primeros años, comienzo a colaborar en sesiones fotográficas como maquilladora, peluquera y modelo.
         <br />
         <br />
-        En 2009, me traslado a <strong>Madrid</strong> para estudiar <strong>maquillaje de caracterización de personajes y modelado de prótesis</strong> en las escuelas <strong>Truhko Makeup</strong> y <strong>Harpo</strong>.A partir de entonces, he compaginado de manera continua el maquillaje y la peluquería social en salones de belleza, eventos y novias, con trabajos en el ámbito audiovisual. 
+        En 2009, me traslado a <strong>Madrid</strong> para estudiar <strong>maquillaje de caracterización de personajes y modelado de prótesis</strong> en las escuelas <strong>Truhko Makeup</strong> y <strong>Harpo</strong>. A partir de entonces, he compaginado de manera continua el maquillaje y la peluquería social en salones de belleza, eventos y novias, con trabajos en el ámbito audiovisual. 
         En 2011, me incorporo a <strong>New Young Creatives</strong>, una división dentro de la agencia de moda editorial <strong>Talents</strong> dedicada a jóvenes maquilladores, donde trabajo en editoriales para <strong>Vogue España, El País Semanal, GQ, Glamour, Amazon BuyVip y Madrid Fashion Week.</strong> En esta misma agencia, asisto a maquilladores de renombre como <strong>Jordi Fontanals, Daniel Céspedes y José Luis Ruzafa</strong>.
         <br />
         <br />
@@ -50,22 +50,22 @@ export const Bio = () => {
       <div className='studiesDiv'>
           <h3 className='bioH3'>ESTUDIOS</h3>
           <ul className='studiesList'>
-            <li>-<strong> Stan Winston School</strong> Character of arts - Online courses (2020/2023)</li>
-            <li>-<strong> Mac Cosmetics </strong> Workshops Madrid (2018)</li>
-            <li>-<strong> Wella Academy </strong> - Varias Técnicas: balayage, rubios, corrección de color, pastel colors, ombré, wellaplex... (Madrid)</li>
-            <li>-<strong> FX, Escultura, moldes y prótesis </strong> - Escuela Harpo - Madrid (2015)</li>
-            <li>-<strong> Tony & Guy </strong> - Creative Cut & Color Valencia (2010)</li>
-            <li>- Maquillaje de <strong> Caracterización </strong> para cine y espectáculos Escuela Truhko - Madrid (2009/2010)</li>
-            <li>-<strong> Imagen personal </strong> por la OMAT y HABIA (Hairdressing & Beauty industry Authority) Gijón (2004/2006)</li>
+            <li>-<strong>Stan Winston School</strong> Character of arts - Online courses (2020/2023)</li>
+            <li>-<strong>Mac Cosmetics</strong> Workshops Madrid (2018)</li>
+            <li>-<strong>Wella Academy</strong> - Varias Técnicas: balayage, rubios, corrección de color, pastel colors, ombré, wellaplex... (Madrid)</li>
+            <li>-<strong>FX, Escultura, moldes y prótesis</strong> - Escuela Harpo - Madrid (2015)</li>
+            <li>-<strong>Tony & Guy</strong> - Creative Cut & Color Valencia (2010)</li>
+            <li>-Maquillaje de<strong> Caracterización </strong> para cine y espectáculos Escuela Truhko - Madrid (2009/2010)</li>
+            <li>-<strong>Imagen personal</strong> por la OMAT y HABIA (Hairdressing & Beauty industry Authority) Gijón (2004/2006)</li>
           </ul>
       </div>
 
       <div className='otherStudiesDiv'>
         <h4 className='bioH4'> OTRAS FORMACIONES</h4>
         <ul className='otherStudiesList'>
-          <li>-<strong> Full Stack Developer</strong> by The Power Business School (Rock the code) - (May 2023/Dec 2024)</li>
-          <li>-<strong> Técnico superior de sonido</strong> - Curva Polar - (2018/2021)</li>
-          <li>-<strong> Inglés B2</strong></li>
+          <li>-<strong>Full Stack Developer</strong> by The Power Business School (Rock the code) - (May 2023/Dec 2024)</li>
+          <li>-<strong>Técnico superior de sonido</strong> - Curva Polar - (2018/2021)</li>
+          <li>-<strong>Inglés B2</strong></li>
         </ul>
       </div>
     </section>
