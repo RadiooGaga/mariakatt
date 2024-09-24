@@ -1,5 +1,4 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --rtc-font-family-1: 'portd';
   --rtc-font-family-2: 'sageffine';
@@ -12,7 +11,7 @@
   --rtc-color-babyPink:#ffe7e3;
   --rtc-color-softGreen: #b7ceb1;
   --rtc-color-limeGreen: #d5f59f;
-  --rtc-color-babyWhite:#f6f6f8;
+  --rtc-color-babyWhite:#f7f7f7;
 
 }
 
@@ -20,7 +19,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100svh;
   box-sizing: border-box;
 
 }

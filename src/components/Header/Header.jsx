@@ -3,6 +3,17 @@ import { NavLink } from 'react-router-dom'
 import './Header.css'
 
 
+const menuItems = [
+    { name: "BIO", path: "/bio" },
+    { name: "EDITORIAL", path: "/editorial" },
+    { name: "CREATIVE", path: "/creative" },
+    { name: "CHARACTER", path: "/character" },
+    { name: "HAIRSTYLES", path: "/hairstyles" },
+    { name: "BEAUTY", path: "/beauty" },
+    { name: "CONTACT", path: "/contact" }
+  ];
+
+  
 export const Header = () => {
 
   return (
@@ -13,18 +24,15 @@ export const Header = () => {
             </div>
             <nav>
                 <ul className='navLinks'>
-                    <li>
-                    <NavLink to="/" className={({isActive}) => isActive ? "active" : "" }></NavLink >
+                {menuItems.map((item, index) => (
+                    <li key={index}>
+                    <NavLink 
+                        to={item.path} 
+                        className={({isActive}) => isActive ? "active" : ""}>
+                        {item.name}
+                    </NavLink>
                     </li>
-                    <li>
-                    <NavLink to="/bio" className={({isActive}) => isActive ? "active" : "" }>BIO</NavLink >
-                    </li>
-                    <li>EDITORIAL</li>
-                    <li>CREATIVE</li>
-                    <li>CHARACTER</li>
-                    <li>HAIRSTYLES</li>
-                    <li>BEAUTY</li>
-                    <li>CONTACT</li>
+                ))}
                 </ul>
             </nav>
         </div>
@@ -32,6 +40,3 @@ export const Header = () => {
   )
 }
 
-
-
-/*<li><NavLink to="/" className={({isActive}) => isActive ? "active" : "" }>BIO</NavLink ></li> */

@@ -10,7 +10,7 @@
 .coverImage {
     object-fit: cover;
     width: 60%;
-    filter: opacity(70%);
+    filter: opacity(80%);
     
 }
 
@@ -75,11 +75,12 @@
     }
 }
 
+
 @media (min-width: 1921px) {
     .coverImage {
         object-fit: cover;
         width: 60%;
-        filter: opacity(70%);
+        filter: opacity(80%);
     }
 }
 
