@@ -2,7 +2,8 @@
 .container {
     display: flex;
     width: 95%;
-    height: 90%;
+    height: 85%;
+    
 }
 
 .figure {
@@ -15,19 +16,26 @@
 .figure:hover {
     cursor: crosshair;
     width: 40%;
-    opacity: 1;
+    z-index: 1;
+    opacity: 1;  
 }
 
 .gallery-item {
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;  
 }
 
 figcaption {
-    display: flex;
+    display: none;
     justify-content: end;
+    align-items: end;
     position: relative;
     bottom: 2em;
     padding-right: 10px;
     font-family: var(--rtc-font-family-2);
+}
+
+.figure:hover .figcaption {
+    display: flex; 
 }

@@ -5,6 +5,8 @@ import './App.css'
 import { Home } from './pages/Home/Home'
 import { Bio } from './pages/Bio/Bio';
 import { Editorial } from './pages/Editorial/Editorial'
+import { Creative } from './pages/Creative/Creative';
+import { Character } from './pages/Character/Character';
 
 
 
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/editorial" element={<Editorial />} />
+          <Route path="/creative" element={<Creative />} />
+          <Route path="/character" element={<Character />} />
         </Routes>
     </>
   )

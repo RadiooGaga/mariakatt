@@ -8,9 +8,12 @@ export const Gallery = ({ galleryItems }) => {
     <div className='container'>
             {galleryItems.map((item, index) => (
                 <figure key={index} className="figure">
-                <img src={item.img} alt={`Gallery ${index}`} className="gallery-item" />
-                <figcaption>{item.caption}</figcaption>
+                <img src={item.img} 
+                alt={`Gallery ${index}`} 
+                className={`gallery-item ${item.className || ''}`} />
+                <figcaption className="figcaption" style={{ color: item.color }}>{item.caption}</figcaption>
                 </figure>
+                
             ))}
     </div>
   )

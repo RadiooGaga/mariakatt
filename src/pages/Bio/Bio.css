@@ -78,7 +78,7 @@ blockquote, .bioParagraph, .studiesList, .otherStudiesList {
 
 .bioPictureDiv {
     width: 100%;
-    height: 700px;
+    height: 650px;
     position: relative; /* Para controlar la posición de la imagen, si es necesario */
     overflow: hidden;
 }
@@ -87,6 +87,7 @@ blockquote, .bioParagraph, .studiesList, .otherStudiesList {
     width: 100%;      /* La imagen ocupa todo el ancho del contenedor */
     height: 100%;     /* La imagen ocupa toda la altura del contenedor */
     object-fit: cover; /* Recorta la imagen para ajustarse al div sin distorsionar */
+    object-position: 50% 20%;
     display: block; 
 }
 
@@ -100,6 +101,20 @@ strong {
     color: var(--rtc-color-turquoise);
     font-weight: 100;
 }
+
+.mob {
+    float: left;
+    width: 360px;
+    height: 440px;
+    margin: 0 25px 20px 0;
+    border-radius: 3px;
+}
+
+.menuCustomLinks2 {
+    margin-top: 100px;
+    background-color: var( --rtc-color-babyWhite);
+}
+
 
 
 
@@ -131,7 +146,7 @@ strong {
 
     .bioPictureDiv {
         width: 100%;
-        height: 265px;
+        height: 230px;
         position: relative;
         overflow: hidden;
     }
@@ -153,7 +168,13 @@ strong {
         font-size: 14px;
     }
 
-
+    .mob {
+        float: none;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 30px;
+        border-radius: 3px;
+    }
    
 }
 
@@ -193,7 +214,7 @@ strong {
 
     .bioPictureDiv {
         width: 100%;
-        height: 350px;
+        height: 250px;
         position: relative; 
         overflow: hidden;
     }
@@ -204,7 +225,15 @@ strong {
         object-fit: cover;
         display: block; 
     }
+    .mob {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin: 0 20px 10px 0;
+        border-radius: 3px;
+    }
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -241,7 +270,7 @@ strong {
 
     .bioPictureDiv {
         width: 100%;
-        height: 450px;
+        height: 350px;
         position: relative; 
         overflow: hidden;
     }
