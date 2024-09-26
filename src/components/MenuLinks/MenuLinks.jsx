@@ -8,7 +8,7 @@ const menuItems = [
   { name: "CREATIVE", path: "/creative" },
   { name: "CHARACTER", path: "/character" },
   { name: "BEAUTY", path: "/beauty" },
-  { name: "HAIRWORK", path: "/hairwork" },
+  { name: "HAIR", path: "/hair" },
   { name: "CONTACT", path: "/contact" }
 ];
 
@@ -22,7 +22,7 @@ export const MenuLinks = ({ classNameNav, className }) => {
             <li key={index}>
             <NavLink 
                 to={item.path} 
-                className={({isActive}) => isActive ? "active" : ""}>
+                className={({isActive}) => isActive ? "activa" : ""}>
                 {item.name}
             </NavLink>
             </li>
