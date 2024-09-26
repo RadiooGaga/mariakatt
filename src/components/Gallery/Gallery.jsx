@@ -53,7 +53,8 @@ export const Gallery = ({ galleryItems }) => {
         setActiveIndex(null); // Restablece el índice activo a null para cerrar la imagen
     };
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) 
+      return <div>Loading...</div>;
     if (error) return <div>Error{error}</div>;
 
 

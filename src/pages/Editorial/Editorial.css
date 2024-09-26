@@ -8,20 +8,9 @@
     justify-content: space-evenly;
     background-color:var(--rtc-color-babyWhite);
     /*background-color:var( --rtc-color-babyPink);*/
-    /*background-color:black;*/
-    
+    /*background-color:black;*/  
 }
 
-.editorialH2 {
-    width: auto;
-    height: auto;
-    color: var(--rtc-color-classicRed);
-    font-family: var(--rtc-font-family-1);
-    transform: scale3d(1.7, 1, 1);
-    letter-spacing: 0.5px;
-    font-weight: 100;
-    font-size: 30px;
-}
 
 .florenz-girl {
     object-fit: cover;
