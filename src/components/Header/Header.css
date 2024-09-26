@@ -118,15 +118,15 @@
         align-items:center;
         width:40%;
         height:100svh;
-        padding: 10px 30px 40px;
+        padding: 10px 10px 40px;
     }
     
     .divLogo {
-        height: 14svh;    
+        height: 12svh;    
     }
 
     .logo {
-        width: 25%;
+        width: 20%;
         object-fit: contain;    
     }
 

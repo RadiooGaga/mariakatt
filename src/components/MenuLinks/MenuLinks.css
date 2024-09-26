@@ -109,7 +109,7 @@ li > a {
         height: 50%;
     }
 
-    .navLinks > li {
+    .menuLinks > li {
         font-size: 50px;
     }
    
@@ -117,13 +117,17 @@ li > a {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    .navLinks > li {
-        font-size: 50px;
+    .menuLinks {
+        gap: 0px;
+    }
+
+    .menuLinks > li {
+        font-size: 45px;
     }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-    .navLinks > li {
+    .menuLinks > li {
         font-size: 50px;
     }
 }
