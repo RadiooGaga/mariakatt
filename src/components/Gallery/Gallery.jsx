@@ -11,37 +11,25 @@ export const Gallery = ({ galleryItems }) => {
     const [loading, setLoading] = useState(true); // Estado para la carga
     const [error, setError] = useState(null); // Estado para errores
 
-    
-    //PRE CARGA DE IMAGENES
-    const preloadImage = (src) => {
-      const img = new Image();
-      img.src = src;
-    };
-    
-    useEffect(() => {
-      galleryItems.forEach(item => preloadImage(item.img)); // Precarga todas las imágenes
-    }, [galleryItems]);
-
-
     // CARGA DE IMÁGENES
     useEffect(() => {
-      setLoading(true); // Iniciar carga
-      console.log("Gallery mounted or updated", galleryItems);
-
-      try {
-        // Si tus imágenes están en local, simplemente asigna el array
-        setImages(galleryItems);
-        setLoading(false); // Finaliza la carga
-    } catch (err) {
-        console.error(err);
-        setError('Error loading images'); // Manejo de errores
-        setLoading(false);
-    }
-
-      return () => {
+        setLoading(true); // Iniciar carga
+        console.log("Gallery mounted or updated", galleryItems);
+  
+        try {
+          // Asignar las imágenes recibidas de Cloudinary
+          setImages(galleryItems);
+          setLoading(false); // Finaliza la carga
+        } catch (err) {
+          console.error(err);
+          setError('Error loading images'); // Manejo de errores
+          setLoading(false);
+        }
+  
+        return () => {
           console.log("Cleaning up");
-      };
-  }, [galleryItems]); 
+        };
+      }, [galleryItems]); 
 
 
     const handleImageClick = (index) => {
