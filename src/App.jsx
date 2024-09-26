@@ -7,6 +7,7 @@ import { Bio } from './pages/Bio/Bio';
 import { Editorial } from './pages/Editorial/Editorial'
 import { Creative } from './pages/Creative/Creative';
 import { Character } from './pages/Character/Character';
+import { Beauty } from './pages/Beauty/Beauty';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/editorial" element={<Editorial />} />
           <Route path="/creative" element={<Creative />} />
           <Route path="/character" element={<Character />} />
+          <Route path="/beauty" element={<Beauty />} />
         </Routes>
     </>
   )
