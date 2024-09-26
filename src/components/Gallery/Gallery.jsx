@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 
 
-
 // GALERÍA (GENÉRICO)
 
 export const Gallery = ({ galleryItems }) => {
@@ -11,6 +10,16 @@ export const Gallery = ({ galleryItems }) => {
     const [images, setImages] = useState([]); // Estado para las imágenes cargadas
     const [loading, setLoading] = useState(true); // Estado para la carga
     const [error, setError] = useState(null); // Estado para errores
+
+    //PRE CARGA DE IMAGENES
+    const preloadImage = (src) => {
+      const img = new Image();
+      img.src = src;
+    };
+    
+    useEffect(() => {
+      galleryItems.forEach(item => preloadImage(item.img)); // Precarga todas las imágenes
+    }, [galleryItems]);
 
 
     // CARGA DE IMÁGENES
@@ -48,30 +57,32 @@ export const Gallery = ({ galleryItems }) => {
     if (error) return <div>Error{error}</div>;
 
 
-    return (
-        <div className='container'>
-          
-            {galleryItems.map((item, index) => (
-                <figure
-                    key={index}
-                    className={`figure ${activeIndex === index ? 'active' : ''}`}// Añade la clase 'active' si esta figura es la activa
-                    onClick={() => handleImageClick(index)} // Maneja el clic para activar la imagen
-                >
+return (
+    <div className='container'>
+        {galleryItems.map((item, index) => (
+            <figure
+                key={index}
+                className={`figure ${activeIndex === index ? 'active' : ''}`}
+                onClick={() => handleImageClick(index)}
+            >
+                {loading ? ( // Mostrar placeholder mientras carga
+                    <div className="image-placeholder">Loading...</div>
+                ) : (
                     <img
-                        src={item.img} 
+                        src={item.img}
                         alt={`Gallery ${index}`}
                         className={`gallery-item ${item.className || ''}`}
                         loading='lazy'
                     />
-                    <figcaption className="figcaption" style={{ color: item.color }}>
-                        {item.caption}
-                    </figcaption>
-                </figure>
-            ))}
-            {activeIndex !== null && ( // Solo muestra la superposición si hay una imagen activa
-                <div className="overlay" onClick={handleClose}></div> 
-                // Cierra la imagen al hacer clic en la superposición
-            )}
-        </div>
-    );
+                )}
+                <figcaption className="figcaption" style={{ color: item.color }}>
+                    {item.caption}
+                </figcaption>
+            </figure>
+        ))}
+        {activeIndex !== null && (
+            <div className="overlay" onClick={handleClose}></div>
+        )}
+    </div>
+);
 };
