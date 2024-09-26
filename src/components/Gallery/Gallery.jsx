@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useMemo } from 'react';
 import './Gallery.css';
 
 
@@ -11,6 +11,7 @@ export const Gallery = ({ galleryItems }) => {
     const [loading, setLoading] = useState(true); // Estado para la carga
     const [error, setError] = useState(null); // Estado para errores
 
+    
     //PRE CARGA DE IMAGENES
     const preloadImage = (src) => {
       const img = new Image();
@@ -73,7 +74,6 @@ return (
                         src={item.img}
                         alt={`Gallery ${index}`}
                         className={`gallery-item ${item.className || ''}`}
-                        loading='lazy'
                     />
                 )}
                 <figcaption className="figcaption" style={{ color: item.color }}>
