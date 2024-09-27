@@ -1,20 +1,18 @@
 .carrousel-container {
     width: 100%;  
-    height: 400px;
+    height: 500px;
     overflow: hidden; /* importante */
 }
 
 .carrousel {
     display: flex;
     width: 100%;
-    height: 100%;
-   
-    
+    height: 100%;  
 }
 
 .carrousel-card {
     min-width: 50%; /* cambiar esto en el modo movil y tablet a más porcentaje */
-    height: 400px;
+    height: 100%;
     transition: transform 0.8s ease-in-out;
 }
 
@@ -22,4 +20,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 175em;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 1);
 }

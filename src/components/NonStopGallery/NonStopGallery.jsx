@@ -1,43 +1,51 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './NonStopGallery.css'
+import React, { useEffect, useState } from 'react';
+import './NonStopGallery.css';
 
-
-
-
-export const NonStopGallery = ({ carrouselItems }) => {
-
+export const NonStopGallery = React.memo(({ carrouselItems }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const carrouselRef = useRef();
     const lastIndex = carrouselItems.length -1;
 
-    console.log(currentIndex)
-    console.log( "posicion", lastIndex)
-
+    // ACTIVAR SI QUIERO EL MOVIMIENTO
+    /*
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1 ) % lastIndex);
-            
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % lastIndex ); 
         }, 3000); // Cambiar cada 3 segundos
 
-        return () => clearInterval(interval); 
-
+        return () => clearInterval(interval);
     }, [lastIndex]);
+*/
 
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex +1) % lastIndex);
+    };
 
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + lastIndex) % lastIndex);
+    };
+
+   
     return (
         <div className='carrousel-container'>
-            <div className='carrousel' >
+            <div className='carrousel'>
                 {carrouselItems.map((item, index) => (
-                    <div key={index} className='carrousel-card'  style={{ transform: `translateX(${-currentIndex * 100}%)` }} ref={carrouselRef}>
-                    <img src={item.img} alt={`carrousel-img-${index}`} />
+                    <div
+                        key={index}
+                        className='carrousel-card'
+                        style={{ transform: `translateX(${-currentIndex * 100}%)` }}
+                    >
+                        <img src={item.img} alt={`carrousel-img-${index}`} />
                     </div>
-                      
                 ))}
             </div>
-            
+            <button className='carousel-button prev-button' onClick={prevImage}>
+                &#9664; {/* Flecha izquierda */}
+            </button>
+            <button className='carousel-button next-button' onClick={nextImage}>
+                &#9654; {/* Flecha derecha */}
+            </button>
         </div>
-        
     );
-};
+});
 
 
