@@ -1,0 +1,25 @@
+.carrousel-container {
+    width: 100%;  
+    height: 400px;
+    overflow: hidden; /* importante */
+}
+
+.carrousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+.carrousel-card {
+    min-width: 50%; /* cambiar esto en el modo movil y tablet a más porcentaje */
+    height: 400px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carrousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
