@@ -1,2 +1,1 @@
-
-export const micloudinary = "drm9ygf0u";
+export const micloudinary = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
