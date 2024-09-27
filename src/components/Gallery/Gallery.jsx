@@ -1,10 +1,10 @@
-import React, { useState, useEffect,useMemo } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import './Gallery.css';
 
 
 // GALERÍA (GENÉRICO)
 
-export const Gallery = ({ galleryItems }) => {
+export const Gallery = memo(({ galleryItems }) => {
   
     const [activeIndex, setActiveIndex] = useState(null); // Estado para manejar la imagen activa
     const [images, setImages] = useState([]); // Estado para las imágenes cargadas
@@ -73,5 +73,5 @@ return (
             <div className="overlay" onClick={handleClose}></div>
         )}
     </div>
-);
-};
+        );
+});

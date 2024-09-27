@@ -22,6 +22,7 @@
     object-fit: cover;
 }
 
+/*
 .carousel-button {
     position: absolute;
     top: 175em;
@@ -44,3 +45,4 @@
 .carousel-button:hover {
     background-color: rgba(255, 255, 255, 1);
 }
+    */

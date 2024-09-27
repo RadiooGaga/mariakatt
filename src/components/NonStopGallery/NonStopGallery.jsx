@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo} from 'react';
 import './NonStopGallery.css';
 
-export const NonStopGallery = React.memo(({ carrouselItems }) => {
+
+export const NonStopGallery = memo(({ carrouselItems }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const lastIndex = carrouselItems.length -1;
 
-    // ACTIVAR SI QUIERO EL MOVIMIENTO
-    /*
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % lastIndex ); 
@@ -14,8 +14,9 @@ export const NonStopGallery = React.memo(({ carrouselItems }) => {
 
         return () => clearInterval(interval);
     }, [lastIndex]);
-*/
 
+
+/*
     const nextImage = () => {
         setCurrentIndex((prevIndex) => (prevIndex +1) % lastIndex);
     };
@@ -23,7 +24,7 @@ export const NonStopGallery = React.memo(({ carrouselItems }) => {
     const prevImage = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + lastIndex) % lastIndex);
     };
-
+*/
    
     return (
         <div className='carrousel-container'>
@@ -38,12 +39,12 @@ export const NonStopGallery = React.memo(({ carrouselItems }) => {
                     </div>
                 ))}
             </div>
-            <button className='carousel-button prev-button' onClick={prevImage}>
-                &#9664; {/* Flecha izquierda */}
+            {/*  <button className='carousel-button prev-button' onClick={prevImage}>
+                &#9664;
             </button>
             <button className='carousel-button next-button' onClick={nextImage}>
-                &#9654; {/* Flecha derecha */}
-            </button>
+                &#9654;
+            </button> */}
         </div>
     );
 });
