@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './Editorial.css'
 import { micloudinary } from '../../utils/config'
 import { MenuLinks } from '../../components/MenuLinks/MenuLinks';
@@ -15,7 +15,7 @@ const galleryItems = [
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/_MG_6853_svyn0h.webp`, caption: "Florenz Collection", className: "florenz-boy", color: "whitesmoke"}
 ];
 
-export const Editorial = () => {
+export const Editorial = memo(() => {
 
   return (
     <section className='editorialSection'>
@@ -24,5 +24,5 @@ export const Editorial = () => {
 
     </section>
   )
-}
+})
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './Beauty.css'
 import { micloudinary } from '../../utils/config';
 import { MenuLinks } from '../../components/MenuLinks/MenuLinks';
@@ -8,6 +8,7 @@ import { Gallery } from '../../components/Gallery/Gallery';
 
 const galleryItems = [
 
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727369953/makeup/beauty/fiesta_noche_2_r3fpqm.webp`, caption: "Maquillaje de fiesta", color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727369953/makeup/beauty/fiesta_noche_2_r3fpqm.webp`, caption: "Maquillaje de fiesta", color: "whitesmoke" }
   /*
   { img: "", caption: "", className: "florenz-girl", color: "whitesmoke" },
@@ -19,7 +20,7 @@ const galleryItems = [
 ];
 
 
-export const Beauty = () => {
+export const Beauty = memo(() => {
   console.log("me cargo")
   return (
     <section className='beautySection'>
@@ -28,4 +29,4 @@ export const Beauty = () => {
 
     </section>
   )
-}
+})

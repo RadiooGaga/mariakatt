@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './Character.css'
 import { micloudinary } from '../../utils/config'
 import { MenuLinks } from '../../components/MenuLinks/MenuLinks';
@@ -16,7 +16,7 @@ const galleryItems = [
 ];
 
 
-export const Character = () => {
+export const Character = memo(() => {
     console.log("me cargo yo tb character")
     
     return (
@@ -26,4 +26,4 @@ export const Character = () => {
     
         </section>
       )
-}
+})

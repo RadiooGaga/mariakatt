@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './Creative.css'
 import { micloudinary } from '../../utils/config';
 import { Gallery } from '../../components/Gallery/Gallery';
@@ -15,13 +15,13 @@ const galleryItems = [
 ];
 
 
-export const Creative = () => {
+export const Creative = memo(() => {
   return (
     <section className='creativeSection'>
         <MenuLinks classNameNav="menuCustomLinks" className="customLinks"/>
         <Gallery galleryItems={galleryItems} />
     </section>
   )
-}
+})
 
 
