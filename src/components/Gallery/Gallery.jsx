@@ -1,35 +1,24 @@
-import React, { useState, useEffect, memo } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 
 
 // GALERÍA (GENÉRICO)
 
-export const Gallery = memo(({ galleryItems }) => {
+export const Gallery = (({ galleryItems }) => {
   
     const [activeIndex, setActiveIndex] = useState(null); // Estado para manejar la imagen activa
-    const [images, setImages] = useState([]); // Estado para las imágenes cargadas
     const [loading, setLoading] = useState(true); // Estado para la carga
     const [error, setError] = useState(null); // Estado para errores
 
     // CARGA DE IMÁGENES
     useEffect(() => {
-        setLoading(true); // Iniciar carga
-        console.log("Gallery mounted or updated", galleryItems);
-  
-        try {
-          // Asignar las imágenes recibidas de Cloudinary
-          setImages(galleryItems);
-          setLoading(false); // Finaliza la carga
-        } catch (err) {
-          console.error(err);
-          setError('Error loading images'); // Manejo de errores
-          setLoading(false);
+        if (galleryItems && galleryItems.length > 0) {
+            setLoading(false); // Finaliza la carga cuando se reciben las imágenes
+        } else {
+            setError('No se encontraron imágenes'); // Manejo de error si no hay imágenes
         }
-  
-        return () => {
-          console.log("Cleaning up");
-        };
-      }, [galleryItems]); 
+    }, [galleryItems]);
+
 
 
     const handleImageClick = (index) => {
@@ -43,7 +32,7 @@ export const Gallery = memo(({ galleryItems }) => {
     };
 
     if (loading) 
-      return <div>Loading...</div>;
+      return <div className='loading'>Loading...</div>;
     if (error) return <div>Error{error}</div>;
 
 
@@ -55,15 +44,11 @@ return (
                 className={`figure ${activeIndex === index ? 'active' : ''}`}
                 onClick={() => handleImageClick(index)}
             >
-                {loading ? ( // Mostrar placeholder mientras carga
-                    <div className="image-placeholder">Loading...</div>
-                ) : (
-                    <img
-                        src={item.img}
-                        alt={`Gallery ${index}`}
-                        className={`gallery-item ${item.className || ''}`}
-                    />
-                )}
+            <img
+                src={item.img}
+                alt={`Gallery ${index}`}
+                className={`gallery-item ${item.className || ''}`}
+            />   
                 <figcaption className="figcaption" style={{ color: item.color }}>
                     {item.caption}
                 </figcaption>

@@ -17,6 +17,7 @@ const galleryItems = [
 
 
 export const Character = () => {
+    console.log("me cargo yo tb character")
     
     return (
         <section className='characterSection'>

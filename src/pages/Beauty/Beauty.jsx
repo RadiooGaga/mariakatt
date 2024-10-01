@@ -20,6 +20,7 @@ const galleryItems = [
 
 
 export const Beauty = () => {
+  console.log("me cargo")
   return (
     <section className='beautySection'>
         <MenuLinks classNameNav="menuCustomLinks" className="customLinks"/>

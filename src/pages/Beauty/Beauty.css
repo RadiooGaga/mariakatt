@@ -22,6 +22,7 @@
     .beautySection {
         justify-content: center;
         height: 100%;     
+        width: 100%;
     }
 }
 
@@ -30,5 +31,6 @@
     .beautySection {
         justify-content: space-evenly;
         height: 100%;     
+        width: 100%;
     }
 }

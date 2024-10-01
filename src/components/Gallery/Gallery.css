@@ -53,6 +53,12 @@ figcaption {
     font-size: 20px;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* MEDIA QUERIES */
