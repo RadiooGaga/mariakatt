@@ -5,10 +5,8 @@
     flex-direction: column;
     align-items: center;
     padding: 5px 0 5px;
-    justify-content: space-evenly;
-    background-color:var(--rtc-color-babyWhite);
-    /*background-color:var( --rtc-color-babyPink);*/
-    /*background-color:black;*/
+    justify-content: center;
+    background-color:var(--color-babyWhite);
     
 }
 
@@ -24,21 +22,3 @@
 }
 
 
-/* MEDIA QUERIES */
-
-
-@media (max-width: 480px) {
-
-    .characterSection {
-        justify-content: center;
-        height: 100%;     
-    }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-
-    .characterSection {
-        justify-content: space-evenly;
-        height: 100%;     
-    }
-}

@@ -1,0 +1,84 @@
+
+.divLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-s);
+    width: 70px; /* esto es lo modificable a la hora del responsive */
+    height: auto;
+    cursor: pointer;
+    background-color: var(--color-transparent);
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;    
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    
+    .logo {
+        width: 50px;
+        object-fit: contain;    
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+    .divLogo {
+        height: 15%;    
+    }
+
+    .logo {
+        width: 50px;
+        object-fit: contain;    
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .divLogo {
+        height: 14svh;    
+    }
+
+    .logo {
+        width: 18%;
+        object-fit: contain;    
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .divLogo {
+        height: 12svh;    
+    }
+
+    .logo {
+        width: 20%;
+        object-fit: contain;    
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    .divLogo {
+        height: 14svh;    
+    }
+
+    .logo {
+        width: 20%;
+        object-fit: contain;    
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px){
+
+    .divLogo {
+        height: 14svh;    
+    }
+}

@@ -1,7 +1,7 @@
 import React  from 'react'
 import './Bio.css'
-import { MenuLinks } from '../../components/MenuLinks/MenuLinks'
 import { NonStopGallery } from '../../components/NonStopGallery/NonStopGallery'
+import { Header } from '../../components/Header/Header';
 
 const carrouselItems = [
   {img: "https://plus.unsplash.com/premium_photo-1664451177155-8247ae799c8b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFrZXVwfGVufDB8fDB8fHww"},
@@ -19,9 +19,12 @@ const carrouselItems = [
 export const Bio = () => {
 
   return (
+    <>
+    <Header />
     <section className='bioSection'>
+      
       <div className='introBioDiv'>
-        <h2 className='bioH2'>BIO</h2>
+        {/*<h2 className='bioH2'>BIO</h2>*/}
         <blockquote>
         “El maquillaje suele asociarse al mundo de la belleza, pero es mucho más que eso. El maquillaje es arte y es cultura, y tiene el poder de transformar a las personas en historias que contar. A veces, no necesariamente bonitas. Eso fue lo que realmente me enganchó de este oficio desde que era niña. 
         <br />
@@ -67,28 +70,19 @@ export const Bio = () => {
       </div> 
 
       <div className='studiesDiv'>
-          <h3 className='bioH3'>ESTUDIOS</h3>
+          <h3 className='bioH3'>FORMACION</h3>
           <ul className='studiesList'>
-            <li>-<strong>Stan Winston School</strong> Character of arts - Online courses (2020/2023)</li>
-            <li>-<strong>Mac Cosmetics</strong> Workshops Madrid (2018)</li>
-            <li>-<strong>Wella Academy</strong> - Varias Técnicas: balayage, rubios, corrección de color, pastel colors, ombré, wellaplex... (Madrid)</li>
-            <li>-<strong>FX, Escultura, moldes y prótesis</strong> - Escuela Harpo - Madrid (2015)</li>
-            <li>-<strong>Tony & Guy</strong> - Creative Cut & Color Valencia (2010)</li>
-            <li>-Maquillaje de<strong> Caracterización </strong> para cine y espectáculos Escuela Truhko - Madrid (2009/2010)</li>
-            <li>-<strong>Imagen personal</strong> por la OMAT y HABIA (Hairdressing & Beauty industry Authority) Gijón (2004/2006)</li>
+            <li><strong>Stan Winston School</strong> Character of arts - Online courses (2020/2023)</li>
+            <li><strong>Mac Cosmetics</strong> Workshops Madrid (2018)</li>
+            <li><strong>Wella Academy</strong> - Varias Técnicas: balayage, rubios, corrección de color, pastel colors, ombré, wellaplex... (Madrid)</li>
+            <li><strong>FX, Escultura, moldes y prótesis</strong> - Escuela Harpo - Madrid (2015)</li>
+            <li><strong>Tony & Guy</strong> - Creative Cut & Color Valencia (2010)</li>
+            <li>Maquillaje de<strong> Caracterización </strong> para cine y espectáculos Escuela Truhko - Madrid (2009/2010)</li>
+            <li><strong>Imagen personal</strong> por la OMAT y HABIA (Hairdressing & Beauty industry Authority) Gijón (2004/2006)</li>
           </ul>
       </div>
-
-      <div className='otherStudiesDiv'>
-        <h4 className='bioH4'> OTRAS FORMACIONES</h4>
-        <ul className='otherStudiesList'>
-          <li>-<strong>Full Stack Developer</strong> by The Power Business School (Rock the code) - (May 2023/Dec 2024)</li>
-          <li>-<strong>Técnico superior de sonido</strong> - Curva Polar - (2018/2021)</li>
-          <li>-<strong>Inglés B2</strong></li>
-        </ul>
-      </div>
       <NonStopGallery carrouselItems={carrouselItems} />
-      <MenuLinks classNameNav="menuCustomLinks2" className="customLinks"/>
     </section>
+    </>
   )
 }

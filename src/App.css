@@ -1,21 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+}
 
 @font-face {
     font-family: 'portd';
     src: url('/assets/fonts/portd___.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'sageffine';
     src: url('/assets/fonts/sageffine-cdnfonts/Sageffine-BF654db192d17bd.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'instrument';
     src: url('/assets/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+  }
+  
+  
+  :root {
+  
+    --font-family-1: 'portd';
+    --font-family-2: 'sageffine';
+    --font-family-3: 'instrument';
+  
+    --font-size-xxs: 10px;
+    --font-size-xs: 14px;
+    --font-size-s: 18px;
+    --font-size-m: 22px;
+
+
+        /* margin */
+    --margin-xs: 5px;
+    --margin-s: 10px;
+    --margin-m: 15px;
+    --margin-l: 20px;
+    --margin-xl: 25px;
+    --margin-xxl: 30px;
+
+
+    /* padding */
+    --padding-xs: 5px;
+    --padding-s: 10px;
+    --padding-m: 15px;
+    --padding-l: 20px;
+    --padding-xl: 25px;
+    --padding-xxl: 30px;
+
+    /* gap */
+    --gap-xs: 5px;
+    --gap-s: 10px;
+    --gap-m: 15px;
+    --gap-l: 20px;
+    --gap-xl: 25px;
+    --gap-xxl: 30px;
+  
+    
+    --color-classicRed: #ff2927;
+    --color-turquoise: #3a595a;
+    --color-softBlue: #7ebbbc;
+    --color-skyBlue: #b6eaf4;
+    --color-babyPink:#ffe7e3;
+    --color-softGreen: #b7ceb1;
+    --color-limeGreen: #d5f59f;
+    --color-babyWhite:#f7f7f7;
+    --color-babyWhiteClear:#f7f7f7b3; 
+  
+  }
+  
+  
+  
+  body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100svh;
+  }
+  

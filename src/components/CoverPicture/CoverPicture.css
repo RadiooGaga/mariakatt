@@ -1,16 +1,16 @@
-.homeCover {
+.coverPictureDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: var(--rtc-color-babyPink);
+    width: 60%;
+    background-color: var(--color-babyPink);
 }
 
 .coverImage {
     object-fit: cover;
-    width: 60%;
+    width: 100%;
     height: 100svh;
-    filter: opacity(80%); 
+    filter: opacity(70%); 
 }
 
 
@@ -18,23 +18,31 @@
 
 @media (max-width: 480px) {
 
-    .homeCover {
-        background-color: var(--rtc-color-skyBlue);
+    .coverPictureDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-skyBlue);
     }
 
     .coverImage {
-         object-fit: cover;
-         width: 100%;
-         height: 100svh;
-         filter: opacity(30%);
-     }
+        object-fit: cover;
+        width: 100%;
+        height: 100svh;
+        filter: opacity(30%);
+    }
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .homeCover {
-        background-color: var(--rtc-color-skyBlue);
+    .coverPictureDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-skyBlue);
     }
 
     .coverImage {
@@ -48,41 +56,27 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-     .homeCover {
-        background-color: var(--rtc-color-skyBlue);
+    .coverPictureDiv {
+        background-color: var(--color-babyPink);
     }
-
-    .coverImage {
-        object-fit: cover;
-        width: 100%;
-        height: 100svh;
-        filter: opacity(30%);
-    }
-   
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .coverImage {
-        object-fit: cover;
-        width: 60%;
-        filter: opacity(70%);
+        width: 100%;
     }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
     .coverImage {
-        object-fit: cover;
-        width: 60%;
-        filter: opacity(70%);
+        width: 100%;
     }
 }
 
 
 @media (min-width: 1921px) {
     .coverImage {
-        object-fit: cover;
-        width: 60%;
-        filter: opacity(80%);
+        width: 100%;
     }
 }
 

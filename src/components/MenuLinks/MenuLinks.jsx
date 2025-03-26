@@ -13,21 +13,24 @@ const menuItems = [
 ];
 
 
-export const MenuLinks = ({ classNameNav, className }) => {
+export const MenuLinksComponent = React.memo(({ classNameNav, className }) => {
 
   return (
-    <nav className={classNameNav}>
+    <>
+    <nav className={classNameNav}> 
         <ul className={`menuLinks ${className}`}> 
         {menuItems.map((item, index) => (
             <li key={index}>
             <NavLink 
                 to={item.path} 
-                className={({isActive}) => isActive ? "activa" : ""}>
+                className={({isActive}) => isActive ? "active" : ""}>
                 {item.name}
             </NavLink>
             </li>
         ))}
         </ul>
     </nav>
+    </>
   )
-}
+})
+

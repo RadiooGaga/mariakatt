@@ -3,34 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    width:40%;
-    padding: 30px 30px 40px;
-    background-color: var(--rtc-color-babyWhite);
-    /*background-color: #63c6e3;*/
-    gap: 20px;
+    width:100%;
+    height: 16vh;
+    padding: var(--padding-s);
+    background-color: var(--color-transparent);
+    position: absolute;
+    top: 0;
+    gap: 10px;
+    z-index: 10;
 }
 
-
-.divLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%; /* esto es lo modificable a la hora del responsive */
-    height: 20%;
-}
-
-.logo {
-    width: 16%;
-    height: auto;
-    object-fit: contain;    
-}
-
-/*
-.logo, li {
-    opacity: 80%;
-}
-*/
 
 /* MEDIA QUERIES */
 
@@ -38,27 +20,11 @@
 
     .divHeader {
         display: flex;
-        justify-content: space-evenly;
-        position: absolute;
-        width:100%;
-        height:100svh;
-        padding: 20px;
-        background-color: transparent;
-        gap: 20px;
-    }
-
-    .divLogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        width: 100%; /* esto es lo modificable a la hora del responsive */
-        height: 20%;
-    }
-    
-    .logo {
-        width: 20%;
-        object-fit: contain;    
+        height: 16vh;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20px;
+        background-color: var(--color-transparent);
     }
    
 }
@@ -68,23 +34,12 @@
   
   .divHeader {
         display: flex;
-        position: absolute;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
         width:100%;
-        height:100svh;
-        padding-top: 20px;
-        background-color: transparent;
+        padding-right: 20px;
+        background-color: var(--color-transparent);
     }
-
-    .divLogo {
-        height: 15%;    
-    }
-
-    .logo {
-        width: 14%;
-        object-fit: contain;    
-    }
-
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -92,20 +47,8 @@
     .divHeader {
         display: flex;
         justify-content: space-evenly;
-        position: absolute;
-        width:100%;
-        height:100svh;
         padding: 10px;
-        background-color: transparent;
-    }
-
-    .divLogo {
-        height: 14svh;    
-    }
-
-    .logo {
-        width: 12%;
-        object-fit: contain;    
+        background-color: var(--color-transparent);
     }
 }
 
@@ -116,18 +59,7 @@
         justify-content:space-evenly;
         flex-direction: column;
         align-items:center;
-        width:40%;
-        height:100svh;
-        padding: 10px 10px 40px;
-    }
-    
-    .divLogo {
-        height: 12svh;    
-    }
-
-    .logo {
-        width: 20%;
-        object-fit: contain;    
+        background-color: var(--color-transparent);
     }
 
 }
@@ -139,18 +71,7 @@
         justify-content:space-around;
         flex-direction: column;
         align-items:center;
-        width:40%;
-        height:100svh;
-        padding: 10px 30px 40px;
-    }
-
-    .divLogo {
-        height: 14svh;    
-    }
-
-    .logo {
-        width: 20%;
-        object-fit: contain;    
+        background-color: var(--color-transparent);
     }
 }
 
@@ -161,14 +82,7 @@
         justify-content:center;
         flex-direction: column;
         align-items:center;
-        width:40%;
-        height:100svh;
-        padding: 30px 30px 40px;
-        background-color: var(--rtc-color-babyWhite);
-    }
-
-    .divLogo {
-        height: 14svh;    
+        background-color: var(--color-transparent);
     }
 }
 

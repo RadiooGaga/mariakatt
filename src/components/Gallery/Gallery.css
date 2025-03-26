@@ -1,9 +1,14 @@
 
 .container {
+    position: relative;
+    top: 4.5em;
     display: flex;
     width: 95%;
-    height: 85%;
-    
+    height: 85%;  
+}
+
+.container-smartPhone {
+    display: flex;
 }
 
 .figure {
@@ -35,11 +40,15 @@ figcaption {
     position: relative;
     bottom: 2em;
     padding-right: 10px;
-    font-family: var(--rtc-font-family-2);
+    font-family: var(--font-family-2);
 }
 
 .figure:hover .figcaption {
-    display: flex; 
+    display: flex;
+    text-align: end; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.377);
+    font-size: var(--font-size-s);
 }
 
 .image-placeholder {
@@ -48,16 +57,23 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var( --rtc-color-babyWhite);
+    background-color: var( --color-babyWhite);
     color: red;
-    font-size: 20px;
+    font-size: var(--font-size-s);
 }
 
-.loading {
+.loading, .errorDiv {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--font-size-s);
+    color: red;
 }
+
+.loading.loadingVisible {
+    opacity: 1;
+    color: var(--color-turquoise);
+  }
 
 
 
@@ -66,7 +82,6 @@ figcaption {
 
 @media (max-width: 1024px) {
 
- 
     .container {
         width: 95%;
         padding: 5px;
@@ -93,7 +108,6 @@ figcaption {
     }
 
     .active {
-       
         position: absolute; /* Fija la imagen al viewport */
         top: 50%; /* Centrar verticalmente */
         left: 50%; /* Centrar horizontalmente */

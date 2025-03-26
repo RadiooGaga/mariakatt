@@ -1,13 +1,15 @@
 .bioSection {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 10px 0px 100px;
-    background-color:var( --rtc-color-babyPink);
+    padding: 60px 0 60px;
+    background-color:var( --color-babyPink);
 }
 
-.introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+.introBioDiv, .biographyDiv, .studiesDiv {
     width: 100%;
     height: auto;
     display: flex;
@@ -17,7 +19,11 @@
     padding: 30px 80px 60px;
 }
 
-.studiesDiv, .otherStudiesDiv {
+.introBioDiv {
+    margin-top: 60px;
+}
+
+.studiesDiv {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -28,8 +34,8 @@
 .bioH2, .bioH3, .bioH4 {
     width: auto;
     height: auto;
-    color: var(--rtc-color-classicRed);
-    font-family: var(--rtc-font-family-1);
+    color: var(--color-classicRed);
+    font-family: var(--font-family-1);
     transform: scale3d(1.7, 1, 1);
     letter-spacing: 1px;
     font-weight: 100;
@@ -51,28 +57,29 @@
     
 }
 
-blockquote, .bioParagraph, .studiesList, .otherStudiesList {
+blockquote, .bioParagraph, .studiesList {
     width: 100%;
     height: auto;
     text-align: center;
-    background-color:var( --rtc-color-babyPink);
-    font-family: var(--rtc-font-family-3);
-    color: var(--rtc-color-classicRed);
+    background-color:var( --color-babyPink);
+    font-family: var(--font-family-3);
+    color: var(--color-classicRed);
     font-size: 16px;
     letter-spacing: 0.5px;
 }
 
-.bioParagraph, .studiesList, .otherStudiesList {
+.bioParagraph, .studiesList {
     text-align: justify;
     list-style: none; 
-    color: var(--rtc-color-turquoise);
+    color: var(--color-turquoise);
 }
 
-.studiesList > li, .otherStudiesList > li  {
+.studiesList > li {
     width: auto;
     height: auto;
-    font-family: var(--rtc-font-family-3);
-    color: var(--rtc-color-turquoise);
+    font-family: var(--font-family-3);
+    color: var(--color-turquoise);
+    list-style:inside;
 }
 
 
@@ -94,11 +101,11 @@ blockquote, .bioParagraph, .studiesList, .otherStudiesList {
 strong {
     width: auto;
     height: auto;
-    color:var(--rtc-color-classicRed);
+    color:var(--color-classicRed);
 }
 
 .clave {
-    color: var(--rtc-color-turquoise);
+    color: var(--color-turquoise);
     font-weight: 100;
 }
 
@@ -112,7 +119,7 @@ strong {
 
 .menuCustomLinks2 {
     margin-top: 100px;
-    background-color: var( --rtc-color-babyWhite);
+    background-color: var( --color-babyWhite);
 }
 
 
@@ -158,11 +165,11 @@ strong {
         display: block; 
     }
 
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 10px 5px;
     }
 
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 20px;
         font-size: 14px;
@@ -185,7 +192,7 @@ strong {
         padding: 20px 0px 40px;
     }
 
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 10px 5px;
     }
     
@@ -205,7 +212,7 @@ strong {
         
     }
 
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 20px;
         font-size: 14px;
@@ -241,7 +248,7 @@ strong {
         padding: 20px 0px 40px;
     }
 
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 20px;
     }
     
@@ -261,7 +268,7 @@ strong {
         
     }
 
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 20px;
         font-size: 16px;
@@ -290,7 +297,7 @@ strong {
         padding: 20px 0px 40px;
     }
 
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 20px;
     }
     
@@ -310,7 +317,7 @@ strong {
         
     }
 
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 20px;
         font-size: 16px;
@@ -334,11 +341,8 @@ strong {
 
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-    .bioSection {
-        padding: 20px 0px 40px;
-    }
     
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 20px;
     }
     
@@ -358,7 +362,7 @@ strong {
         
     }
     
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 20px;
         font-size: 16px;
@@ -382,12 +386,12 @@ strong {
 
 @media (min-width: 1441px) and (max-width: 1920px) {
 
-    .introBioDiv, .biographyDiv, .studiesDiv, .otherStudiesDiv {
+    .introBioDiv, .biographyDiv, .studiesDiv {
         padding: 30px 60px 40px;
     }
 
 
-    blockquote, .bioParagraph,.studiesList, .otherStudiesList {
+    blockquote, .bioParagraph,.studiesList {
         text-align: justify;
         padding: 15px;
         font-size: 16px;

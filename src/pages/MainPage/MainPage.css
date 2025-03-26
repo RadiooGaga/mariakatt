@@ -1,0 +1,110 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100svh;
+    background-color: var(--color-babyWhite);
+    /*background-color: #63c6e3;*/
+    gap: 20px;
+}
+
+.coverMenu { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:40%;
+    height: 100%;
+    padding: 30px 30px 40px;
+    background-color: var(--color-babyWhite);
+    /*background-color: #63c6e3;*/
+    gap: 20px;
+}
+
+
+/*
+.logo, li {
+    opacity: 80%;
+}
+*/
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+
+    .coverMenu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        padding: var(--padding-l);
+        background-color: transparent;
+        /* background-color: #63c6e3; */
+        gap: 20px;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .coverMenu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        padding: var(--padding-l);
+        background-color: transparent;
+        /* background-color: #63c6e3; */
+        gap: 20px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .mainDiv {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        width:100%;
+        height:100svh;
+        background-color: var(--color-babyWhite);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .mainDiv {
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+        width:100%;
+        height:100svh;
+        background-color: var(--color-babyWhite);
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    .mainDiv {
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        width:100%;
+        height:100svh;
+        padding: 10px 30px 40px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px){
+
+   .mainDiv {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100svh;
+        padding: 30px 30px 40px;
+        background-color: var(--color-babyWhite);
+    }
+}
