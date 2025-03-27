@@ -17,6 +17,7 @@
     filter: grayscale(100%);
     opacity: 0.8;
     transition: 1.2s ease;
+    padding: 1px;
 }
 
 .figure:hover {
@@ -88,6 +89,10 @@ figcaption {
 
 @media (max-width: 480px) {
 
+    .figure {
+        padding: 2px;
+    }
+
     .gallery-item.vertical:hover {
         width: 100%;
         object-fit: contain; 
@@ -98,6 +103,10 @@ figcaption {
 
 @media (min-width: 481px) and (max-width: 768px) {
 
+    .figure {
+        padding: 2px;
+    }
+
     .gallery-item.vertical:hover {
         width: 100%;
         object-fit: contain; 
@@ -106,6 +115,10 @@ figcaption {
 }
 
 @media (max-width: 1024px) {
+
+    .figure {
+        padding: 2px;
+    }
 
     .container {
         width: 95%;
@@ -161,6 +174,9 @@ figcaption {
 }
 
 @media (min-width: 1025px) and (max-width: 1919px){
+    .figure {
+        padding: 1px;
+    }
 
     .container {
         top:6em;
