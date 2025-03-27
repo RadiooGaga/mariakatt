@@ -88,10 +88,6 @@ figcaption {
 
 @media (max-width: 480px) {
 
-    .container {
-        height: auto;
-    }
-
     .gallery-item.vertical:hover {
         width: 100%;
         object-fit: contain; 
@@ -101,7 +97,6 @@ figcaption {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
 
     .gallery-item.vertical:hover {
         width: 100%;
@@ -114,24 +109,14 @@ figcaption {
 
     .container {
         width: 95%;
-        height: auto;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Distribuir las imágenes sin movimiento */
-        overflow: auto; 
         position: relative;
         top: 8em;
+        padding-bottom: 30px;
     }
-
-    .container {
-        position: relative;
-        top: 8em;
-        display: flex;
-        width: 95%;
-        height: auto;  
-        overflow: auto; 
-    }
-  
 
     .figure {
         flex-basis: 33%; /* Tamaño fijo para cada imagen */
@@ -180,7 +165,6 @@ figcaption {
     .container {
         top:6em;
     }
-  
 
     .overlay {
         position: fixed;

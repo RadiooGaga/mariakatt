@@ -22,11 +22,6 @@
         width: 97%;
         height: 100%;
     }
-
-    .deco:hover {
-        width: 95%;
-        object-fit: contain;
-    }
     
     .hairSection {
         height: 100%;
@@ -52,7 +47,11 @@
 @media (min-width: 721px) and (max-width: 1919px) {
 
     .hair:hover {
-        width: 45%;
+        width: 50%;
+    }
+
+    .hair.deco:hover {
+        width: 100%;
     }
 
     .hairSection {
