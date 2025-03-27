@@ -42,11 +42,11 @@
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .divLogo {
-        height: 14svh;    
+        height: 12svh;    
     }
 
     .logo {
-        width: 18%;
+        width: 65px;
         object-fit: contain;    
     }
 }
@@ -58,7 +58,7 @@
     }
 
     .logo {
-        width: 20%;
+        width: 65px;
         object-fit: contain;    
     }
 
@@ -71,7 +71,7 @@
     }
 
     .logo {
-        width: 20%;
+        width: 60px;
         object-fit: contain;    
     }
 }
@@ -80,5 +80,10 @@
 
     .divLogo {
         height: 14svh;    
+    }
+
+    .logo {
+        width: 50px;
+        object-fit: contain;    
     }
 }

@@ -9,6 +9,11 @@
     background-color:var(--color-babyWhite);
 }
 
+.editorial:hover {
+    width: 30%;
+}
+
+
 
 .florenz-girl {
     object-fit: cover;
@@ -23,6 +28,37 @@
 .brianda, .eps {
     object-fit: cover;
     object-position: 50% 10%;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    
+    .editorialSection  {
+        height: 100%;
+        padding: 5px 0 50px;
+    } 
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .editorialSection {
+        height: 100%;
+        padding: 5px 0 50px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1919px) {
+
+    .editorialSection {
+        height: 90svh;
+        padding: 5px 0 5px;
+        margin-top: 20px;
+    }
 }
 
 

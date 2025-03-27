@@ -5,11 +5,12 @@ import { NavLink } from 'react-router-dom'
 const menuItems = [
   { name: "BIO", path: "/bio" },
   { name: "EDITORIAL", path: "/editorial" },
-  { name: "CREATIVE", path: "/creative" },
-  { name: "CHARACTER", path: "/character" },
+  { name: "CREATIVO", path: "/creative" },
+  { name: "PERSONAJES", path: "/character" },
   { name: "BEAUTY", path: "/beauty" },
-  { name: "HAIR", path: "/hair" },
-  { name: "CONTACT", path: "/contact" }
+  { name: "PELO", path: "/hair" },
+  { name: "FX", path: "/fx" },
+  { name: "CONTACTO", path: "/contact" }
 ];
 
 

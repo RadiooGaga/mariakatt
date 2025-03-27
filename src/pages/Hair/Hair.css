@@ -1,0 +1,65 @@
+.hairSection {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0 5px;
+    justify-content: center;
+    background-color:var(--color-babyWhite);
+}
+
+.hair:hover {
+    width: 10%;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 480px) {
+
+    .hair:hover {
+        width: 97%;
+        height: 100%;
+    }
+
+    .deco:hover {
+        width: 95%;
+        object-fit: contain;
+    }
+    
+    .hairSection {
+        height: 100%;
+        padding: 5px 0 50px;
+    }
+    
+}
+
+
+@media (min-width: 481px) and (max-width: 720px) {
+
+    .hair:hover {
+        width: 90%;
+        height: auto;
+    }
+
+    .hairSection {
+        height: 100%;
+        padding: 5px 0 50px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1919px) {
+
+    .hair:hover {
+        width: 45%;
+    }
+
+    .hairSection {
+        height: 90svh;
+        padding: 5px 0 5px;
+        margin-top: 20px;
+    }
+
+    
+}

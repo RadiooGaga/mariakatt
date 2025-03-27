@@ -117,7 +117,7 @@ li > a {
         justify-content: center;
         align-items: center;
         width: 96%;
-        height: 260px;
+        height: 290px;
         z-index: 10;
         background-color: var(--color-babyWhiteClear);
     }
@@ -132,7 +132,7 @@ li > a {
     }
 
     .menuLinks > li {
-        font-size: 40px;
+        font-size: var(--font-size-xl);
     }
 
     .customLinks {
@@ -146,7 +146,7 @@ li > a {
     }
 
     .customLinks > li { 
-        font-size: var(--font-size-s);  
+        font-size: var(--font-size-m);  
     }
    
 }
@@ -168,7 +168,7 @@ li > a {
         justify-content: center;
         align-items: center;
         width: 96%;
-        height: 260px;
+        height: 290px;
         z-index: 10;
         background-color: var(--color-babyWhiteClear);
     }

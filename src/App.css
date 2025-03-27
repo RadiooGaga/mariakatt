@@ -29,6 +29,8 @@
   
   
   :root {
+
+    background-color: var(--color-babyWhite);
   
     --font-family-1: 'portd';
     --font-family-2: 'sageffine';
@@ -38,6 +40,9 @@
     --font-size-xs: 14px;
     --font-size-s: 18px;
     --font-size-m: 22px;
+    --font-size-mm: 28px;
+    --font-size-l: 32px;
+    --font-size-xl: 40px;
 
 
         /* margin */

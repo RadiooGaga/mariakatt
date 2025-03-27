@@ -1,4 +1,4 @@
-.beautySection {
+.fxSection {
     width: 100%;
     height: 100svh;
     display: flex;
@@ -9,28 +9,24 @@
     background-color:var(--color-babyWhite);
 }
 
-.beauty:hover {
-    width: 50%;
+
+.fx:hover {
+    width: 70%;
 }
 
-.nineties {
+.posesion {
     object-fit: cover;
-    object-position: 82%; 
+    object-position: 52%; 
 }
 
-.sara {
+.dedo {
     object-fit: cover;
-    object-position: 32%;
+    object-position: 72%; 
 }
 
-.invitada1, .invitada2, .invitada3 {
+.ojo, .accidente2 {
     object-fit: cover;
-    object-position: 24%;
-}
-
-.book, .night  {
-    object-fit: cover;
-    object-position: 58%; 
+    object-position: 36%; 
 }
 
 
@@ -39,12 +35,17 @@
 
 @media (max-width: 480px) {
 
-    .beauty:hover {
-        width: 95%;
+    .fx:hover {
+        width: 100%;
+        left: 52.5%;
+    }
 
+    .ojo:hover, .dedo:hover {
+        width: 95%;
+        object-fit: contain;
     }
     
-    .beautySection  {
+    .fxSection  {
         height: 100%;
         padding: 5px 0 50px;
     } 
@@ -53,22 +54,39 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-
-    .beauty:hover {
-        width: 95%;
+    .fx:hover {
+        width: 100%;
+        left: 52.5%;
     }
 
-    .beautySection {
+    .ojo:hover, .dedo:hover {
+        width: 95%;
+        object-fit: contain;
+        
+    }
+
+    .fxSection {
         height: 100%;
         padding: 5px 0 50px;
     }
 }
 
 
-
 @media (min-width: 769px) and (max-width: 1919px) {
 
-    .beautySection {
+    .fx:hover {
+        width: 95%;
+        left: 51.5%;
+    }
+
+    .ojo:hover, .dedo:hover {
+        width: 95%;
+        object-fit: contain;
+        
+    }
+
+
+    .fxSection {
         height: 90svh;
         padding: 5px 0 5px;
         margin-top: 20px;

@@ -73,7 +73,7 @@ return (
         {galleryItems.map((item, index) => (
             <figure
                 key={index}
-                className={`figure ${className || ''} ${activeIndex === index ? 'active' : ''}`}
+                className={`figure ${className || ''} ${activeIndex === index ? 'activePicture' : ''}`}
                 onClick={() => handleImageClick(index)}
             >
             <img
@@ -86,7 +86,7 @@ return (
                 </figcaption>
             </figure>
         ))}
-        {activeIndex !== null && (
+        {activeIndex !== null && isMobile && (
             <div className="overlay" onClick={handleClose}></div>
         )}
     </div>

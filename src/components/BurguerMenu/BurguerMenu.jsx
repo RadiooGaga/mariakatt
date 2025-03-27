@@ -1,6 +1,5 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react'
 import './BurguerMenu.css'
-import { MenuLinksComponent } from '../MenuLinks/MenuLinks';
 
 
 export const BurguerMenu = ({onClick}) => {
