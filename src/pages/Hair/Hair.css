@@ -19,8 +19,8 @@
 @media (max-width: 480px) {
 
     .hair:hover {
-        width: 97%;
-        height: 100%;
+        width: 90%;
+        height: auto;
     }
     
     .hairSection {
