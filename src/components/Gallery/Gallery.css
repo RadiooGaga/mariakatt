@@ -1,7 +1,7 @@
 
 .container {
     position: relative;
-    top: 4.5em;
+    top: 0em;
     display: flex;
     width: 95%;
     height: 80%;  
@@ -26,6 +26,19 @@
     filter: grayscale(0%);
     opacity: 1;  
 }
+/*
+.activePicture {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 10;
+    opacity: 1;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: contain; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}*/
 
 .gallery-item {
     width: 100%;
@@ -38,8 +51,6 @@
     object-fit: contain; 
     background-color: black;
 }
-
-
 
 figcaption {
     display: none;
@@ -116,10 +127,6 @@ figcaption {
 
 @media (max-width: 1024px) {
 
-    .figure {
-        padding: 2px;
-    }
-
     .container {
         width: 95%;
         height: 100%;
@@ -127,11 +134,11 @@ figcaption {
         flex-wrap: wrap;
         justify-content: center; /* Distribuir las imágenes sin movimiento */
         position: relative;
-        top: 8em;
-        padding-bottom: 30px;
+        top: 12em;
     }
 
     .figure {
+        padding: 2px;
         flex-basis: 33%; /* Tamaño fijo para cada imagen */
         flex-grow: 1;
         opacity: 0.8;
@@ -179,7 +186,7 @@ figcaption {
     }
 
     .container {
-        top:6em;
+        top:2em;
     }
 
     .overlay {

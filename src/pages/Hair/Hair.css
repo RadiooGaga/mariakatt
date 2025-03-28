@@ -11,7 +11,22 @@
 
 .hair:hover {
     width: 10%;
+    transition: width 1.2s ease;
 }
+
+.hair .deco:hover {
+    width: 100%;
+}
+
+.instamatic {
+    object-fit: cover;
+    object-position: 22%; 
+}
+
+
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -24,7 +39,7 @@
     }
     
     .hairSection {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     }
     
@@ -39,26 +54,36 @@
     }
 
     .hairSection {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     }
 }
 
-@media (min-width: 721px) and (max-width: 1919px) {
-
-    .hair:hover {
-        width: 50%;
-    }
-
-    .hair.deco:hover {
-        width: 100%;
-    }
+@media (min-width: 721px) and (max-width: 1024px) {
 
     .hairSection {
         height: 90svh;
         padding: 5px 0 5px;
-        margin-top: 20px;
+    }
+    
+    .hair:hover {
+        width: 10%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+
+    .hairSection {
+        height: 90svh;
+        padding: 5px 0 5px;
     }
 
-    
+    .hair:hover {
+        width: 6%;
+    }
+
+    .hair .deco:hover {
+        width: 100%;
+    }
 }
+

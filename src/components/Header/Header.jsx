@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import './Header.css'
 import { Logo } from '../Logo/Logo'
 import { MenuLinksComponent } from '../MenuLinks/MenuLinks'
@@ -9,6 +10,9 @@ export const Header = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   const [ isOpen, setIsOpen ] = useState(false);
+  const location = useLocation();
+  const isBioPage = location.pathname === '/bio';
+
 
   useEffect(() => {
       const checkIsMobile = () => {
@@ -25,7 +29,7 @@ export const Header = () => {
   }
 
   return (
-    <div className='divHeader'>
+    <div className={`divHeader ${isBioPage ? 'header-pink' : ''}`}>
       {isMobile ? (
         <>
           <Logo />

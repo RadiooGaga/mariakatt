@@ -30,7 +30,8 @@
 @media (min-width: 481px) and (max-width: 768px) {
   
     .divLogo {
-        height: 15%;    
+        width: auto;
+        height: auto;   
     }
 
     .logo {

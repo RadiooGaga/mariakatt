@@ -11,7 +11,7 @@
 
 
 .fx:hover {
-    width: 70%;
+    width: 50%;
 }
 
 .posesion {
@@ -45,7 +45,7 @@
     }
     
     .fxSection  {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     } 
 }
@@ -64,28 +64,37 @@
     }
 
     .fxSection {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     }
 }
 
 
-@media (min-width: 769px) and (max-width: 1919px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
     .fx:hover {
-        width: 95%;
+        width: 100%;
+        height: 70%;
     }
 
-    .ojo:hover, .dedo:hover {
-        width: 95%;
-        object-fit: contain;
-        
+ 
+    .fxSection {
+        height: 90svh;
+        padding: 5px 0 5px;
     }
+}
 
+
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+
+    .fx:hover {
+        width: 50%;
+        height: 100%;
+    }
 
     .fxSection {
         height: 90svh;
         padding: 5px 0 5px;
-        margin-top: 20px;
     }
 }

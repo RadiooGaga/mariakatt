@@ -10,7 +10,7 @@
 }
 
 .character:hover {
-    width: 50%;
+    width: 30%;
 }
 
 .character1, .character8 {
@@ -42,7 +42,7 @@
     }
     
     .characterSection  {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     } 
 }
@@ -58,7 +58,7 @@
     }
     
     .characterSection  {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     }
 }
@@ -69,6 +69,5 @@
     .characterSection {
         height: 90svh;
         padding: 5px 0 5px;
-        margin-top: 20px;
     }
 }

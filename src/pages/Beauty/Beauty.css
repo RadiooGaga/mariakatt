@@ -44,7 +44,7 @@
     }
     
     .beautySection  {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     } 
 }
@@ -58,18 +58,34 @@
     }
 
     .beautySection {
-        height: 100%;
+        height: 90svh;
         padding: 5px 0 50px;
     }
 }
 
 
 
-@media (min-width: 769px) and (max-width: 1919px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .beauty:hover {
+        width: 60%;
+    }
 
     .beautySection {
         height: 90svh;
         padding: 5px 0 5px;
-        margin-top: 20px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+
+    .beauty:hover {
+        width: 40%;
+    }
+
+    .beautySection {
+        height: 90svh;
+        padding: 5px 0 5px;
+    }
+}
+
