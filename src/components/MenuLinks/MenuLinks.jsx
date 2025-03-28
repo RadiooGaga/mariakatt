@@ -1,6 +1,6 @@
 import React from 'react'
 import './MenuLinks.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const menuItems = [
   { name: "BIO", path: "/bio" },
@@ -16,9 +16,13 @@ const menuItems = [
 
 export const MenuLinksComponent = React.memo(({ classNameNav, className }) => {
 
+  const location = useLocation();
+  const isBioPage = location.pathname === '/bio';
+
   return (
     <>
-    <nav className={classNameNav}> 
+    {/* si estamos en la bio, el menu desplegable es rosa */}
+    <nav className={`${classNameNav} ${isBioPage ? 'menu-pink' : ''}`}> 
         <ul className={`menuLinks ${className}`}> 
         {menuItems.map((item, index) => (
             <li key={index}>

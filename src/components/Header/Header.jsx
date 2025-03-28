@@ -22,7 +22,6 @@ export const Header = () => {
 
   const handleToggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log('click o no')
   }
 
   return (
