@@ -30,7 +30,7 @@ li > a {
     list-style: none;
     font-family: var(--font-family-1);
     letter-spacing: 1px;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
     transform: scale3d(1.7, 1, 1); 
 }
