@@ -33,16 +33,18 @@
 @media (max-width: 480px) {
 
     .hairSection {
-        height: auto;
+        height: 100%;
     }
 
     .hair:hover {
         width: 95%;
-        height: 40%;
+        height: auto;
     }
 
     .figure.hair {
-        flex-basis: 45%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -51,16 +53,18 @@
 
 
     .hairSection {
-        height: auto;
+        height: 100%;
     }
 
     .hair:hover {
         width: 95%;
-        height: 60%;
+        height: auto;
     }
 
     .figure.hair {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -68,7 +72,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .hairSection {
-        height: auto;
+        height: 100%;
     }
 
     .hair:hover {
@@ -77,23 +81,27 @@
     }
     
     .figure.hair {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .hairSection {
-        height: auto;
+        height: 100%;
     }
 
     .hair:hover {
         width: 95%;
-        height: 75%;
+        height: auto;
     }
 
     .figure.hair {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 

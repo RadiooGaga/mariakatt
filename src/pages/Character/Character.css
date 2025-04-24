@@ -9,12 +9,8 @@
     background-color:var(--color-babyWhite); 
 }
 
-.character {
-    width: 10%;
-}
-
 .character:hover {
-    width: 40%;
+    width: 30%;
 }
 
 .character1, .character8 {
@@ -41,32 +37,38 @@
 @media (max-width: 480px) {
 
     .characterSection {
-        height: auto;
+        height: 100%;
     }
 
     .character:hover {
         width: 95%;
+        height: 55%;
     }
 
     .figure.character {
+        display: flex;
         flex-basis: 45%;
+        flex-flow: column;
     }
+
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
 
     .characterSection {
-        height: auto;
+        height: 100%;
     }
-
+    
     .character:hover {
         width: 95%;
         height: 65%;
     }
 
     .figure.character {
-        flex-basis: 45%;
+        display: flex;
+        flex-flow: column;
+        flex-basis: 48%;
     }
 }
 
@@ -74,53 +76,66 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .characterSection {
-        height: auto;
+        height: 100%;
     }
 
     .character:hover {
-        width: 95%;
-        height: 65%;
+        width: 85%;
+        height: 85%;
     }
-    
+
     .figure.character {
-        flex-basis: 45%;
+        display: flex;
+        flex-flow: column;
+        flex-basis: 48%;
     }
 }
 
-@media (min-width: 1024px) and  (max-width: 1279px) {
+
+@media (min-width: 1024px) and (max-width: 1279px) {
 
     .characterSection {
-        height: auto;
+        height: 100%;
     }
-
+    
     .character:hover {
-        width: 95%;
-        height: 45%;
+        width: 85%;
+        height: 85%;
     }
 
     .figure.character {
-        flex-basis: 45%;
+        display: flex;
+        flex-flow: column;
+        flex-basis: 48%;
     }
+  
+    .figure.character {
+        flex-basis: 48%;
+    } 
 }
 
-@media (min-width: 1280px) and  (max-width: 1443px) {
 
+@media (min-width: 1280px) and (max-width: 1443px) {
 
     .character {
-        width: 0%;
+        width: 30%;
     }
+
     .character:hover {
-        width: 40%;
+        width: 60%;
     }
+    
 }
+
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
     .character {
-        width: 20%;
+        width: 30%;
+    }
+
+    .character:hover {
+        width: 60%;
     }
     
-    .character:hover {
-        width: 40%;
-    }
 }

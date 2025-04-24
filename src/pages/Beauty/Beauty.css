@@ -44,16 +44,18 @@
 @media (max-width: 480px) {
 
     .beautySection {
-        height: auto;
+        height: 100%;
     }
 
     .beauty:hover {
         width: 95%;
-        height: 45%;
+        height: 55%;
     }
 
     .figure.beauty {
-        flex-basis: 45%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -62,8 +64,9 @@
 
 
     .beautySection {
-        height: auto;
+        height: 100%;
     }
+
 
     .beauty:hover {
         width: 95%;
@@ -71,7 +74,9 @@
     }
 
     .figure.beauty {
-        flex-basis: 45%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -79,8 +84,9 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .beautySection {
-        height: auto;
+        height: 100%;
     }
+
 
     .beauty:hover {
         width: 95%;
@@ -88,15 +94,18 @@
     }
     
     .figure.beauty {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .beautySection {
-        height: auto;
+        height: 100%;
     }
+
 
     .beauty:hover {
         width: 95%;
@@ -104,7 +113,9 @@
     }
 
     .figure.beauty {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 

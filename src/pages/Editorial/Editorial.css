@@ -43,16 +43,18 @@
 @media (max-width: 480px) {
 
     .editorialSection {
-        height: auto;
+        height: 100%;
     }
 
     .editorial:hover {
         width: 95%;
-        height: 50%;
+        height: 55%;
     }
 
     .figure.editorial {
-        flex-basis: 45%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -61,7 +63,7 @@
 
 
     .editorialSection {
-        height: auto;
+        height: 100%;
     }
 
     .editorial:hover {
@@ -70,7 +72,9 @@
     }
 
     .figure.editorial {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
@@ -78,7 +82,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .editorialSection {
-        height: auto;
+        height: 100%;
     }
 
     .editorial:hover {
@@ -87,14 +91,16 @@
     }
     
     .figure.editorial {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .editorialSection {
-        height: auto;
+        height: 100%;
     }
 
     .editorial:hover {
@@ -103,7 +109,9 @@
     }
 
     .figure.editorial {
+        display: flex;
         flex-basis: 33%;
+        flex-flow: column;
     }
 }
 

@@ -110,7 +110,7 @@ li > a {
     /* los links del menu hamburguesa */
     .menuCustomLinks {
         position: absolute;
-        top: 8em;
+        top: 7em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -165,7 +165,7 @@ li > a {
     /* los links del menu hamburguesa */
     .menuCustomLinks {
         position: absolute;
-        top: 6em;
+        top: 7em;
         display: flex;
         flex-direction: column;
         justify-content: center;

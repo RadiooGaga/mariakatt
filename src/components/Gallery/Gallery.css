@@ -1,23 +1,20 @@
 
 .container {
+    display: flex;
     position: relative;
     top: 2em;
-    display: flex;
     width: 95%;
     height: 100%;  
     overflow: hidden;
 }
 
-.container-smartPhone {
-    display: flex;
-    padding-bottom: 30px;
-}
+
 
 .figure {
     flex-grow: 1;
     filter: grayscale(100%);
     transition: all 1.2s ease-in-out;
-    padding: 2px;
+    padding: 1px;
 }
 
 /*
@@ -39,8 +36,6 @@
     height: 100%;
     object-fit:cover; 
     background-color: black;
-    position: relative;
-    overflow: hidden;
 }
 
 
@@ -59,7 +54,6 @@ figcaption {
     z-index: 1;
     filter: grayscale(0%);
     opacity: 0.9;  
-    /*transform: scale(1.005)*/ /* CUIDADO */
 }
 
 .figure:hover .figcaption {
@@ -100,41 +94,31 @@ figcaption {
 
 @media (max-width: 480px) {
 
-
-    .gallery-item.vertical:hover {
-        width: 100%;
-        object-fit: contain; 
-        background-color: black;
-    }
-
-    .container {
+    .container-smartPhone {
         display: flex;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
-        position: relative;
-        top: 9em;
-        padding-bottom: 30px;
+        padding: 5px 5px 30px;
     }
 
     .figure {
         padding: 2px;
-        flex-basis: 24%; /* Tamaño fijo para cada imagen */
-        flex-grow: 1;
-        opacity: 0.8;
         transition: transform 0.5s ease, opacity 0.9s ease;
         position: relative;
     }
 
     .figure:hover {
-        position: absolute; /* Fija la imagen al viewport */
+        position: absolute; 
     }
 
     .activePicture {
-        position: absolute; /* Fija la imagen al viewport */
-        top: 50%; /* Centrar verticalmente */
-        left: 50%; /* Centrar horizontalmente */
-        transform: translate(-50%, -50%) scale(1); /* Ajusta la escala y centra */
-        z-index: 10; /* Asegura que esté por encima de otras imágenes */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 10; 
+        opacity: 1; 
     }
 
     .overlay {
@@ -144,47 +128,39 @@ figcaption {
         width: 100%;
         height: 100%;
         z-index: 1; /* Debajo de la imagen activa */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        opacity: 1; 
     }
 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .gallery-item.vertical:hover {
-        width: 100%;
-        object-fit: contain; 
-        background-color: black;
-    }
-
-    .container {
+    .container-smartPhone {
         display: flex;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
-        position: relative;
-        top: 9em;
-        padding-bottom: 30px;
+        padding: 5px 5px 30px;
     }
-
+    
     .figure {
         padding: 2px;
-        flex-basis: 24%; /* Tamaño fijo para cada imagen */
         flex-grow: 1;
-        opacity: 0.8;
         transition: transform 0.5s ease, opacity 0.9s ease;
         position: relative;
     }
 
     .figure:hover {
-        position: absolute; /* Fija la imagen al viewport */
+        position: absolute; 
     }
 
     .activePicture {
-        position: absolute; /* Fija la imagen al viewport */
-        top: 50%; /* Centrar verticalmente */
-        left: 50%; /* Centrar horizontalmente */
-        transform: translate(-50%, -50%) scale(1); /* Ajusta la escala y centra */
-        z-index: 10; /* Asegura que esté por encima de otras imágenes */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 10; 
+        opacity: 1; 
     }
 
     .overlay {
@@ -194,42 +170,38 @@ figcaption {
         width: 100%;
         height: 100%;
         z-index: 1; /* Debajo de la imagen activa */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        opacity: 1; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
 
-    .container {
-        width: 90%;
-        height: 90%;
+    .container-smartPhone {
         display: flex;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
-        justify-content: center; /* Distribuir las imágenes sin movimiento */
-        position: relative;
-        top: 9em;
+        padding: 5px 5px 30px;
     }
 
     .figure {
         padding: 2px;
-        flex-basis: 24%; /* Tamaño fijo para cada imagen */
         flex-grow: 1;
-        opacity: 0.8;
         transition: transform 0.5s ease, opacity 0.9s ease;
         position: relative;
     }
 
     .figure:hover {
-        position: absolute; /* Fija la imagen al viewport */
+        position: absolute; 
     }
 
     .activePicture {
-        position: absolute; /* Fija la imagen al viewport */
-        top: 50%; /* Centrar verticalmente */
-        left: 50%; /* Centrar horizontalmente */
-        transform: translate(-50%, -50%) scale(1); /* Ajusta la escala y centra */
-        z-index: 10; /* Asegura que esté por encima de otras imágenes */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 10; 
+        opacity: 1; 
     }
 
     .overlay {
@@ -239,14 +211,11 @@ figcaption {
         width: 100%;
         height: 100%;
         z-index: 1; /* Debajo de la imagen activa */
-        opacity: 1; /* Asegura que la imagen esté completamente visible */
+        opacity: 1; 
     }
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
-    .figure {
-        padding: 1px;
-    }
 
     .container {
         top:2em;
@@ -254,10 +223,6 @@ figcaption {
 }
 
 @media (min-width: 1441px) and (max-width: 1919px){
-
-    .figure {
-        padding: 1px;
-    }
 
     .container {
         top:2em;

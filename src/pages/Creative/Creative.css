@@ -36,25 +36,7 @@
 @media (max-width: 480px) {
 
     .creativeSection {
-        height: auto;
-    }
-
-    .creative:hover {
-        width: 95%;
-        height: 50%;
-    }
-
-    .figure.creative {
-        flex-basis: 45%;
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-
-    .creativeSection {
-        height: auto;
+        height: 100%;
     }
 
     .creative:hover {
@@ -63,6 +45,27 @@
     }
 
     .figure.creative {
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .creativeSection {
+        height: 100%;
+    }
+
+    .creative:hover {
+        width: 95%;
+        height: 65%;
+    }
+
+    .figure.creative {
+        display: flex;
+        flex-flow: column;
         flex-basis: 33%;
     }
 }
@@ -71,15 +74,17 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .creativeSection {
-        height: auto;
+        height: 100%;
     }
-
+    
     .creative:hover {
         width: 95%;
         height: 65%;
     }
-    
+   
     .figure.creative {
+        display: flex;
+        flex-flow: column;
         flex-basis: 33%;
     }
 }
@@ -87,21 +92,24 @@
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .creativeSection {
-        height: auto;
+        height: 100%;
     }
+
 
     .creative:hover {
         width: 95%;
-        height: 45%;
+        height: 65%;
     }
 
     .figure.creative {
+        display: flex;
+        flex-flow: column;
         flex-basis: 33%;
     }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
-
+    
 
     .creative {
         width: 0%;
