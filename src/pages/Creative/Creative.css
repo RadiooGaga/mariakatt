@@ -10,20 +10,22 @@
 }
 
 .creative {
-    width:10%;
+    width: 10%;
 }
 
-
-.creative1 {
-    object-fit: cover;
-    object-position: 35%;
+.creative:hover {
+    width: 40%;
 }
 
-.vertical {
+.creativo1, .creativo2, .creativo8 {
     object-fit: cover;
     object-position: 55%;
 }
 
+.creativo3 {
+    object-fit: cover;
+    object-position: 35%;
+}
 
 
 
@@ -33,9 +35,13 @@
 
 @media (max-width: 480px) {
 
+    .creativeSection {
+        height: auto;
+    }
+
     .creative:hover {
-        width: 100%;
-        height: 65%;
+        width: 95%;
+        height: 50%;
     }
 
     .figure.creative {
@@ -46,8 +52,13 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
+
+    .creativeSection {
+        height: auto;
+    }
+
     .creative:hover {
-        width: 100%;
+        width: 95%;
         height: 65%;
     }
 
@@ -57,11 +68,31 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .creativeSection {
+        height: auto;
+    }
 
     .creative:hover {
-        width: 85%;
-        height: 85%;
+        width: 95%;
+        height: 65%;
+    }
+    
+    .figure.creative {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1024px) and  (max-width: 1279px) {
+
+    .creativeSection {
+        height: auto;
+    }
+
+    .creative:hover {
+        width: 95%;
+        height: 45%;
     }
 
     .figure.creative {
@@ -69,22 +100,25 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1443px) {
+@media (min-width: 1280px) and  (max-width: 1443px) {
 
-    .creative:hover {
-        width: 85%;
-        height: 85%;
+
+    .creative {
+        width: 0%;
     }
-
-    .figure.creative {
-        flex-basis: 33%;
-    }  
+    .creative:hover {
+        width: 40%;
+    }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
+    .creative {
+        width: 0%;
+    }
+    
     .creative:hover {
-        width: 90%;
+        width: 40%;
     }
 }
 

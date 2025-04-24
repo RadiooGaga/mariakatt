@@ -6,13 +6,13 @@ import { Gallery } from '../../components/Gallery/Gallery';
 
 const galleryItems = [
     
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366467/makeup/editorial/SAAKO_1_SS14_d87dtp.webp`, caption: "Saako design - hair&makeup", className: "saako", color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/4694_guh3os.webp`, caption: "Florenz Collection - hair&makeup", className: "florenz-girl", color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366467/makeup/editorial/Brianda1_wi4u33.webp`, caption: "Brianda Fitz-James - hair&makeup para Cucareliquia",className: "brianda", color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/EPS_STREETSTYLE_161312ok-002_eb9eqp.webp`, caption: "El País Semanal - hair&makeup", className: "eps", color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/4932_wxi67k.webp`, caption: "Florenz Collection - hair&makeup", className: "florenz-boy", color: "whitesmoke"  },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/EPS_STREETSTYLE_161767ok-011_d2uadi.webp`, caption: "El País Semanal - hair&makeup", className: "eps", color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/editorial/_MG_6853_svyn0h.webp`, caption: "Florenz Collection - makeup", className: "florenz-boy", color: "whitesmoke"}
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745490171/makeup/editorial/editorial1_t3mgmf.webp`, caption: "Saako design - hair&makeup", className: "editorial1", color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745490335/makeup/editorial/editorial2_po1ukv.webp`, caption: "Florenz Collection - hair&makeup", className: "editorial2", color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745490502/makeup/editorial/editorial3_n4bho5.webp`, caption: "Brianda Fitz-James - hair&makeup para Cucareliquia",className: "editorial3", color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745489985/makeup/editorial/editorial4_s9asnu.webp`, caption: "El País Semanal - hair&makeup", className: "editorial4", color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745490627/makeup/editorial/editorial5_l4wasz.webp`, caption: "Florenz Collection - hair&makeup", className: "editorial5", color: "whitesmoke"  },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745490839/makeup/editorial/editorial6_kqufpo.webp`, caption: "El País Semanal - hair&makeup", className: "editorial6", color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745489580/makeup/editorial/editorial7_qorapv.webp`, caption: "Florenz Collection - makeup", className: "editorial7", color: "whitesmoke"}
 
 
 ];

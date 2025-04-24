@@ -1,6 +1,6 @@
 .fxSection {
     width: 100%;
-    height: 100svh;
+    height: 90svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,8 +11,11 @@
 
 
 .fx {
-    object-fit: cover;
-    width: 20%;
+    width: 10%;
+}
+
+.fx:hover {
+    width: 60%;
 }
 
 .posesion {
@@ -31,13 +34,10 @@
     object-position: 20%;  
 }
 
-.botet:hover, .fran:hover, .fetos:hover {
-    object-fit: cover;
+
+.botet:hover {
+    object-fit:contain;
 }
-
-
-
-
 
 
 
@@ -45,78 +45,119 @@
 
 @media (max-width: 480px) {
 
+    .fxSection {
+        height: auto;
+    }
+
     .fx:hover {
+        width: 95%;
+        height: 30%;
+    }
+
+    .dedo:hover {
         width: 100%;
-        height: 55%;
+        height: 60%;
+    }
+
+    .botet:hover, .fetos:hover {
+        height: auto;
+        object-fit: cover;
     }
 
     .figure.fx {
-        flex-basis: 51%;
+        flex-basis: 45%;
     }
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .fx:hover {
-        width: 100%;
+
+    .fxSection {
+        height: auto;
     }
-
-    .ojo:hover, .dedo:hover {
-        width: 100%;
-        object-fit: contain; 
-    }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
 
     .fx:hover {
-        width: 100%;
+        width: 95%;
+        height: 40%;
     }
 
-    .ojo:hover, .dedo:hover {
+    .dedo:hover {
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
 
     .botet:hover, .fetos:hover {
-        height: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
-    .fran:hover {
-        position: relative;
-        top: 14em;
-    }
-
- 
-    .fxSection {
-        height: 90svh;
-        padding: 5px 0 5px;
+    .figure.fx {
+        flex-basis: 45%;
     }
 }
 
 
-@media (min-width: 1025px) and (max-width: 1443px) {
-
-    .fx:hover {
-        width: 40%;
-    }
+@media (min-width: 769px) and (max-width: 1023px) {
 
     .fxSection {
-        height: 90svh;
-        padding: 5px 0 5px;
+        height: auto;
+    }
+
+    .fx:hover {
+        width: 95%;
+        height: 45%;
+    }
+
+    .dedo:hover {
+        width: 100%;
+        height: 50%;
+    }
+
+    .botet:hover, .fetos:hover {
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .figure.fx {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1024px) and  (max-width: 1279px) {
+
+    .fxSection {
+        height: auto;
+    }
+
+    .fx:hover {
+        width: 95%;
+        height: 45%;
+    }
+
+    .figure.fx {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1280px) and  (max-width: 1443px) {
+
+
+    .fx {
+        width: 0%;
+    }
+    .fx:hover {
+        width: 40%;
     }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .fx:hover {
-        width: 70%;
+    .fx {
+        width: 0%;
     }
-
-    .fxSection {
-        height: 90svh;
-        padding: 5px 0 5px;
+    
+    .fx:hover {
+        width: 40%;
     }
 }

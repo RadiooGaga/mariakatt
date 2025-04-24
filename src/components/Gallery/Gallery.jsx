@@ -19,7 +19,7 @@ export const Gallery = (({ galleryItems, className }) => {
     // Manejo de cambio de tamaño de ventana para detectar mobile
     useEffect(() => {
         const checkIsMobile = () => {
-            setIsMobile(window.innerWidth <= 1023);
+            setIsMobile(window.innerWidth <= 1279);
         };
 
         checkIsMobile(); // Llamar al inicio para establecer el estado correctamente

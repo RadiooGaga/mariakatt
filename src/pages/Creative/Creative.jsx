@@ -4,14 +4,14 @@ import { micloudinary } from '../../utils/config';
 import { Gallery } from '../../components/Gallery/Gallery';
 
 const galleryItems = [ 
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743073179/makeup/creative/picasso_djbfbq.jpg`, caption: 'picasso - "El rostro No1"', className: "vertical", color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366468/makeup/creative/fire2_aauf7r.webp`, caption: "", className: "creative2", color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366467/makeup/creative/BEAUTY_PICTORICO_2_koobhd.webp`, caption: "", className: "creative1", color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366466/makeup/creative/tokio_ync8xu.webp`, caption: "", color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366467/makeup/creative/hielo_igsu2r.webp`, caption: "", color: "grey"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366466/makeup/creative/JOHN_GALIANO_ndsnmy.webp`, caption: "",  color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727366467/makeup/creative/insp_is_she_hungry_eowkdm.webp`, caption: "", color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1742836503/makeup/creative/IMPERDIBLE_mnqb5e.webp`, caption: "", color: "whitesmoke"}
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745491900/makeup/creative/creativo1_djf53a.webp`, caption: 'picasso - "El rostro No1"', className: "creativo1", color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745492161/makeup/creative/creativo2_og02a5.webp`, caption: "", className: "creativo2", color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745492367/makeup/creative/creativo3_rsse6x.webp`, caption: "", className: "creativo3", color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493115/makeup/creative/creativo4_opbnkk.webp`, caption: "", className: 'creativo4', color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493269/makeup/creative/creativo5_w8otvn.webp`, caption: "", className: 'creativo5', color: "grey"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493432/makeup/creative/creativo6_xwb7r6.webp`, caption: "john galiano",className: 'creativo6', color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493689/makeup/creative/creativo7_igornu.webp`, caption: "inspo: is she hungry", className: 'creativo7',color: "whitesmoke"},
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493990/makeup/creative/creativo8_wsonqc.webp`, caption: "", className: 'creativo8', color: "whitesmoke"}
 
 ];
 

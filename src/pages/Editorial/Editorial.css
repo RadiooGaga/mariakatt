@@ -9,28 +9,32 @@
     background-color:var(--color-babyWhite); 
 }
 
+
 .editorial {
-    width: 10%;
+    width: 20%;
+}
+
+.editorial:hover {
+    width: 60%;
 }
 
 
-.saako {
-    object-position: 50% 30%;
+.editorial1 {
+    object-position: 40% 30%;
 }
 
-.florenz-girl {
+
+.editorial2, .editorial7, .editorial6 {
     object-position: 35%;
 } 
 
-.florenz-boy {
-    object-position: 55%;
+.editorial5 {
+    object-position: 52%;
 }
 
-.brianda, .eps {
+.editorial3, .editorial4 {
     object-position: 50% 10%;
 }
-
-
 
 
 
@@ -38,39 +42,30 @@
 
 @media (max-width: 480px) {
 
+    .editorialSection {
+        height: auto;
+    }
+
     .editorial:hover {
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 50%;
     }
 
     .figure.editorial {
         flex-basis: 45%;
     }
-
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
-    
-    .editorial:hover {
-        width: 90%;
-        height: 90%;
-    }
 
-    .figure.editorial {
-        flex-basis: 33%;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
 
     .editorialSection {
-        height: 90svh;
-        padding: 5px 0 5px;
+        height: auto;
     }
 
     .editorial:hover {
-        width: 85%;
+        width: 95%;
         height: 85%;
     }
 
@@ -79,28 +74,57 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1443px) {
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .editorialSection {
+        height: auto;
+    }
 
     .editorial:hover {
-        width: 85%;
+        width: 95%;
+        height: 85%;
+    }
+    
+    .figure.editorial {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1024px) and  (max-width: 1279px) {
+
+    .editorialSection {
+        height: auto;
+    }
+
+    .editorial:hover {
+        width: 95%;
         height: 85%;
     }
 
     .figure.editorial {
         flex-basis: 33%;
-    }  
+    }
 }
 
+@media (min-width: 1280px) and  (max-width: 1443px) {
+
+
+    .editorial {
+        width: 0%;
+    }
+    .editorial:hover {
+        width: 40%;
+    }
+}
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .editorial:hover {
-        width: 90%;
-    }
-
-    .editorialSection {
-        height: 90svh;
-        padding: 5px 0 5px;
+    .editorial {
+        width: 0%;
     }
     
+    .editorial:hover {
+        width: 40%;
+    }
 }

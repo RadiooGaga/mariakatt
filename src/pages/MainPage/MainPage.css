@@ -59,7 +59,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
 
     .mainDiv {
         display: flex;
@@ -71,7 +71,7 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
 
     .mainDiv {
         display: flex;

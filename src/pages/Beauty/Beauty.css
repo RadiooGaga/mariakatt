@@ -1,6 +1,6 @@
 .beautySection {
     width: 100%;
-    height: 100svh;
+    height: 90svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +10,11 @@
 }
 
 .beauty {
-    width: 20%;
-    object-fit: cover;
+    width: 10%;
+}
+
+.beauty:hover {
+    width: 30%;
 }
 
 .sara {
@@ -40,10 +43,15 @@
 
 @media (max-width: 480px) {
 
-    .beauty:hover {
-        width: 100%;
-        height: 55%;
+    .beautySection {
+        height: auto;
     }
+
+    .beauty:hover {
+        width: 95%;
+        height: 45%;
+    }
+
     .figure.beauty {
         flex-basis: 45%;
     }
@@ -52,9 +60,47 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
+
+    .beautySection {
+        height: auto;
+    }
+
     .beauty:hover {
-        width: 100%;
-        height: 55%;
+        width: 95%;
+        height: 45%;
+    }
+
+    .figure.beauty {
+        flex-basis: 45%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .beautySection {
+        height: auto;
+    }
+
+    .beauty:hover {
+        width: 95%;
+        height: 60%;
+    }
+    
+    .figure.beauty {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1024px) and  (max-width: 1279px) {
+
+    .beautySection {
+        height: auto;
+    }
+
+    .beauty:hover {
+        width: 95%;
+        height: 45%;
     }
 
     .figure.beauty {
@@ -62,42 +108,26 @@
     }
 }
 
+@media (min-width: 1280px) and  (max-width: 1443px) {
 
-@media (min-width: 769px) and (max-width: 1024px) {
 
-    .beauty:hover {
-        width: 85%;
-        height: 85%;
+    .beauty {
+        width: 0%;
     }
-
-    .beautySection {
-        height: 90svh;
-        padding: 5px 0 5px;
+    .beauty:hover {
+        width: 40%;
     }
 }
-
-@media (min-width: 1025px) and (max-width: 1443px) {
-
-    .beauty:hover {
-        width: 90%;
-    }
-
-    .beautySection {
-        height: 90svh;
-        padding: 5px 0 5px;
-    }
-}
-
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .beauty:hover {
-        width: 80%;
+    .beauty {
+        width: 0%;
     }
-
-    .beautySection {
-        height: 90svh;
-        padding: 5px 0 5px;
+    
+    .beauty:hover {
+        width: 40%;
     }
 }
+
 
