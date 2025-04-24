@@ -13,6 +13,7 @@
 .divHeader.header-pink {
     padding-top: var(--padding-l);
     background-color: var(--color-babyPink) ;
+    
 }
 
 
@@ -24,11 +25,13 @@
         position: absolute;
         top: 0;
         display: flex;
-        height: 12vh;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 20px;
         background-color: var(--color-transparent);
+    }
+
+    .divHeader.header-pink {
+        height: 12vh; 
     }
    
 }
@@ -42,8 +45,11 @@
         flex-direction: row;
         justify-content: space-between;
         width:100%;
-        padding-right: 20px;
         background-color: var(--color-transparent);
+    }
+
+    .divHeader.header-pink {
+        height: 12vh; 
     }
 }
 
@@ -55,6 +61,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 10px;
+        height: 12vh;
         background-color: var(--color-transparent);
     }
 }
@@ -66,7 +73,13 @@
         justify-content:space-evenly;
         flex-direction: column;
         align-items:center;
+        width:100%;
+        height: 4vh;
         background-color: var(--color-transparent);
+    }
+
+    .divHeader.header-pink {
+        height: 12vh;
     }
 
 }

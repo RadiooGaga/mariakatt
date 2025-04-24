@@ -7,7 +7,7 @@ import { Gallery } from '../../components/Gallery/Gallery';
 
 const galleryItems = [
 
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727369953/makeup/beauty/fiesta_noche_2_r3fpqm.webp`, caption: "Maquillaje de noche/fiesta", className: 'night', color: "whitesmoke" },
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1727369953/makeup/beauty/fiesta_noche_2_r3fpqm.webp`, caption: "Maquillaje de noche/fiesta", className: 'vertical', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1742821852/makeup/beauty/90s_agmwll.webp`, caption: "", className: 'nineties', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743066856/makeup/beauty/ss-model_ebvkw8.webp`, caption: "Book - hair & makeup",className: 'book', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743066683/makeup/beauty/makeup_natural2_yuxndp.webp`, caption: "Maquillaje invitada", className: 'invitada1', color: "whitesmoke" },

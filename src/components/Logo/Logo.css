@@ -19,10 +19,15 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 480px) {
+
+    .divLogo {
+        position: relative;
+        left: 25px; 
+    }
     
     .logo {
-        width: 50px;
-        object-fit: contain;    
+        width: 55px;
+        object-fit: contain;   
     }
    
 }
@@ -30,12 +35,12 @@
 @media (min-width: 481px) and (max-width: 768px) {
   
     .divLogo {
-        width: auto;
-        height: auto;   
+        position: relative;
+        left: 25px; 
     }
 
     .logo {
-        width: 50px;
+        width: 55px;
         object-fit: contain;    
     }
 }
