@@ -49,9 +49,8 @@ export const Gallery = (({ galleryItems, className }) => {
 
 
 
-    const handleImageClick = (index) => {
-      console.log(index)
-        setActiveIndex(index);
+    const handleImageClick = (item) => {
+        setActiveIndex(item);
     };
 
     const handleClose = (e) => {
@@ -72,9 +71,9 @@ return (
     <div className={`container ${isMobile ? 'container-smartPhone' : ''}`}>
         {galleryItems.map((item, index) => (
             <figure
-                key={index}
-                className={`figure ${className || ''} ${activeIndex === index ? 'activePicture' : ''}`}
-                onClick={() => handleImageClick(index)}
+                key={item.id || item.img}
+                className={`figure ${className || ''} ${activeIndex?.img === item.img ? 'activePicture' : ''}`}
+                onClick={() => handleImageClick(item)}
             >
             <img
                 src={item.img}
