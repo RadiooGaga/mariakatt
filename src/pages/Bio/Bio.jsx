@@ -1,18 +1,19 @@
 import React  from 'react'
 import './Bio.css'
 import { NonStopGallery } from '../../components/NonStopGallery/NonStopGallery'
+import { micloudinary } from '../../utils/config'
 import { Header } from '../../components/Header/Header';
 
 const carrouselItems = [
-  {img: "https://plus.unsplash.com/premium_photo-1664451177155-8247ae799c8b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFrZXVwfGVufDB8fDB8fHww"},
-  {img: "https://images.unsplash.com/photo-1551392505-f4056032826e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1ha2V1cHxlbnwwfHwwfHx8MA%3D%3D"},
-  {img: "https://images.unsplash.com/photo-1526045405698-cf8b8acc4aaf?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-  {img: "https://images.unsplash.com/photo-1606876430311-6b09172238b9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-  {img: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-  {img: "https://images.unsplash.com/photo-1630084775816-7abb7383ded5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-  {img: "https://plus.unsplash.com/premium_photo-1703343320111-53f45b907410?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-  {img: "https://images.unsplash.com/photo-1570088727237-68500d217455?q=80&w=2930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444204/makeup/celebrities/Javier-Botet-y-Patricia-Vazquez_iielu8.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443458/makeup/celebrities/Julia%CC%81n-Lopez_kl0ipr.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443689/makeup/celebrities/Aria-Bedmar_atznxp.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443800/makeup/celebrities/Angy-Fernandez_rdrjhq.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444011/makeup/celebrities/Goyo-Jimenez_njmemv.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444352/makeup/celebrities/Cristina-Brondo_vgwqli.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444484/makeup/celebrities/Carlos-Manuel-Diaz_g1tawb.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444724/makeup/celebrities/Chacha-Huang_oaszkj.webp`},
+  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444974/makeup/celebrities/Mad-Max-Payne_vvegx3.webp`}
 ];
 
 
