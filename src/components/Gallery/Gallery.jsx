@@ -38,6 +38,9 @@ export const Gallery = ({ galleryItems, className }) => {
     <>
       <Header />
       <div className={`container ${isMobile ? 'container-smartPhone' : ''}`}>
+      {activeIndex !== null && isMobile && (
+          <div className="overlay" onClick={handleClose}></div>
+        )}
         {galleryItems.map((item, index) => (
           <figure
             key={`${item.img}-${index}`}
@@ -54,9 +57,7 @@ export const Gallery = ({ galleryItems, className }) => {
             </figcaption>
           </figure>
         ))}
-        {activeIndex !== null && isMobile && (
-          <div className="overlay" onClick={handleClose}></div>
-        )}
+       
       </div>
     </>
   );

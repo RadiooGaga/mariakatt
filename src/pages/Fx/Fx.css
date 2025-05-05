@@ -45,12 +45,12 @@
 @media (max-width: 480px) {
 
     .fxSection {
-        height: 100%;
+        height: auto;
     }
 
     .fx:hover {
         width: 95%;
-        height: 50%;
+        height: 60%;
     }
 
     .dedo:hover, .ojo:hover {
@@ -73,7 +73,7 @@
 
 
     .fxSection {
-        height: 100%;
+        height: auto;
     }
 
     .fx:hover {
@@ -100,14 +100,14 @@
         display: flex;
         flex-basis: 33%;
         flex-flow: column;
-}
+    }
 }
 
 
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .fxSection {
-        height: 100%;
+        height: auto;
     }
 
     .fx:hover {

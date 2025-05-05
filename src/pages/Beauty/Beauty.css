@@ -42,7 +42,7 @@
 @media (max-width: 480px) {
 
     .beautySection {
-        height: 100%;
+        height: auto;
     }
 
     .beauty:hover {
@@ -62,7 +62,7 @@
 
 
     .beautySection {
-        height: 100%;
+        height: auto;
     }
 
 
@@ -82,7 +82,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .beautySection {
-        height: 100%;
+        height: auto;
     }
 
 
@@ -101,7 +101,7 @@
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .beautySection {
-        height: 100%;
+        height: auto;
     }
 
 

@@ -33,12 +33,12 @@
 @media (max-width: 480px) {
 
     .creativeSection {
-        height: 100%;
+        height: auto;
     }
 
     .creative:hover {
         width: 95%;
-        height: 65%;
+        height: 70%;
     }
 
     .figure.creative {
@@ -52,7 +52,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
 
     .creativeSection {
-        height: 100%;
+        height: auto;
     }
 
     .creative:hover {
@@ -71,7 +71,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .creativeSection {
-        height: 100%;
+        height: auto;
     }
     
     .creative:hover {
@@ -89,7 +89,7 @@
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .creativeSection {
-        height: 100%;
+        height: auto;
     }
 
 

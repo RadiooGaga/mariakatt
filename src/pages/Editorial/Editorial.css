@@ -43,12 +43,12 @@
 @media (max-width: 480px) {
 
     .editorialSection {
-        height: 100%;
+        height: auto;
     }
 
     .editorial:hover {
         width: 95%;
-        height: 60%;
+        height: 70%;
     }
 
     .figure.editorial {
@@ -63,7 +63,7 @@
 
 
     .editorialSection {
-        height: 100%;
+        height: auto;
     }
 
     .editorial:hover {
@@ -82,7 +82,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
 
     .editorialSection {
-        height: 100%;
+        height:auto;
     }
 
     .editorial:hover {
@@ -100,7 +100,7 @@
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
     .editorialSection {
-        height: 100%;
+        height: auto;
     }
 
     .editorial:hover {
