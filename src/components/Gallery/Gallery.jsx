@@ -17,7 +17,12 @@ export const Gallery = ({ galleryItems, className }) => {
   }, []);
 
   const handleImageClick = (index) => {
-    setActiveIndex(index);
+    console.log(index)
+    if (activeIndex === index) {
+      setActiveIndex(null); // Si ya está activa, al hacer click otra vez se cierra
+    } else {
+      setActiveIndex(index);
+    }
   };
 
   const handleClose = (e) => {
