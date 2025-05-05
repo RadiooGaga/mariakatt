@@ -9,9 +9,6 @@
     background-color:var(--color-babyWhite);
 }
 
-.creative {
-    width: 10%;
-}
 
 .creative:hover {
     width: 40%;
@@ -60,7 +57,7 @@
 
     .creative:hover {
         width: 95%;
-        height: 65%;
+        height: 70%;
     }
 
     .figure.creative {
@@ -97,8 +94,8 @@
 
 
     .creative:hover {
-        width: 95%;
-        height: 65%;
+        width: 90%;
+        height: 75%;
     }
 
     .figure.creative {

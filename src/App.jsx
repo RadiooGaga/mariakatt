@@ -11,7 +11,7 @@ import { Beauty } from './pages/Beauty/Beauty';
 import { Hair } from './pages/Hair/Hair';
 import { Fx } from './pages/Fx/Fx';
 import { Contact } from './pages/Contact/Contact';
-import { GalleryProvider } from './utils/galleryContext';
+
 
 
 
@@ -19,7 +19,6 @@ function App() {
 
   return (
     <>
-      <GalleryProvider>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/bio" element={<Bio />} />
@@ -32,7 +31,6 @@ function App() {
           <Route path="/contact" element={<Contact />} /> 
             
           </Routes>
-      </GalleryProvider>
     </>
   )
 }

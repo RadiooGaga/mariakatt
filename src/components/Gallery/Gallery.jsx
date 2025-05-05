@@ -1,95 +1,58 @@
 import React, { useState, useEffect } from 'react';
-import { useGallery } from '../../utils/galleryContext';
 import { Header } from '../Header/Header';
 import './Gallery.css';
 
+export const Gallery = ({ galleryItems, className }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-
-// GALERÍA (GENÉRICO)
-
-export const Gallery = (({ galleryItems, className }) => {
-
-    const { getGalleryItems, setGalleryItems } = useGallery();
-  
-    const [activeIndex, setActiveIndex] = useState(null); // Estado para manejar la imagen activa
-    const [loading, setLoading] = useState(true); // Estado para la carga
-    const [isMobile, setIsMobile] = useState(false);
-    const [error, setError] = useState(null); // Estado para errores
-
-    // Manejo de cambio de tamaño de ventana para detectar mobile
-    useEffect(() => {
-        const checkIsMobile = () => {
-            setIsMobile(window.innerWidth <= 1279);
-        };
-
-        checkIsMobile(); // Llamar al inicio para establecer el estado correctamente
-        window.addEventListener('resize', checkIsMobile);
-        return () => window.removeEventListener('resize', checkIsMobile);
-    }, []);
-
-
-    // CARGA DE IMÁGENES
-    useEffect(() => {
-
-        if (!galleryItems || galleryItems.length === 0) {
-            setError('Ha habido un problema y no hay imágenes disponibles');
-            setLoading(false)
-            return 
-        } 
-
-        const storedItems = getGalleryItems(className);
-
-        if (storedItems && storedItems.length > 0) {
-            setGalleryItems(galleryItems, className); // ⚠️ Esto puede generar el bucle
-        }
-
-        setLoading(false);
-        
-    }, [galleryItems, className]); 
-
-
-
-    const handleImageClick = (item) => {
-        setActiveIndex(item);
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 1279);
     };
 
-    const handleClose = (e) => {
-        e.stopPropagation(); // Evitar que el clic en la superposición cierre la imagen
-        setActiveIndex(null); // Restablece el índice activo a null para cerrar la imagen
-    };
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
 
-    if (loading) 
-      return <div className='loading'>Loading...</div>;
-    if (error) {
-        return <div className='errorDiv'>{error}</div>;
-    } 
+  const handleImageClick = (index) => {
+    setActiveIndex(index);
+  };
 
+  const handleClose = (e) => {
+    e.stopPropagation();
+    setActiveIndex(null);
+  };
 
-return (
+  if (!galleryItems || galleryItems.length === 0) {
+    return <div className="errorDiv">No hay imágenes disponibles.</div>;
+  }
+
+  return (
     <>
-    <Header />
-    <div className={`container ${isMobile ? 'container-smartPhone' : ''}`}>
+      <Header />
+      <div className={`container ${isMobile ? 'container-smartPhone' : ''}`}>
         {galleryItems.map((item, index) => (
-            <figure
-                key={item.id || item.img}
-                className={`figure ${className || ''} ${activeIndex?.img === item.img ? 'activePicture' : ''}`}
-                onClick={() => handleImageClick(item)}
-            >
+          <figure
+            key={`${item.img}-${index}`}
+            className={`figure ${className || ''} ${activeIndex === index ? 'activePicture' : ''}`}
+            onClick={() => handleImageClick(index)}
+          >
             <img
-                src={item.img}
-                alt={`Gallery ${index}`}
-                className={`gallery-item ${item.className || ''}`}
-            />   
-                <figcaption className="figcaption" style={{ color: item.color }}>
-                    {item.caption}
-                </figcaption>
-            </figure>
+              src={item.img}
+              alt={`Imagen ${index}`}
+              className={`gallery-item ${item.className || ''}`}
+            />
+            <figcaption className="figcaption" style={{ color: item.color }}>
+              {item.caption}
+            </figcaption>
+          </figure>
         ))}
         {activeIndex !== null && isMobile && (
-            <div className="overlay" onClick={handleClose}></div>
+          <div className="overlay" onClick={handleClose}></div>
         )}
-    </div>
+      </div>
     </>
-      
-    );
-});
+  );
+};

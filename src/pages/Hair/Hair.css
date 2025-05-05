@@ -57,7 +57,7 @@
     }
 
     .hair:hover {
-        width: 95%;
+        width: 70%;
         height: auto;
     }
 
@@ -76,8 +76,8 @@
     }
 
     .hair:hover {
-        width: 95%;
-        height: 75%;
+        width: 70%;
+        height: 100%;
     }
     
     .figure.hair {

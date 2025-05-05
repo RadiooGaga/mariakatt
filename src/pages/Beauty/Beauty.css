@@ -10,32 +10,30 @@
 }
 
 .beauty {
-    width: 10%;
-}
-
-.beauty:hover {
     width: 30%;
 }
 
-.sara {
-    object-position: 32%;
-}
-
-.invitada1, .invitada2, .invitada3 {
-    object-position: 24%;
-}
-
-.book {
+.beauty1, .beauty3 {
     object-position: 58%; 
 }
 
-.vertical {
-    object-position: 75%;
-}
-
-.nineties {
+.beauty2 {
     object-position: 90%;
 }
+
+.beauty5, .beauty4 {
+    object-position: 32%;
+}
+
+.beauty7, .beauty8 {
+    object-position: 20%;
+}
+
+
+
+
+
+
 
 
 
@@ -70,7 +68,7 @@
 
     .beauty:hover {
         width: 95%;
-        height: 45%;
+        height: 70%;
     }
 
     .figure.beauty {
@@ -89,8 +87,8 @@
 
 
     .beauty:hover {
-        width: 95%;
-        height: 60%;
+        width: 80%;
+        height: 90%;
     }
     
     .figure.beauty {
@@ -108,8 +106,8 @@
 
 
     .beauty:hover {
-        width: 95%;
-        height: 45%;
+        width: 80%;
+        height: 90%;
     }
 
     .figure.beauty {
