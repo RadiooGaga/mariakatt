@@ -19,11 +19,6 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 480px) {
-
-    .divLogo {
-        position: relative;
-        left: 8px; 
-    }
     
     .logo {
         width: 55px;
@@ -33,11 +28,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  
-    .divLogo {
-        position: relative;
-        left: 10px; 
-    }
 
     .logo {
         width: 55px;

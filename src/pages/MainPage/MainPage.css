@@ -6,7 +6,6 @@
     height:100vh;
     background-color: var(--color-babyWhite);
     /*background-color: #63c6e3;*/
-    gap: 20px;
 }
 
 .coverMenu { 
@@ -17,7 +16,6 @@
     width: 40%;
     background-color: var(--color-babyWhite);
     /*background-color: #63c6e3;*/
-    gap: 20px;
 }
 
 
@@ -38,7 +36,7 @@
         padding: var(--padding-l);
         background-color: transparent;
         /* background-color: #63c6e3; */
-        gap: 20px;
+
     }
    
 }
@@ -52,7 +50,7 @@
         padding: var(--padding-l);
         background-color: transparent;
         /* background-color: #63c6e3; */
-        gap: 20px;
+
     }
 
 }
