@@ -18,10 +18,6 @@
     width: 60%;
 }
 
-.fran:hover {
-    width: 100%;
-}
-
 .posesion {
     object-position: 52%; 
 }
@@ -43,63 +39,63 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 480px) {
-
-    .fxSection {
+     .fxSection {
         height: auto;
+    }
+    .fx {
+        width: 90%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
     }
 
     .fx:hover {
         width: 95%;
-        height: 60%;
     }
 
-    .dedo:hover, .ojo:hover {
-        width: 100%;
-        height: 45%;
+    .gallery-item.fran:hover, .gallery-item.fetos:hover {
+        position: relative;
+        top: 0;
+        height: 70vh;
     }
 
-    .botet:hover {
-        height: auto;
-    }
-
-    .figure.fx {
-        flex-basis: 33%;
-        flex-flow: row;
+    .gallery-item.botet:hover {
+        position: relative;
+        top: 0;
+        width: 70vw;
+        height: 90vh;
     }
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-
     .fxSection {
         height: auto;
     }
 
-    .fx:hover {
-        width: 95%;
-        height: 100%;
-    }
-
-    .dedo:hover, .ojo:hover{
-        width: 100%;
-        height: 50%;
-    }
-
-    .fetos:hover {
-        width: 100%;
-        height: 75%;
-    }
-
-    .botet:hover {
-        width: 500px;
-        height: 700px;
-    }
-
-    .figure.fx {
+    .fx {
+        width: 90%;
         display: flex;
         flex-basis: 33%;
         flex-flow: column;
+    }
+
+    .fx:hover {
+        width: 95%;
+    }
+
+    .gallery-item.fran:hover, .gallery-item.fetos:hover {
+        position: relative;
+        top: 0;
+        height: 70vh;
+    }
+
+    .gallery-item.botet:hover {
+        position: relative;
+        top: 0;
+        width: 70vw;
+        height: 90vh;
     }
 }
 
@@ -110,30 +106,27 @@
         height: auto;
     }
 
-    .fx:hover {
-        width: 95%;
-        height: 95%;
-    }
-
-    .dedo:hover {
-        width: 100%;
-        height: 50%;
-    }
-
-    .fetos:hover {
-        transform: translate(0%, -5%) scale(0.9);
-    }
-
-    .botet:hover {
-        transform: translate(25%, -5%) scale(0.9);
-        width: 70%;
-    }
-    
-    .figure.fx {
+    .fx {
+        width: 90%;
         display: flex;
         flex-basis: 33%;
         flex-flow: column;
     }
+    
+    .fx:hover {
+        width: 95%;
+    }
+
+    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.botet:hover, .gallery-item.fetos:hover {
+        position: relative;
+        top: 0;
+        height: 75vh;
+    }
+
+    .gallery-item.botet:hover,  .gallery-item.fetos:hover  {
+        width: 50vw;
+    }
+
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
@@ -141,35 +134,52 @@
     .fxSection {
         height: auto;
     }
-
+    
+    .fx {
+        width: 90%;
+        display: flex;
+        flex-basis: 33%;
+        flex-flow: column;
+    }
+    
     .fx:hover {
         width: 95%;
-        height: 45%;
     }
 
-    .figure.fx {
-        flex-basis: 33%;
+    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.botet:hover, .gallery-item.fetos:hover {
+        position: relative;
+        top: 0;
+        height: 75vh;
+    }
+
+    .gallery-item.botet:hover,  .gallery-item.fetos:hover  {
+        width: 50vw;
     }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
-
-
-    .fx {
-        width: 0%;
-    }
     .fx:hover {
-        width: 40%;
+        width: 80%;
+    }
+
+    .gallery-item.botet:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .fx {
-        width: 0%;
-    }
-    
-    .fx:hover {
+   .fx:hover {
         width: 40%;
+    }
+
+    .gallery-item.botet:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 }

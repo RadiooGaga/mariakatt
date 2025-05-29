@@ -9,6 +9,9 @@
     background-color:var(--color-babyWhite);
 }
 
+.creative {
+    width: 10%;
+}
 
 .creative:hover {
     width: 40%;
@@ -75,8 +78,8 @@
     }
     
     .creative:hover {
-        width: 95%;
-        height: 65%;
+        width: 80%;
+        height: 95%;
     }
    
     .figure.creative {
@@ -84,6 +87,12 @@
         flex-flow: column;
         flex-basis: 33%;
     }
+
+    .gallery-item.creativo1:hover {
+        width: 55%;
+        height: 95%;
+    }
+
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {

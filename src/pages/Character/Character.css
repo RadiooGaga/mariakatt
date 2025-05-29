@@ -9,6 +9,10 @@
     background-color:var(--color-babyWhite); 
 }
 
+.character {
+    width: 10%;
+}
+
 .character:hover {
     width: 30%;
 }

@@ -34,7 +34,7 @@ export const Fx = () => {
 
   const handleCancel = () => {
     console.log('El usuario rechazó ver el contenido');
-    navigate('/otra-ruta'); // Cambia '/otra-ruta' por la página a la que quieres redirigir
+    navigate('/bio'); // Cambia '/otra-ruta' por la página a la que quieres redirigir
   };
 
 

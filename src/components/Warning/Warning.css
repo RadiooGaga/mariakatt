@@ -1,6 +1,6 @@
 .warningdiv {
     position: absolute;
-    top: 56%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
     display: flex;
@@ -9,7 +9,7 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    height: 75vh;
+    height: 1280px;
     background-color: var(--color-babyWhiteClear);
     z-index: 10;
     gap: var(--gap-xxl);
@@ -45,3 +45,18 @@
 .si:hover, .no:hover {
     background-color: var(--color-grey);
 }
+
+
+
+@media (max-width: 480px) {
+    .warningdiv {
+        padding: var(--padding-l) var(--padding-xxl); 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .warningdiv {
+      padding: var(--padding-l) var(--padding-xxl); 
+    }
+}
+
