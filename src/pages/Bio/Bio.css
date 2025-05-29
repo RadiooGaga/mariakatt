@@ -59,9 +59,9 @@ blockquote, .bioParagraph, .studiesList {
     height: auto;
     text-align: center;
     background-color:var( --color-babyPink);
-    font-family: var(--font-family-3);
-    color: var(--color-classicRed);
-    font-size: 16px;
+    font-family:var(--font-family-2);
+    color: var(--color-turquoise);
+    font-size: 20px;
     letter-spacing: 0.5px;
 }
 
@@ -74,7 +74,7 @@ blockquote, .bioParagraph, .studiesList {
 .studiesList > li {
     width: auto;
     height: auto;
-    font-family: var(--font-family-3);
+    font-family: var(--font-family-2);
     color: var(--color-turquoise);
     list-style:inside;
 }

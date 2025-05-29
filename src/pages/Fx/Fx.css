@@ -1,12 +1,13 @@
 .fxSection {
     width: 100%;
-    height: 90svh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px 0 5px;
     justify-content: center;
     background-color:var(--color-babyWhite);
+    gap: 30px;
 }
 
 
@@ -34,37 +35,30 @@
     object-position: 20%;  
 }
 
+.gallery-item.botet:hover {
+    height: auto;
+}
 
 
 /* MEDIA QUERIES */
 
 @media (max-width: 480px) {
-     .fxSection {
+
+    .fxSection {
         height: auto;
     }
-    .fx {
-        width: 90%;
+
+    .figure.fx {
         display: flex;
-        flex-basis: 33%;
+        flex-basis: 60%;
         flex-flow: column;
     }
 
     .fx:hover {
         width: 95%;
+        height: 75vh;
     }
 
-    .gallery-item.fran:hover, .gallery-item.fetos:hover {
-        position: relative;
-        top: 0;
-        height: 70vh;
-    }
-
-    .gallery-item.botet:hover {
-        position: relative;
-        top: 0;
-        width: 70vw;
-        height: 90vh;
-    }
 }
 
 
@@ -75,27 +69,29 @@
     }
 
     .fx {
-        width: 90%;
         display: flex;
-        flex-basis: 33%;
+        flex-basis: 40%;
         flex-flow: column;
     }
 
     .fx:hover {
         width: 95%;
-    }
-
-    .gallery-item.fran:hover, .gallery-item.fetos:hover {
-        position: relative;
-        top: 0;
-        height: 70vh;
+        height: 75vh;
     }
 
     .gallery-item.botet:hover {
-        position: relative;
-        top: 0;
-        width: 70vw;
-        height: 90vh;
+        width: 80%;
+        height: 100vh;
+    }
+
+    .gallery-item.dedo:hover, .gallery-item.ojo:hover {
+        width: 95%;
+        height: 57vh;
+    }
+
+    .gallery-item.fetos:hover {
+        width: 85%;
+        height: 78vh;
     }
 }
 
@@ -117,14 +113,19 @@
         width: 95%;
     }
 
-    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.botet:hover, .gallery-item.fetos:hover {
-        position: relative;
-        top: 0;
+    .gallery-item.botet:hover {
+        width: 43%;
         height: 75vh;
     }
 
-    .gallery-item.botet:hover,  .gallery-item.fetos:hover  {
-        width: 50vw;
+    .gallery-item.dedo:hover, .gallery-item.ojo:hover, .gallery-item.fran:hover {
+        width: 85%;
+        height: 57vh;
+    }
+
+    .gallery-item.fetos:hover {
+        width: 85%;
+        height: 78vh;
     }
 
 }
@@ -143,17 +144,17 @@
     }
     
     .fx:hover {
-        width: 95%;
-    }
-
-    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.botet:hover, .gallery-item.fetos:hover {
-        position: relative;
-        top: 0;
         height: 75vh;
     }
 
-    .gallery-item.botet:hover,  .gallery-item.fetos:hover  {
-        width: 50vw;
+    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.fetos:hover, .gallery-item.dedo:hover {
+        width: 95%;
+        height: 65vh;
+    }
+
+    .gallery-item.botet:hover {
+        width: 57%;
+        height: 75vh;
     }
 }
 

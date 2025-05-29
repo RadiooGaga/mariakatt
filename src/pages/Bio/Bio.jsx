@@ -27,14 +27,13 @@ export const Bio = () => {
       <div className='introBioDiv'>
         {/*<h2 className='bioH2'>BIO</h2>*/}
         <blockquote>
-        “El maquillaje suele asociarse al mundo de la belleza, pero es mucho más que eso. El maquillaje es arte y es cultura, y tiene el poder de transformar a las personas en historias que contar. A veces, no necesariamente bonitas. Eso fue lo que realmente me enganchó de este oficio desde que era niña. 
+        “Muchas veces se asocia el maquillaje solo con la belleza, pero en realidad es mucho más. Es arte, es cultura y tiene la capacidad de contar historias a través de las personas. No siempre son historias bonitas, y eso fue precisamente lo que me atrapó desde pequeña. 
         <br />
-        Un cambio de look puede significar un nuevo comienzo. Puedes usarlo simplemente por mantener y cuidar tu imagen, para mejorar la autoestima o para sentirte mejor o diferente en un día especial. Puedes no poder vivir sin maquillaje o no maquillarte en absoluto.
-        En un actor o actriz esa transformación también forma parte de su día a día. Y también, a través del maquillaje se convierten en ese personaje que cuenta una historia y una realidad que, aunque no es la suya, debe defenderla como tal.
+        Un cambio de look puede significar muchas cosas: un nuevo comienzo, una forma de cuidarse, de subir la autoestima o simplemente de sentirse diferente un día especial. Hay quien no puede vivir sin maquillarse y quien no lo necesita en absoluto.
         <br />
-        Con esto me refiero a que <strong className='clave'>nuestra imagen siempre tiene una historia detrás</strong>. En mayor o menor medida forma parte de nosotros; como espectador o como protagonista.
+        En el caso de actores y actrices, esa transformación forma parte de su trabajo. El maquillaje les ayuda a convertirse en el personaje que interpretan, a defender una historia que no es la suya, pero que deben hacer suya por completo.
         <br />
-        Cuando quien ha pasado por mis manos se mira satisfecho al espejo y puede enfrentar su papel, es que he hecho bien mi trabajo.“
+        Porque al final, nuestra imagen siempre cuenta algo. Sea mucho o poco, siempre dice algo de nosotros. Y cuando alguien que ha pasado por mis manos se mira al espejo, sonríe y se reconoce en lo que ve —sea en su día a día o en un escenario—, entonces sé que he hecho bien mi trabajo.”
         </blockquote>
       </div>
 

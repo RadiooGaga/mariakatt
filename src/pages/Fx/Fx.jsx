@@ -8,6 +8,7 @@ import { Warning } from '../../components/Warning/Warning';
 
 const galleryItems = [
 
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743412735/makeup/fx/javier-botet_pihgju.webp`, caption: 'Javier Botet y Patricia Vazquez para "No enciendas la luz" (postproduccion)', className: 'botet', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743072319/makeup/fx/halloween2020_cqdw6j.webp`, caption: "Posesión - prótesis de silicona y dentadura", className: 'posesion', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743068826/makeup/fx/indice_ta6d8b.webp`, caption: "Reproducción dedo índice en silicona y maquillaje hiperrealista",className: 'dedo', color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743071015/makeup/fx/cicatriz-quemadura_rk1zo0.webp`, caption: "Cicatriz queloide por quemadura - prótesis planas ", className: 'fran', color: "whitesmoke" },
@@ -15,9 +16,7 @@ const galleryItems = [
 
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743078891/makeup/fx/Victor-Castllo-euv_k5r5es.webp`, caption: '"El último vaso"',  color: "whitesmoke" },
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743079011/makeup/fx/accidente_oarecw.webp`, caption: '"El último vaso"',className: 'accidente2',   color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743411254/makeup/fx/fetos_qod9jo.webp`, caption: 'Fetos',className: 'fetos', color: "whitesmoke" },
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743412735/makeup/fx/javier-botet_pihgju.webp`, caption: 'Javier Botet y Patricia Vazquez para "No enciendas la luz" (postproduccion)', className: 'botet', color: "whitesmoke" }
-
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1743411254/makeup/fx/fetos_qod9jo.webp`, caption: 'Fetos',className: 'fetos', color: "whitesmoke" }
 
 ];
 
