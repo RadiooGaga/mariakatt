@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import './Fx.css'
 import { useNavigate } from 'react-router-dom';
 import { micloudinary } from '../../utils/config'
@@ -23,11 +23,25 @@ const galleryItems = [
 export const Fx = () => {
   console.log('me carga FX')
 
-  const [ seeContent , setSeeContent ] = useState(false)
+  const [ seeContent , setSeeContent ] = useState(false);
+  const [ isScrollBlocked, setIsScrollBlocked ] = useState(true);
   const navigate = useNavigate(); 
+  const fxSectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = fxSectionRef.current;
+      if (section) {
+        if (isScrollBlocked) {
+        section.classList.add('no-scroll');
+      } else {
+        section.classList.remove('no-scroll');
+      }
+    }
+  }, [isScrollBlocked]);
 
   const handleConfirm = () => {
     setSeeContent(true);
+    setIsScrollBlocked(false);
     console.log('El usuario aceptó ver el contenido');
   };
 
@@ -37,12 +51,16 @@ export const Fx = () => {
   };
 
 
+
+
   return (
     <>
-    <section className='fxSection'>
+    <section className='fxSection' ref={fxSectionRef}>
       <Gallery galleryItems={galleryItems} className={'fx'}/>
     </section>
-    {!seeContent && <Warning onConfirm={handleConfirm} onCancel={handleCancel} />}
+    {!seeContent && isScrollBlocked &&
+      <Warning onConfirm={handleConfirm} onCancel={handleCancel} 
+    />}
     </>
   )
 }

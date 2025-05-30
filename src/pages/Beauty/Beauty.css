@@ -72,16 +72,17 @@
 
     .figure.beauty {
         display: flex;
-        flex-basis: 45%;
+        flex-basis: 33%;
         flex-flow: column;
     }
 
     .beauty:hover {
+        width: 85%;
         height: 75vh;
     }
 
     .beauty1, .beauty3 {
-    object-position: 75%; 
+        object-position: 75%; 
     }
 }
 

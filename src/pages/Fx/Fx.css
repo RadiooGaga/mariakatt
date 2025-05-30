@@ -10,6 +10,11 @@
     gap: 30px;
 }
 
+.fxSection.no-scroll {
+  overflow-y: hidden;
+  height: 100vh; /*esto evita scroll interno*/
+}
+
 
 .fx {
     width: 10%;
@@ -25,6 +30,11 @@
 
 .dedo {
     object-position: 72%; 
+}
+
+.dedo:hover {
+    width: 100%;
+    height: 80%;
 }
 
 .ojo, .accidente2, .fran {
@@ -59,6 +69,16 @@
         height: 75vh;
     }
 
+    .gallery-item.dedo:hover, .gallery-item.ojo:hover {
+        width: 95%;
+        height: 32%;
+    }
+
+    .gallery-item.fetos:hover {
+        width: 95%;
+        height: 70%;
+    }
+
 }
 
 
@@ -68,7 +88,7 @@
         height: auto;
     }
 
-    .fx {
+    .figure.fx {
         display: flex;
         flex-basis: 40%;
         flex-flow: column;
@@ -85,13 +105,13 @@
     }
 
     .gallery-item.dedo:hover, .gallery-item.ojo:hover {
-        width: 95%;
-        height: 57vh;
+        width: 100%;
+        height: 38vh;
     }
 
     .gallery-item.fetos:hover {
-        width: 85%;
-        height: 78vh;
+        width: 95%;
+        height: 90%;
     }
 }
 
@@ -102,8 +122,7 @@
         height: auto;
     }
 
-    .fx {
-        width: 90%;
+    .figure.fx {
         display: flex;
         flex-basis: 33%;
         flex-flow: column;
@@ -119,12 +138,13 @@
     }
 
     .gallery-item.dedo:hover, .gallery-item.ojo:hover, .gallery-item.fran:hover {
-        width: 85%;
+        width: 100%;
         height: 57vh;
     }
 
     .gallery-item.fetos:hover {
-        width: 85%;
+        object-fit: contain;
+        width: 100%;
         height: 78vh;
     }
 
@@ -136,8 +156,7 @@
         height: auto;
     }
     
-    .fx {
-        width: 90%;
+    .figure.fx {
         display: flex;
         flex-basis: 33%;
         flex-flow: column;
@@ -147,14 +166,24 @@
         height: 75vh;
     }
 
-    .gallery-item.fran:hover, .gallery-item.ojo:hover, .gallery-item.fetos:hover, .gallery-item.dedo:hover {
-        width: 95%;
-        height: 65vh;
+    .gallery-item.dedo:hover, .gallery-item.ojo:hover {
+        width: 100%;
+        height: 55%;
+    }
+
+    .gallery-item.fran:hover {
+        width: 100%;
+        height: 78vh;
     }
 
     .gallery-item.botet:hover {
-        width: 57%;
+        width: 70%;
         height: 75vh;
+    }
+
+    .gallery-item.fetos:hover {
+        width: 95%;
+        height: 78vh;
     }
 }
 

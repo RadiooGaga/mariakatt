@@ -7,10 +7,12 @@
 }
 
 .figure {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     filter: grayscale(100%);
     transition: all 1.2s ease-in-out;
-    padding: 1px;
+    padding: 0 1px;
 }
 
 
@@ -18,16 +20,12 @@
     width: 100%;
     height: 100%;
     object-fit:cover; 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.407);
 }
 
 
 figcaption {
     display: none;
-    width: auto;
-    align-items: end;
-    position: relative;
-    bottom: 2em;
     padding: 0 10px;
     font-family: var(--font-family-2);
 }
@@ -40,9 +38,15 @@ figcaption {
 
 .figure:hover .figcaption {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.377);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(25, 24, 24, 0.648);
     font-size: var(--font-size-s);
+    align-items: center;
+    justify-content: end;
 }
+
 
 .image-placeholder {
     width: 100%;
@@ -102,6 +106,9 @@ figcaption {
     }
 
     .activePicture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed; 
         top: 50%;
         left: 50%; 
@@ -110,6 +117,12 @@ figcaption {
         opacity: 1; 
     }
 
+    .figure:hover .figcaption {
+        display: contents;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
+    }
 
 }
 
@@ -151,6 +164,13 @@ figcaption {
         transform: translate(-50%, -50%) scale(1);
         z-index: 10; 
         opacity: 1; 
+    }
+
+    .figure:hover .figcaption {
+        display: contents;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
     }
 
 }
@@ -197,8 +217,12 @@ figcaption {
         opacity: 1; 
     }
 
-
-
+    .figure:hover .figcaption {
+        display: contents;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -231,7 +255,6 @@ figcaption {
         opacity: 1; 
     }
 
-
     .overlay {
         position: fixed;
         top: 0;
@@ -242,13 +265,42 @@ figcaption {
         z-index: 1; /* Debajo de la imagen activa */
         opacity: 1; 
     }
+
+    .figure:hover .figcaption {
+        display: contents;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
+    }
 }
 
 @media (min-width: 1280px) and (max-width: 1443px) {
 
+    .figure:hover .figcaption {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
+        justify-content: end;
+    }
 
 }
 
-@media (min-width: 1444px) and (max-width: 1919px){
+@media (min-width: 1444px) and (max-width: 1919px) {
+
+    .figure:hover .figcaption {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(25, 24, 24, 0.648);
+        font-size: var(--font-size-s);
+        align-items: center;
+        justify-content: end;
+    }
+
 
 }
