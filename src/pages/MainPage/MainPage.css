@@ -31,7 +31,7 @@
 
     .coverMenu {
         display: flex;
-        position: absolute;
+        position: fixed;
         width: 100%;
         background-color: transparent;
         gap: 20px;
@@ -45,7 +45,7 @@
 
     .coverMenu {
         display: flex;
-        position: absolute;
+        position: fixed;
         width: 100%;
         background-color: transparent;
         gap: 20px;
