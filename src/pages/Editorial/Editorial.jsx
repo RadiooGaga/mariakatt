@@ -18,9 +18,6 @@ const galleryItems = [
 ];
 
 export const Editorial = () => {
-
-  console.log('me carga editorial')
-
   return (
     <section className='editorialSection'>
       <Gallery galleryItems={galleryItems} className={'editorial'}/>

@@ -10,6 +10,7 @@ import { Character } from './pages/Character/Character';
 import { Beauty } from './pages/Beauty/Beauty';
 import { Hair } from './pages/Hair/Hair';
 import { Fx } from './pages/Fx/Fx';
+import { Cursos } from './pages/Cursos/Cursos';
 import { Contact } from './pages/Contact/Contact';
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/beauty" element={<Beauty />} /> 
           <Route path="/hair" element={<Hair />} /> 
           <Route path="/fx" element={<Fx />} /> 
+          <Route path="/cursos" element={<Cursos />} /> 
           <Route path="/contact" element={<Contact />} /> 
             
           </Routes>

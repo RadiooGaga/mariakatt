@@ -20,7 +20,6 @@ const galleryItems = [
 
 
 export const Beauty = () => {
-  console.log('me carga beauty')
   return (
     <section className='beautySection'>
       <Gallery galleryItems={galleryItems} className={'beauty'}/>

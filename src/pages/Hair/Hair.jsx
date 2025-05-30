@@ -18,9 +18,6 @@ const galleryItems = [
 ];
 
 export const Hair = () => {
-
-  console.log('me carga hair')
-
   return (
     <section className='hairSection'>
       <Gallery galleryItems={galleryItems} className={'hair'} />

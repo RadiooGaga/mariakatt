@@ -17,7 +17,6 @@ const galleryItems = [
 
 
 export const Creative = () => {
-  console.log('me carga creative')
   return (
     <section className='creativeSection'>
       <Gallery galleryItems={galleryItems} className={'creative'}/>

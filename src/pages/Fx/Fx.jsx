@@ -21,7 +21,6 @@ const galleryItems = [
 ];
 
 export const Fx = () => {
-  console.log('me carga FX')
 
   const [ seeContent , setSeeContent ] = useState(false);
   const [ isScrollBlocked, setIsScrollBlocked ] = useState(true);

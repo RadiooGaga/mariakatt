@@ -19,8 +19,6 @@ const galleryItems = [
 
 
 export const Character = () => {
-    console.log("me carga character")
-    
     return (
         <section className='characterSection'>
             <Gallery galleryItems={galleryItems} className={'character'} />

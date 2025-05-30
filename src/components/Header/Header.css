@@ -27,6 +27,7 @@
         justify-content: space-between;
         align-items:center;
         height: 12vh;
+        padding: 0 10px;
     }
 
     .divHeader.header-pink {
@@ -43,6 +44,7 @@
         justify-content: space-between;
         align-items:center;
         height: 12vh;
+        padding: 0 16px;
     }
 
     .divHeader.header-pink {
