@@ -105,5 +105,12 @@
         align-items:center;
         background-color: var(--color-transparent);
     }
+
+    .divHeader.header-pink {
+        background-color: var(--color-babyPink) ;
+        height: 17vh;
+   
+    }
+
 }
 

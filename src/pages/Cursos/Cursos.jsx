@@ -13,7 +13,7 @@ export const Cursos = () => {
     <section className='educationSection'>
       <h2 className='warning'>ZONA EN CONSTRUCCIoN 🚧 </h2>
       <span>🫠</span>
-      <h2 className='volver' onClick={handleGoBack}>VOLVER</h2>
+      <h2 className='vuelta' onClick={handleGoBack}>VOLVER</h2>
     </section>
   );
 }

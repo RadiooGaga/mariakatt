@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import { useNavigate } from 'react-router-dom'
+import { ContactForm } from '../../components/Form/Form'
 
 export const Contact = () => {
 
@@ -11,10 +12,10 @@ export const Contact = () => {
 
   return (
     <section className='contactSection'>
-      <h2 className='warning'>ESTA WEB ESTA EN CONSTRUCCION, PERO PUEDES ENVIARME TU MENSAJE A ESTE MAIL </h2>
-      <h3 className='mail'>mariahkatt@gmail.com</h3>
-      <span>🫠</span>
+      <ContactForm />
       <h2 className='volver' onClick={handleGoBack}>VOLVER</h2>
+
+     
     </section>
   );
 }

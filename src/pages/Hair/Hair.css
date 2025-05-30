@@ -165,11 +165,11 @@
 @media (min-width: 1444px) and (max-width: 1919px) {
 
     .hair {
-        width: 0%;
+        width: 20%;
     }
     
     .hair:hover {
-        width: 40%;
+        width: 30%;
     }
 }
 
