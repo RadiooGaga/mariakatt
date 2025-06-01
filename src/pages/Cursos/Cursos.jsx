@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import './Cursos.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -16,5 +16,5 @@ export const Cursos = () => {
       <h2 className='vuelta' onClick={handleGoBack}>VOLVER</h2>
     </section>
   );
-}
+}*/
 

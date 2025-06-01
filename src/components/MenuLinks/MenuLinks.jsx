@@ -10,7 +10,7 @@ const menuItems = [
   { name: "BEAUTY", path: "/beauty" },
   { name: "PELO", path: "/hair" },
   { name: "FX", path: "/fx" },
-  { name: "CURSOS", path: "/cursos" },
+  //{ name: "CURSOS", path: "/cursos" },
   { name: "CONTACTO", path: "/contact" }
 ];
 
