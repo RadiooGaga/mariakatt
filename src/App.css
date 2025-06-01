@@ -7,21 +7,21 @@
 
 @font-face {
     font-family: 'portd';
-    src: url('/assets/fonts/portd___.ttf') format('truetype');
+    src: url('../src/fonts/portd___.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'sageffine';
-    src: url('/assets/fonts/sageffine-cdnfonts/Sageffine-BF654db192d17bd.otf') format('truetype');
+    src: url('../src/fonts/sageffine-cdnfonts/Sageffine-BF654db192d17bd.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'instrument';
-    src: url('/assets/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+    src: url('../src/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

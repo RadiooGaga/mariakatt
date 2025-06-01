@@ -9,7 +9,7 @@ export const CoverPicture = () => {
     <div className='coverPictureDiv'>
       <img 
       className='coverImage' 
-      src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1742839856/makeup/creative/orange_puppet_gekj2f.webp`} 
+      src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748787152/makeup/pics/orange_puppet_cwebsa.webp`} 
       alt="coverImage" />
     </div>
   )

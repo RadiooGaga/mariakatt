@@ -38,7 +38,7 @@ export const Bio = () => {
       </div>
 
       <div className='bioPictureDiv'>
-        <img className='bioPic' src="/assets/pics/bannerBig.webp" alt="bioPic" />
+        <img className='bioPic' src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748787152/makeup/pics/premios-fugaz_px3scn.webp`} alt="bioPic" />
       </div>
 
       <div className='biographyDiv'>

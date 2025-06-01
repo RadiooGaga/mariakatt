@@ -1,6 +1,7 @@
 import React from 'react'
 import './Logo.css'
 import { useNavigate } from 'react-router-dom'
+import { micloudinary } from '../../utils/config'
 
 export const Logo = ({width}) => {
 
@@ -12,7 +13,7 @@ export const Logo = ({width}) => {
 
   return (
     <div className='divLogo' onClick={handleClickLogo} style={{ width: width }}>
-        <img className='logo' src="/assets/pics/MKlogoWebTransparente.png" alt="logo" />
+        <img className='logo' src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748612335/makeup/logos/MKlogoWebTransparente_xzgwqv.png`} alt="logo" />
     </div>
   )
 }
