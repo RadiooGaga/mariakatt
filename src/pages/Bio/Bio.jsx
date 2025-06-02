@@ -38,14 +38,14 @@ export const Bio = () => {
       </div>
 
       <div className='bioPictureDiv'>
-        <img className='bioPic' src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748787152/makeup/pics/premios-fugaz_px3scn.webp`} alt="bioPic" />
+        <img className='bioPic' src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748787151/makeup/pics/bannerBig_z1ob3c.webp`} alt="bioPic" />
       </div>
 
       <div className='biographyDiv'>
         <p className='bioParagraph'>Con una trayectoria de casi 20 años, inicio mi carrera trabajando en salones de peluquería de señora y caballero en <strong>Gijón</strong>, mi ciudad natal, y en <strong>Fuerteventura</strong>. Durante esos primeros años, comienzo a colaborar en sesiones fotográficas como maquilladora, peluquera y modelo.
         <br />
         <br />
-        <img src="/assets/pics/premios-fugaz.webp" alt="MFW" className='mob' />
+        <img src={`https://res.cloudinary.com/${micloudinary}/image/upload/v1748787152/makeup/pics/premios-fugaz_px3scn.webp`} alt="MFW" className='mob' />
         En 2009, me traslado a <strong>Madrid</strong> para estudiar <strong>maquillaje de caracterización de personajes y modelado de prótesis</strong> en las escuelas <strong>Truhko Makeup</strong> y <strong>Harpo</strong>. A partir de entonces, he compaginado de manera continua el maquillaje y la peluquería social en salones de belleza, eventos y novias, con trabajos en el ámbito audiovisual. 
         En 2011, me incorporo a <strong>New Young Creatives</strong>, una división dentro de la agencia de moda editorial <strong>Talents</strong> dedicada a jóvenes maquilladores, donde trabajo en editoriales para <strong>Vogue España, El País Semanal, GQ, Glamour, Amazon BuyVip y Madrid Fashion Week.</strong> En esta misma agencia, asisto a maquilladores de renombre como <strong>Jordi Fontanals, Daniel Céspedes y José Luis Ruzafa</strong>.
         <br />
