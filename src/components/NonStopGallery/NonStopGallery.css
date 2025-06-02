@@ -2,6 +2,7 @@
     width: 100%;  
     height: 60vh;
     overflow: hidden; /* importante */
+    margin-top: 20px;
 }
 
 .carrousel {
@@ -22,6 +23,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 0 1px;
 }
 
 .adjusted1 {
@@ -33,7 +35,11 @@
 }
 
 .adjusted3 {
-    object-position: 0% 10%;
+    object-position: 30% 10%;
+}
+
+.adjusted4 {
+    object-position: 80% 0% ;
 }
 
 
