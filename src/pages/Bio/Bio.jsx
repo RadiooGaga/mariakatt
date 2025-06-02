@@ -3,18 +3,9 @@ import './Bio.css'
 import { NonStopGallery } from '../../components/NonStopGallery/NonStopGallery'
 import { micloudinary } from '../../utils/config'
 import { Header } from '../../components/Header/Header';
+import { carrouselItems } from '../../utils/carrouselItems.js';
 
-const carrouselItems = [
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444204/makeup/celebrities/Javier-Botet-y-Patricia-Vazquez_iielu8.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443458/makeup/celebrities/Julia%CC%81n-Lopez_kl0ipr.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443689/makeup/celebrities/Aria-Bedmar_atznxp.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746443800/makeup/celebrities/Angy-Fernandez_rdrjhq.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444011/makeup/celebrities/Goyo-Jimenez_njmemv.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444352/makeup/celebrities/Cristina-Brondo_vgwqli.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444484/makeup/celebrities/Carlos-Manuel-Diaz_g1tawb.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444724/makeup/celebrities/Chacha-Huang_oaszkj.webp`},
-  {img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1746444974/makeup/celebrities/Mad-Max-Payne_vvegx3.webp`}
-];
+
 
 
 export const Bio = () => {

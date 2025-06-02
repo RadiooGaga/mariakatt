@@ -119,6 +119,11 @@ strong {
     background-color: var( --color-babyWhite);
 }
 
+.adjusted {
+    filter: grayscale(0%);
+    object-position: 0% 50%;
+}
+
 
 
 
