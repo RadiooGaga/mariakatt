@@ -10,16 +10,27 @@
     gap: 30px;
 }
 
-.creative {
+.container.creative {
+    display: flex;
+    width: 95%;
+    height: 100%;  
+    overflow: hidden;
+}
+
+.figure.creative {
     width: 20%;
 }
 
-.creative:hover {
+.figure.creative:hover {
     width: 60%;
 }
 
-.creativo1, .creativo2, .creativo8 {
+.creativo1, .creativo2, .creativo8, .creativo5 {
     object-position: 55%;
+}
+
+.creativo9 {
+    object-position: 45%;
 }
 
 .creativo3 {
@@ -39,19 +50,11 @@
     }
 
     .figure.creative {
-        display: flex;
         flex-basis: 60%;
-        flex-flow: column;
     }
 
-    .creative:hover {
-        width: 95%;
-        height: 75vh;
-    }
-
-    .gallery-item.creativo3 {
-        width: 95%;
-        height: 55vh;
+    .figure.creative:hover {
+        min-width: 500px;
     }
 }
 
@@ -62,15 +65,12 @@
         height: auto;
     }
 
-    .creative:hover {
-        width: 95%;
-        height: 70%;
+    .figure.creative {
+        flex-basis: 40%;
     }
 
-    .figure.creative {
-        display: flex;
-        flex-flow: column;
-        flex-basis: 40%;
+    .figure.creative:hover {
+        min-width: 650px;
     }
 }
 
@@ -82,16 +82,12 @@
     }
     
     .figure.creative {
-        display: flex;
-        flex-flow: column;
         flex-basis: 33%;
     }
 
-    .creative:hover {
-       height: 75vh;
+    .figure.creative:hover {
+        width: 95%;
     }
-   
-
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
@@ -106,7 +102,8 @@
         flex-basis: 33%;
     }
 
-    .creative:hover {
+    .figure.creative:hover {
+        width: 95%;
         height: 75vh;
     }
 

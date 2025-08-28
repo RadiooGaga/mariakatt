@@ -37,7 +37,7 @@ export const Gallery = ({ galleryItems, className }) => {
   return (
     <>
       <Header />
-      <div className={`container ${isMobile ? 'container-smartPhone' : ''}`}>
+      <div className={`container ${isMobile ? 'container-smartPhone' : ''} ${className || ''}`}>
       {activeIndex !== null && isMobile && (
           <div className="overlay" onClick={handleClose}></div>
         )}
@@ -47,15 +47,28 @@ export const Gallery = ({ galleryItems, className }) => {
             className={`figure ${className || ''} ${activeIndex === index ? 'activePicture' : ''}`}
             onClick={() => handleImageClick(index)}
           >
-            <img
-              src={item.img}
-              alt={`Imagen ${index}`}
-              className={`gallery-item ${item.className || ''}`}
-            />
-            <figcaption className="figcaption" style={{ color: item.color }}>
-              {item.caption}
-            </figcaption>
-          </figure>
+         {item.video ? (
+        <video
+            className={`gallery-video ${item.className || ''}`}
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={item.video} type="video/mp4" />
+            Tu navegador no soporta la reproducción de vídeo.
+          </video>
+        ) : (
+          <img
+            src={item.img}
+            alt={`Imagen ${index}`}
+            className={`gallery-item ${item.className || ''}`}
+          />
+        )}
+        <figcaption className="figcaption" style={{ color: item.color }}>
+          {item.caption}
+        </figcaption>
+      </figure>
         ))}
        
       </div>

@@ -19,11 +19,10 @@ export const Bio = () => {
         {/*<h2 className='bioH2'>BIO</h2>*/}
         <blockquote>
         “Muchas veces se asocia el maquillaje solo con la belleza, pero en realidad es mucho más. Es arte, es cultura y tiene la capacidad de contar historias a través de las personas. No siempre son historias bonitas, y eso fue precisamente lo que me atrapó desde pequeña. 
-        <br />
         Un cambio de look puede significar muchas cosas: un nuevo comienzo, una forma de cuidarse, de subir la autoestima o simplemente de sentirse diferente un día especial. Hay quien no puede vivir sin maquillarse y quien no lo necesita en absoluto.
-        <br />
+        <br /><br />
         En el caso de actores y actrices, esa transformación forma parte de su trabajo. El maquillaje les ayuda a convertirse en el personaje que interpretan, a defender una historia que no es la suya, pero que deben hacer suya por completo.
-        <br />
+        <br /><br />
         Porque al final, nuestra imagen siempre cuenta algo. Sea mucho o poco, siempre dice algo de nosotros. Y cuando alguien que ha pasado por mis manos se mira al espejo, sonríe y se reconoce en lo que ve —sea en su día a día o en un escenario—, entonces sé que he hecho bien mi trabajo.”
         </blockquote>
       </div>

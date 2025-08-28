@@ -10,12 +10,19 @@
     gap: 30px;
 }
 
+.container.editorial {
+    display: flex;
+    width: 95%;
+    height: 100%;  
+    overflow: hidden;
+}
 
-.editorial {
+
+.figure.editorial {
     width: 20%;
 }
 
-.editorial:hover {
+.figure.editorial:hover {
     width: 60%;
 }
 
@@ -53,12 +60,10 @@
     }
 
     .figure.editorial {
-        display: flex;
         flex-basis: 60%;
-        flex-flow: column;
     }
 
-    .editorial:hover {
+    .figure.editorial:hover {
         width: 95%;
         height: 75vh;
     }
@@ -73,12 +78,10 @@
     }
     
     .figure.editorial {
-        display: flex;
         flex-basis:40%;
-        flex-flow: column;
     }
 
-    .editorial:hover {
+    .figure.editorial:hover {
         width: 95%;
         height: 75vh;
     }
@@ -97,7 +100,7 @@
         flex-flow: column;
     }
 
-    .editorial:hover {
+    .figure.editorial:hover {
         height: 75vh;
     }
 
@@ -115,7 +118,7 @@
         flex-flow: column;
     }
 
-    .editorial:hover {
+    .figure.editorial:hover {
         height: 75vh;
     }
 
@@ -125,21 +128,21 @@
 @media (min-width: 1280px) and  (max-width: 1443px) {
 
 
-    .editorial {
+    .figure.editorial {
         width: 0%;
     }
-    .editorial:hover {
+    .figure.editorial:hover {
         width: 40%;
     }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .editorial {
+    .figure.editorial {
         width: 0%;
     }
     
-    .editorial:hover {
+    .figure.editorial:hover {
         width: 20%;
     }
 }

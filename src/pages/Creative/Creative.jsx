@@ -11,7 +11,8 @@ const galleryItems = [
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493269/makeup/creative/creativo5_w8otvn.webp`, caption: "", className: 'creativo5', color: "grey"},
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493432/makeup/creative/creativo6_xwb7r6.webp`, caption: "john galiano",className: 'creativo6', color: "whitesmoke"},
   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493689/makeup/creative/creativo7_igornu.webp`, caption: "inspo: is she hungry", className: 'creativo7',color: "whitesmoke"},
-  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493990/makeup/creative/creativo8_wsonqc.webp`, caption: "", className: 'creativo8', color: "whitesmoke"}
+  { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1745493990/makeup/creative/creativo8_wsonqc.webp`, caption: "", className: 'creativo8', color: "whitesmoke"},
+   { img: `https://res.cloudinary.com/${micloudinary}/image/upload/v1756404109/makeup/hair/zombieboy_oqo0vt.webp`, caption: "", className: 'creativo9', color: "whitesmoke"}
 
 ];
 

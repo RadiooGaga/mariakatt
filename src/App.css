@@ -92,7 +92,7 @@
     --color-softGreen: #b7ceb1;
     --color-limeGreen: #d5f59f;
     --color-babyWhite:#f7f7f7;
-    --color-babyWhiteClear:#f7f7f7d2; 
+    --color-babyWhiteClear:#f7f7f7e3; 
   
   }
   
@@ -105,3 +105,4 @@
     max-width: 100vw;
   }
   
+

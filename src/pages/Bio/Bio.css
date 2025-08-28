@@ -65,6 +65,10 @@ blockquote, .bioParagraph, .studiesList {
     letter-spacing: 0.2px;
 }
 
+blockquote {
+    width: 70%;
+}
+
 .bioParagraph, .studiesList {
     text-align: justify;
     list-style: none; 

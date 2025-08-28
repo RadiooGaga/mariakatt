@@ -10,11 +10,18 @@
     gap: 30px;
 }
 
-.character {
+.container.character  {
+    display: flex;
+    width: 95%;
+    height: 100%;  
+    overflow: hidden;
+}
+
+.figure.character {
     width: 10%;
 }
 
-.character:hover {
+.figure.character:hover {
     width: 30%;
 }
 
@@ -51,7 +58,7 @@
         flex-flow: column;
     }
 
-    .character:hover {
+    .figure.character:hover {
         width: 95%;
         height: 75vh;
     }
@@ -71,7 +78,7 @@
         flex-basis: 45%;
     }
     
-    .character:hover {
+    .figure.character:hover {
         width: 95%;
         height: 75vh;
     }
@@ -90,7 +97,7 @@
         flex-basis: 45%;
     }
 
-    .character:hover {
+    .figure.character:hover {
         width: 95%;
         height: 75vh;
     }
@@ -111,7 +118,7 @@
         flex-basis: 33%;
     }
 
-    .character:hover {
+    .figure.character:hover {
         height: 75vh;
     }
 }
@@ -132,11 +139,11 @@
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .character {
+    .figure.character {
         width: 20%;
     }
 
-    .character:hover {
+    .figure.character:hover {
         width: 60%;
     }
     

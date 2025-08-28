@@ -1,5 +1,5 @@
 
-.container {
+.container  {
     display: flex;
     width: 95%;
     height: 100%;  
@@ -91,6 +91,7 @@ figcaption {
         padding: 2px;
         transition: transform 0.5s ease, opacity 0.9s ease;
         position: relative;
+        flex-flow: column;
     }
 
 
@@ -141,6 +142,7 @@ figcaption {
         padding: 2px;
         flex-grow: 1;
         transition: transform 0.5s ease, opacity 0.9s ease;
+        flex-flow: column;
     }
     
     .overlay {

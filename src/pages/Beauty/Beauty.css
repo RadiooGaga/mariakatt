@@ -10,11 +10,18 @@
     gap: 30px;
 }
 
-.beauty {
+.container.beauty {
+    display: flex;
+    width: 95%;
+    height: 100%;  
+    overflow: hidden;
+}
+
+.figure.beauty {
     width: 10%;
 }
 
-.beauty:hover {
+.figure.beauty:hover {
     width: 30%;
 }
 
@@ -51,12 +58,10 @@
     }
 
     .figure.beauty {
-        display: flex;
         flex-basis: 60%;
-        flex-flow: column;
     }
 
-    .beauty:hover {
+    .figure.beauty:hover {
         width: 95%;
         height: 75vh;
     }
@@ -72,11 +77,10 @@
 
     .figure.beauty {
         display: flex;
-        flex-basis: 33%;
-        flex-flow: column;
+        flex-basis: 45%;
     }
 
-    .beauty:hover {
+    .figure.beauty:hover {
         width: 85%;
         height: 75vh;
     }
@@ -99,7 +103,7 @@
         flex-flow: column;
     }
 
-    .beauty:hover {
+    .figure.beauty:hover {
         width: 80%;
         height: 75vh;
     }
@@ -118,30 +122,31 @@
         flex-flow: column;
     }
 
-    .beauty:hover {
-        width: 50%;
-        height: 75vh;
+    .figure.beauty:hover {
+        width: 95%;
+        height: 80vh;
+
     }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
 
 
-    .beauty {
+    .figure.beauty {
         width: 10%;
     }
-    .beauty:hover {
+    .figure.beauty:hover {
         width: 35%;
     }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .beauty {
+    .figure.beauty {
         width: 10%;
     }
     
-    .beauty:hover {
+    .figure.beauty:hover {
         width: 30%;
     }
 }
