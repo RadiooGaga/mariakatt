@@ -26,6 +26,13 @@
     font-style: normal;
   }
 
+    @font-face {
+    font-family: 't-star';
+    src: url('../src/fonts/t-star/TStarProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   
   :root {
 
@@ -34,6 +41,7 @@
     --font-family-1: 'portd';
     --font-family-2: 'sageffine';
     --font-family-3: 'instrument';
+    --font-family-4: 't-star';
   
     --font-size-xxs: 10px;
     --font-size-xs: 14px;
