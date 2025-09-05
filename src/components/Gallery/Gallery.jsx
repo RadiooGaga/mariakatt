@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useIsSmartphone } from '../../utils/hooks';
 import { Header } from '../Header/Header';
 import './Gallery.css';
 
 export const Gallery = ({ galleryItems, className }) => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth <= 1279);
-    };
-
-    checkIsMobile();
-    window.addEventListener('resize', checkIsMobile);
-    return () => window.removeEventListener('resize', checkIsMobile);
-  }, []);
+  const isSmartphone = useIsSmartphone();
 
   const handleImageClick = (index) => {
     //console.log(index)
@@ -37,8 +28,8 @@ export const Gallery = ({ galleryItems, className }) => {
   return (
     <>
       <Header />
-      <div className={`container ${isMobile ? 'container-smartPhone' : ''} ${className || ''}`}>
-      {activeIndex !== null && isMobile && (
+      <div className={`container ${isSmartphone ? 'container-smartPhone' : ''} ${className || ''}`}>
+      {activeIndex !== null && isSmartphone && (
           <div className="overlay" onClick={handleClose}></div>
         )}
         {galleryItems.map((item, index) => (
