@@ -18,12 +18,12 @@ export const Bio = () => {
       <div className='introBioDiv'>
         {/*<h2 className='bioH2'>BIO</h2>*/}
         <blockquote>
-        “Muchas veces se asocia el maquillaje solo con la belleza, pero en realidad es mucho más. Es arte, es cultura y tiene la capacidad de contar historias a través de las personas. No siempre son historias bonitas, y eso fue precisamente lo que me atrapó desde pequeña. 
-        Un cambio de look puede significar muchas cosas: un nuevo comienzo, una forma de cuidarse, de subir la autoestima o simplemente de sentirse diferente un día especial. Hay quien no puede vivir sin maquillarse y quien no lo necesita en absoluto.
+        “A menudo se asocia el maquillaje únicamente con la belleza, pero en realidad va mucho más allá. Es arte, es cultura y tiene el poder de contar historias a través de cada persona. No siempre son historias agradables, y precisamente eso fue lo que me fascinó desde niña.
+        Un cambio de look puede tener muchos significados: un nuevo comienzo, una manera de cuidarse, de aumentar la autoestima o simplemente de sentirse diferente en un día especial. Hay personas que no conciben su vida sin maquillaje y otras que no lo necesitan en absoluto.
         <br /><br />
-        En el caso de actores y actrices, esa transformación forma parte de su trabajo. El maquillaje les ayuda a convertirse en el personaje que interpretan, a defender una historia que no es la suya, pero que deben hacer suya por completo.
+        Para actores y actrices, esta transformación es parte esencial de su trabajo. El maquillaje les permite encarnar a un personaje, dar vida a una historia que no es la suya, pero que deben hacer completamente propia.
         <br /><br />
-        Porque al final, nuestra imagen siempre cuenta algo. Sea mucho o poco, siempre dice algo de nosotros. Y cuando alguien que ha pasado por mis manos se mira al espejo, sonríe y se reconoce en lo que ve —sea en su día a día o en un escenario—, entonces sé que he hecho bien mi trabajo.”
+        Al final, nuestra imagen siempre comunica algo. Sea mucho o poco, siempre transmite un mensaje sobre nosotros. Y cuando alguien que ha pasado por mis manos se mira al espejo, sonríe y se reconoce —ya sea en su día a día o en un escenario—, sé que he cumplido con mi propósito profesional y humano.”
         </blockquote>
       </div>
 
@@ -55,7 +55,9 @@ export const Bio = () => {
         En 2021 y 2022, obtengo <strong> 2 nominaciones a Mejor Maquillaje y Peluquería</strong> en los <strong>Premios Lorca</strong> por <em>El Último Vaso</em> y en los <strong>Premios Fugaz</strong> por <em>Sauerdogs</em>, respectivamente.
         <br />
         <br />
-        Actualmente vivo en Málaga.
+        Me mudo a Málaga en 2022 y aquí, realizo estudios de programación web full stack durante 2 años.
+        Actualmente vivo en Málaga y tanto el maquillaje y el hair art como la programación son mis actuales pasiones.
+        Disfruto conviviendo con ambasy cada una ocupa su espacio en mi día a día, permitiendo expresarme y desarrollarme de formas distintas.
         </p>
       </div> 
 
