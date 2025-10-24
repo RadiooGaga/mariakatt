@@ -55,7 +55,7 @@ export const Bio = () => {
         En 2021 y 2022, obtengo <strong> 2 nominaciones a Mejor Maquillaje y Peluquería</strong> en los <strong>Premios Lorca</strong> por <em>El Último Vaso</em> y en los <strong>Premios Fugaz</strong> por <em>Sauerdogs</em>, respectivamente.
         <br />
         <br />
-        Me mudo a Málaga en 2022 y aquí, realizo estudios de programación web full stack durante 2 años.
+        Me mudo a Málaga en 2022 y aquí, realizo estudios de programación web full stack durante 2 años en <strong>The Power MBA.</strong>
         Actualmente vivo en Málaga y tanto el maquillaje y el hair art como la programación son mis actuales pasiones.
         Disfruto conviviendo con ambasy cada una ocupa su espacio en mi día a día, permitiendo expresarme y desarrollarme de formas distintas.
         </p>
