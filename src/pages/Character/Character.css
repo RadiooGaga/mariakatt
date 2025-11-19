@@ -91,15 +91,5 @@
 }
 
 
-@media (min-width: 1280px) and (max-width: 1919px) {
 
-    .character {
-        width: 20%;
-    }
-
-    .character:hover {
-        width: 60%;
-    }
-    
-}
 

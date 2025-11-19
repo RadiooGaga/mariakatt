@@ -1,23 +1,8 @@
-.figure.creative {
-    width: 20%;
-}
-
-.figure.creative:hover {
-    width: 30%;
-}
-
-.creativo1, .creativo2, .creativo8, .creativo5 {
-    object-position: 55%;
-}
-
-.creativo9 {
-    object-position: 45%;
-}
-
-.creativo3 {
-    object-position: 35%;
-}
-
+.figure.creative { width: 20%; }
+.figure.creative:hover { width: 70%; }
+.creativo1, .creativo2, .creativo8, .creativo5 { object-position: 55%; }
+.creativo9 { object-position: 45%; }
+.creativo3 { object-position: 35%; }
 
 
 
@@ -36,7 +21,7 @@
     }
 
     .creativo3:hover {
-        height: 85%;
+        height: 82%;
     }
 }
 
@@ -84,24 +69,11 @@
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
     
-    .creative {
+    .figure.creative {
         width: 10%;
-    }
-    .creative:hover {
-        width: 40%;
     }
 }
 
-@media (min-width: 1444px) and (max-width: 1919px) {
-
-    .creative {
-        width: 10%;
-    }
-
-    .creative:hover {
-        width: 30%;
-    }
-}
 
 
 
