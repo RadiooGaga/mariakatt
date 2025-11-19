@@ -26,9 +26,16 @@
     font-style: normal;
   }
 
-    @font-face {
+  @font-face {
     font-family: 't-star';
     src: url('../src/fonts/t-star/TStarProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'montserrat';
+    src: url('../src/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -42,6 +49,7 @@
     --font-family-2: 'sageffine';
     --font-family-3: 'instrument';
     --font-family-4: 't-star';
+    --font-family-5: 'montserrat';
   
     --font-size-xxs: 10px;
     --font-size-xs: 14px;

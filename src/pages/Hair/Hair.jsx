@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../components/Gallery/Gallery.css'
 import './Hair.css'
 import { micloudinary } from '../../utils/config'
 import { Gallery } from '../../components/Gallery/Gallery';
@@ -27,7 +28,7 @@ const galleryItems = [
 
 export const Hair = () => {
   return (
-    <section className='hairSection'>
+    <section className='gallerySection'>
       <Gallery galleryItems={galleryItems} className={'hair'} />
     </section>
   )

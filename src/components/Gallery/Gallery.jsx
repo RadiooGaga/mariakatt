@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useIsSmartphone } from '../../utils/hooks';
 import { Header } from '../Header/Header';
 import './Gallery.css';
 
 export const Gallery = ({ galleryItems, className }) => {
+  const [figcaption, setFigcaption] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const isSmartphone = useIsSmartphone();
 
@@ -11,7 +12,10 @@ export const Gallery = ({ galleryItems, className }) => {
     //console.log(index)
     if (activeIndex === index) {
       setActiveIndex(null); // Si ya está activa, al hacer click otra vez se cierra
+      setFigcaption(false)
     } else {
+      const hasCaption = !!galleryItems[index].caption?.trim();
+      setFigcaption(hasCaption);
       setActiveIndex(index);
     }
   };
@@ -55,10 +59,17 @@ export const Gallery = ({ galleryItems, className }) => {
             alt={`Imagen ${index}`}
             className={`gallery-item ${item.className || ''}`}
           />
-        )}
-        <figcaption className="figcaption" style={{ color: item.color }}>
-          {item.caption}
-        </figcaption>
+           )}
+            {item.caption?.trim() && (
+            <figcaption
+              className={`figcaption ${
+                isSmartphone && activeIndex === index ? 'visible' : ''
+              }`}
+              style={{ color: item.color }}
+            >
+              {item.caption}
+            </figcaption>
+          )}
       </figure>
         ))}
        
