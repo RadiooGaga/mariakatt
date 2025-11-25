@@ -1,5 +1,6 @@
 .figure.editorial { width: 20% }
 .figure.editorial:hover { width: 60% }
+.figure.editorial.activePicture { width: 30% }
 .editorial0 { object-position: 12% }
 .editorial1, .editorial6 { object-position: 46% }
 .editorial2, .editorial7 { object-position: 35% } 
@@ -14,7 +15,7 @@
 
     .figure.editorial { flex-basis: 60% }
 
-    .figure.editorial:hover {
+    .figure.editorial.activePicture {
         width: 95%;
         height: 75vh;
     }
@@ -24,7 +25,7 @@
 
     .figure.editorial { flex-basis:40% }
 
-    .figure.editorial:hover {
+    .figure.editorial.activePicture {
         width: 95%;
         height: 75vh;
     }
@@ -32,36 +33,32 @@
 
 @media (min-width: 769px) and (max-width: 1023px) {
 
-    
     .figure.editorial {
-        display: flex;
         flex-basis: 33%;
-        flex-flow: column;
     }
 
-    .figure.editorial:hover { height: 75vh }
+    .figure.editorial.activePicture { 
+        width: 55%;
+    }
 
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
-    .figure.editorial {
-        display: flex;
-        flex-basis: 33%;
-        flex-flow: column;
-    }
-
-    .figure.editorial:hover { height: 75vh }
+    .figure.editorial { flex-basis: 33% }
+    .figure.editorial.activePicture { width: 55% }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
 
     .figure.editorial { width: 0% }
-    .figure.editorial:hover { width: 40% }
+    .figure.editorial:hover { width: 20% }
+    .figure.editorial.activePicture { width: 60% }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
     .figure.editorial { width: 0% }
     .figure.editorial:hover { width: 20% }
+    .figure.editorial.activePicture { width: 40% }
 }

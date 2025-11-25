@@ -1,5 +1,6 @@
 .figure.beauty { width: 10% }
 .figure.beauty:hover { width: 30% }
+.figure.beauty.activePicture { width: 40% }
 .beauty1 { object-position: 55% }
 .beauty3 { object-position: 70% }
 .beauty2 { object-position: 85% }
@@ -12,85 +13,53 @@
 
 @media (max-width: 480px) {
 
-    .figure.beauty {
-        flex-basis: 60%;
-    }
-
-    .figure.beauty:hover {
+    .figure.beauty { flex-basis: 60% }
+    .figure.beauty.activePicture {
         width: 95%;
         height: 75vh;
     }
 }
 
-
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .figure.beauty {
-        display: flex;
-        flex-basis: 45%;
-    }
-
-    .figure.beauty:hover {
+    .figure.beauty { flex-basis: 45% }
+    .figure.beauty.activePicture{
         width: 85%;
         height: 75vh;
     }
-
     .beauty1, .beauty3 {
         object-position: 75%; 
     }
 }
 
-
 @media (min-width: 769px) and (max-width: 1023px) {
 
-    .figure.beauty {
-        display: flex;
-        flex-basis: 33%;
-        flex-flow: column;
-    }
-
-    .figure.beauty:hover {
+    .figure.beauty { flex-basis: 33% }
+    .figure.beauty.activePicture {
         width: 80%;
         height: 75vh;
     }
-    
 }
 
 @media (min-width: 1024px) and  (max-width: 1279px) {
 
-    .figure.beauty {
-        display: flex;
-        flex-basis: 33%;
-        flex-flow: column;
-    }
-
-    .figure.beauty:hover {
-        width: 95%;
-        height: 80vh;
-
+    .figure.beauty { flex-basis: 33% }
+    .figure.beauty.activePicture {
+        width: 60%;
+        height: 90%;
     }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
-
-
-    .figure.beauty {
-        width: 10%;
-    }
-    .figure.beauty:hover {
-        width: 35%;
-    }
+    .figure.beauty { width: 10% }
+    .figure.beauty:hover { width: 30% }
+    .figure.beauty.activePicture { width: 60% }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
-
-    .figure.beauty {
-        width: 10%;
-    }
-    
-    .figure.beauty:hover {
-        width: 30%;
-    }
+    .figure.beauty { width: 10% }
+    .figure.beauty:hover { width: 30% }
+    .figure.beauty.activePicture { width: 40% }
 }
 
 

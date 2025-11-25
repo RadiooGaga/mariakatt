@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { micloudinary } from '../../utils/config'
 import { Gallery } from '../../components/Gallery/Gallery';
 import { Warning } from '../../components/Warning/Warning';
+import '../../components/Gallery/Gallery.css'
 
 
 const galleryItems = [
@@ -53,7 +54,7 @@ export const Fx = () => {
 
   const handleCancel = () => {
     console.log('El usuario rechazó ver el contenido');
-    navigate('/bio'); // Cambia '/otra-ruta' por la página a la que quieres redirigir
+    navigate('/'); // Cambia '/otra-ruta' por la página a la que quieres redirigir
   };
 
 
