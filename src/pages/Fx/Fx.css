@@ -6,7 +6,7 @@
     align-items: center;
     padding: 5px 0 5px;
     justify-content: center;
-    background-color:var(--color-babyWhite);
+    background-color:var(--babyWhite);
     gap: 30px;
 }
 

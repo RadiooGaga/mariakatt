@@ -6,7 +6,7 @@
     align-items: center;
     padding: 5px 0 5px;
     justify-content: center;
-    background-color:var(--color-babyWhite); 
+    background-color:var(--babyWhite); 
     gap: 30px;
 }
 
@@ -90,7 +90,7 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var( --color-babyWhite);
+    background-color: var( --babyWhite);
     color: red;
     font-size: var(--font-size-s);
 }
@@ -105,7 +105,7 @@ figcaption {
 
 .loading.loadingVisible {
     opacity: 1;
-    color: var(--color-turquoise);
+    color: var(--turquoise);
 }
 
 

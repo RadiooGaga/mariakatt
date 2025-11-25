@@ -7,7 +7,7 @@
     width: 70px; /* esto es lo modificable a la hora del responsive */
     height: auto;
     cursor: pointer;
-    background-color: var(--color-transparent);
+    background-color: var(--transparent);
 }
 
 .logo {

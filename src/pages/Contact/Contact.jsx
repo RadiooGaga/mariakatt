@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Contact.css'
 import { useNavigate } from 'react-router-dom'
 import { ContactForm } from '../../components/Form/Form'
+import './Contact.css'
 
 export const Contact = () => {
 
@@ -14,8 +14,6 @@ export const Contact = () => {
     <section className='contactSection'>
       <ContactForm />
       <h2 className='volver' onClick={handleGoBack}>VOLVER</h2>
-
-     
     </section>
   );
 }

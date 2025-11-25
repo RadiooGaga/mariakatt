@@ -11,6 +11,7 @@ const menuItems = [
   { name: "PELO", path: "/hair" },
   { name: "FX", path: "/fx" },
   //{ name: "CURSOS", path: "/cursos" },
+  //{ name: "TARIFAS", path: "/pricing" },
   { name: "CONTACTO", path: "/contact" }
 ];
 

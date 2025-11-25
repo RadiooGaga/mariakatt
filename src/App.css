@@ -43,7 +43,7 @@
   
   :root {
 
-    background-color: var(--color-babyWhite);
+    background-color: var(--babyWhite);
   
     --font-family-1: 'portd';
     --font-family-2: 'sageffine';
@@ -51,7 +51,7 @@
     --font-family-4: 't-star';
     --font-family-5: 'montserrat';
   
-    --font-size-xxs: 10px;
+    --font-size-xxs: 12px;
     --font-size-xs: 14px;
     --font-size-s: 18px;
     --font-size-m: 22px;
@@ -88,19 +88,19 @@
     --gap-xxxl: 50px;
   
     
-    --color-classicRed: #ff2927;
-    --color-turquoise: #032f30;
-    --color-softTurquoise: #9bd2d3;
-    --color-grey: #5b6060;
-    --color-softGrey: #a4adac;
-    --color-softBlue: #7ebbbc;
-    --color-skyBlue: #b6eaf4;
-    --color-babyPink:#ffe7e3;
-    --color-babyPink:#ffe7e3d3;
-    --color-softGreen: #b7ceb1;
-    --color-limeGreen: #d5f59f;
-    --color-babyWhite:#f7f7f7;
-    --color-babyWhiteClear:#f7f7f7e3; 
+    --classicRed: #ff2927;
+    --turquoise: #032f30;
+    --softTurquoise: #9bd2d3;
+    --grey: #5b6060;
+    --softGrey: #a4adac;
+    --softBlue: #7ebbbc;
+    --skyBlue: #b6eaf4;
+    --bubblegum:#efcdcdd3;
+    --babyPink:#ffe7e3d3;
+    --softGreen: #b7ceb1;
+    --limeGreen: #d5f59f;
+    --babyWhite:#f7f7f7;
+    --babyWhiteClear:#f7f7f7e3; 
   
   }
   
@@ -114,3 +114,21 @@
   }
   
 
+.warning {
+  font-family: var(--font-family-1);
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-weight: 100;
+  color: red;
+}
+
+.vuelta {
+  font-family: var(--font-family-1);
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 100;
+  color: red;
+  padding-top: 50px;
+  cursor: pointer;
+  transform: scale3d(1.7, 1, 1);
+}

@@ -1,0 +1,120 @@
+#pricingSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: var(--padding-s);
+    background-color:var(--babyPink);
+    gap: 50px;
+}
+
+.pricesContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+}
+
+.service {
+    position: relative;
+    display: flex;
+    text-align: start;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid var(--bubblegum);
+    background-color:transparent;
+}
+
+.serviceH2 {
+    font-family: var(--font-family-5);
+    font-size: var(--font-size-m);
+    color: var(--turquoise);
+}
+
+.pricesContainerButtonImg {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.pricingH2 {
+    font-size: 45px;
+    font-family: var(--font-family-1);
+    color: var(--classicRed);
+    letter-spacing: 1px;
+    font-weight: 100;
+    transform: scale3d(1.7, 1, 1);
+}
+
+.serviceDescriptionDiv {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    font-family: var(--font-family-5);
+    font-size: var(--font-size-s);
+    max-height: 0;
+    overflow: overlay;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: var(--bubblegum);
+}
+
+.serviceDescriptionDiv.open {
+    max-height: 300px;
+    padding: 20px;
+}
+
+.quantity, .taxes {
+    font-family: var(--font-family-5);
+    font-size: var(--font-size-xs);
+    color: var(--classicRed);
+}
+
+.taxes {
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 480px) {  
+    .pricesContainerButtonImg { width: 20px; height: 20px; }
+    .serviceH2 {font-size: var(--font-size-xs);}
+    .pricesContainer { width: 90%;}
+    .serviceDescriptionDiv, .quantity, .taxes  { font-size: var(--font-size-xxs);}
+
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .serviceH2 {font-size: var(--font-size-xs);}
+    .pricesContainer { width: 90%;}
+    .serviceDescriptionDiv, .quantity, .taxes { font-size: var(--font-size-xxs);}
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .serviceH2 {font-size: var(--font-size-s);}
+    .pricesContainer { width: 80%;}
+    .serviceDescriptionDiv { font-size: var(--font-size-xs);}
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .serviceH2 {font-size: var(--font-size-s);}
+    .pricesContainer { width: 80%;}
+    .serviceDescriptionDiv { font-size: var(--font-size-xs);}
+}
+
+@media (min-width: 1441px) and (max-width: 1919px){
+    .serviceH2 {font-size: var(--font-size-m);}
+    .pricesContainer { width: 80%;}
+}

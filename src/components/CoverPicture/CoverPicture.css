@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    background-color: var(--color-babyPink);
+    background-color: var(--babyPink);
 }
 
 .coverImage {
@@ -23,7 +23,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: var(--color-skyBlue);
+        background-color: var(--skyBlue);
     }
 
     .coverImage {
@@ -42,7 +42,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: var(--color-skyBlue);
+        background-color: var(--skyBlue);
     }
 
     .coverImage {
@@ -57,7 +57,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .coverPictureDiv {
-        background-color: var(--color-babyPink);
+        background-color: var(--babyPink);
     }
 
     .coverImage {

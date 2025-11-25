@@ -5,13 +5,13 @@
     align-items:center;
     width:100%;
     height: 15vh;
-    background-color: var(--color-transparent);
+    background-color: var(--transparent);
     gap: 10px;
 }
 
 .divHeader.header-pink {
     padding-top: var(--padding-l);
-    background-color: var(--color-babyPink) ;
+    background-color: var(--babyPink) ;
     
 }
 
@@ -58,7 +58,7 @@
         justify-content: space-evenly;
         padding: 10px;
         height: 16vh;
-        background-color: var(--color-transparent);
+        background-color: var(--transparent);
     }
 
     .divHeader.header-pink {
@@ -75,7 +75,7 @@
         align-items:center;
         width:100%;
         height: 16vh;
-        background-color: var(--color-transparent);
+        background-color: var(--transparent);
     }
 
     .divHeader.header-pink {
@@ -91,7 +91,7 @@
         justify-content:space-around;
         flex-direction: column;
         align-items:center;
-        background-color: var(--color-transparent);
+        background-color: var(--transparent);
     }
 }
 
@@ -102,11 +102,11 @@
         justify-content:center;
         flex-direction: column;
         align-items:center;
-        background-color: var(--color-transparent);
+        background-color: var(--transparent);
     }
 
     .divHeader.header-pink {
-        background-color: var(--color-babyPink) ;
+        background-color: var(--babyPink) ;
         height: 17vh;
    
     }

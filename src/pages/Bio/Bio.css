@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     padding: 5px 0 50px 0;
-    background-color:var( --color-babyPink);
+    background-color:var( --babyPink);
 }
 
 .introBioDiv, .biographyDiv, .studiesDiv {
@@ -31,7 +31,7 @@
 .bioH2, .bioH3, .bioH4 {
     width: auto;
     height: auto;
-    color: var(--color-classicRed);
+    color: var(--classicRed);
     font-family: var(--font-family-1);
     transform: scale3d(1.7, 1, 1);
     letter-spacing: 1px;
@@ -58,28 +58,28 @@ blockquote, .bioParagraph, .studiesList {
     width: 100%;
     height: auto;
     text-align: center;
-    background-color:var( --color-babyPink);
+    background-color:var( --babyPink);
     font-family:var(--font-family-4);
-    color: var(--color-turquoise);
+    color: var(--turquoise);
     font-size: 18px;
     letter-spacing: 0.2px;
 }
 
 blockquote {
-    width: 80%;
+    width: 90%;
 }
 
 .bioParagraph, .studiesList {
     text-align: justify;
     list-style: none; 
-    color: var(--color-turquoise);
+    color: var(--turquoise);
 }
 
 .studiesList > li {
     width: auto;
     height: auto;
     font-family: var(--font-family-4);
-    color: var(--color-turquoise);
+    color: var(--turquoise);
     list-style:inside;
 }
 
@@ -102,11 +102,11 @@ blockquote {
 strong {
     width: auto;
     height: auto;
-    color:var(--color-classicRed);
+    color:var(--classicRed);
 }
 
 .clave {
-    color: var(--color-turquoise);
+    color: var(--turquoise);
     font-weight: 100;
 }
 
@@ -120,7 +120,7 @@ strong {
 
 .menuCustomLinks2 {
     margin-top: 100px;
-    background-color: var( --color-babyWhite);
+    background-color: var( --babyWhite);
 }
 
 .adjusted {
@@ -223,7 +223,6 @@ strong {
         padding: 20px;
         font-size: 14px;
     }
-
 
     .bioPictureDiv {
         width: 100%;

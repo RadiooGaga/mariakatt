@@ -1,6 +1,6 @@
 /*import React from 'react'
-import './Cursos.css'
 import { useNavigate } from 'react-router-dom'
+import './Cursos.css'
 
 export const Cursos = () => {
 
@@ -16,5 +16,6 @@ export const Cursos = () => {
       <h2 className='vuelta' onClick={handleGoBack}>VOLVER</h2>
     </section>
   );
-}*/
+}
 
+*/
