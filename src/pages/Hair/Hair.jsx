@@ -28,7 +28,7 @@ const galleryItems = [
 
 export const Hair = () => {
   return (
-    <section className='gallerySection'>
+    <section className='hairSection'>
       <Gallery galleryItems={galleryItems} className={'hair'} />
     </section>
   )

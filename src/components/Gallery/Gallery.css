@@ -10,7 +10,7 @@
     gap: 30px;
 }
 
-.container, .container.editorial, .container.creative, .container.character, .container.beauty  {
+.container.editorial, .container.creative, .container.character, .container.beauty  {
     display: flex;
     width: 95%;
     height: 100%;  
