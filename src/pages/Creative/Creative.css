@@ -1,7 +1,8 @@
 .figure.creative { width: 20%; }
 .figure.creative:hover { width: 70%; }
-.creativo1, .creativo2, .creativo8, .creativo5 { object-position: 55%; }
-.creativo9 { object-position: 45%; }
+.creativo1, .creativo2, .creativo8, .creativo5 { object-position: 55% }
+.creativo1 { filter: brightness(1.1) }
+.creativo9 { object-position: 45%; filter: contrast(1.1); }
 .creativo3 { object-position: 35%; }
 
 

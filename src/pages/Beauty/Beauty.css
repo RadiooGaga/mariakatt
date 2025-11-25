@@ -1,34 +1,11 @@
-
-.figure.beauty {
-    width: 10%;
-}
-
-.figure.beauty:hover {
-    width: 30%;
-}
-
-.beauty1, .beauty3 {
-    object-position: 58%; 
-}
-
-.beauty2 {
-    object-position: 90%;
-}
-
-.beauty5, .beauty4 {
-    object-position: 32%;
-}
-
-.beauty7, .beauty8 {
-    object-position: 20%;
-}
-
-
-
-
-
-
-
+.figure.beauty { width: 10% }
+.figure.beauty:hover { width: 30% }
+.beauty1 { object-position: 55% }
+.beauty3 { object-position: 70% }
+.beauty2 { object-position: 85% }
+.beauty5, .beauty4, .beauty7, .beauty8  { object-position: 33% }
+.beauty10 { object-position: 36% }
+.beauty8 { filter: contrast(1.1) sepia(0.1) }
 
 
 /* MEDIA QUERIES */

@@ -1,35 +1,10 @@
-
-
-.figure.editorial {
-    width: 20%;
-}
-
-.figure.editorial:hover {
-    width: 60%;
-}
-
-
-
-.editorial1 {
-    object-position: 30% 30%;
-}
-
-
-.editorial2, .editorial7, .editorial6 {
-    object-position: 35%;
-} 
-
-.editorial5 {
-    object-position: 52%;
-}
-
-.editorial3, .editorial4 {
-    object-position: 50% 10%;
-}
-
-.editorial6 {
-    object-position: 30% 20%;
-}
+.figure.editorial { width: 20% }
+.figure.editorial:hover { width: 60% }
+.editorial0 { object-position: 12% }
+.editorial1, .editorial6 { object-position: 46% }
+.editorial2, .editorial7 { object-position: 35% } 
+.editorial5, .editorial4 { object-position: 50% }
+.editorial3 { object-position: 55% }
 
 
 
@@ -37,29 +12,23 @@
 
 @media (max-width: 480px) {
 
-    .figure.editorial {
-        flex-basis: 60%;
-    }
+    .figure.editorial { flex-basis: 60% }
 
     .figure.editorial:hover {
         width: 95%;
         height: 75vh;
     }
 }
-
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .figure.editorial {
-        flex-basis:40%;
-    }
+    .figure.editorial { flex-basis:40% }
 
     .figure.editorial:hover {
         width: 95%;
         height: 75vh;
     }
 }
-
 
 @media (min-width: 769px) and (max-width: 1023px) {
 
@@ -70,9 +39,7 @@
         flex-flow: column;
     }
 
-    .figure.editorial:hover {
-        height: 75vh;
-    }
+    .figure.editorial:hover { height: 75vh }
 
 }
 
@@ -84,30 +51,17 @@
         flex-flow: column;
     }
 
-    .figure.editorial:hover {
-        height: 75vh;
-    }
-
-   
+    .figure.editorial:hover { height: 75vh }
 }
 
 @media (min-width: 1280px) and  (max-width: 1443px) {
 
-    .figure.editorial {
-        width: 0%;
-    }
-    .figure.editorial:hover {
-        width: 40%;
-    }
+    .figure.editorial { width: 0% }
+    .figure.editorial:hover { width: 40% }
 }
 
 @media (min-width: 1444px) and (max-width: 1919px) {
 
-    .figure.editorial {
-        width: 0%;
-    }
-    
-    .figure.editorial:hover {
-        width: 20%;
-    }
+    .figure.editorial { width: 0% }
+    .figure.editorial:hover { width: 20% }
 }

@@ -79,7 +79,7 @@ figcaption {
     align-items: center;
     text-align: end;
     font-family: var(--font-family-5);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xxs);
     transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
     visibility: hidden;
     opacity: 0;
