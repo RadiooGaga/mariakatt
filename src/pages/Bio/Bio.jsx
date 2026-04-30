@@ -58,7 +58,7 @@ export const Bio = () => {
         Me mudo a Málaga en 2022 y aquí, realizo estudios de programación web full stack durante 2 años en <strong>The Power MBA</strong>. 
         <br />
         <br />
-        Actualmente vivo en Gijón y tanto el maquillaje y el hair art como la programación son mis actuales pasiones.
+        Actualmente vivo en Gijón y tanto el maquillaje y la peluquería como la programación son mis actuales pasiones.
         Disfruto conviviendo con ambas y cada una ocupa su espacio en mi día a día, permitiendo expresarme y desarrollarme de formas distintas.
         </p>
       </div> 
